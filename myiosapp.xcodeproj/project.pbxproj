@@ -16,6 +16,9 @@
 		C3E6D21D253301070078A178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E6D21B253301070078A178 /* LaunchScreen.storyboard */; };
 		C3E6D228253301070078A178 /* myiosappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6D227253301070078A178 /* myiosappTests.swift */; };
 		C3E6D233253301070078A178 /* myiosappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6D232253301070078A178 /* myiosappUITests.swift */; };
+		C3E6D24725347A6C0078A178 /* ShowRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6D24525347A6C0078A178 /* ShowRecordController.swift */; };
+		C3E6D24825347A6C0078A178 /* AddRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6D24625347A6C0078A178 /* AddRecordController.swift */; };
+		C3E6D253253482E20078A178 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6D252253482E20078A178 /* StudentTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		C3E6D22E253301070078A178 /* myiosappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myiosappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E6D232253301070078A178 /* myiosappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myiosappUITests.swift; sourceTree = "<group>"; };
 		C3E6D234253301070078A178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E6D24525347A6C0078A178 /* ShowRecordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowRecordController.swift; sourceTree = "<group>"; };
+		C3E6D24625347A6C0078A178 /* AddRecordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecordController.swift; sourceTree = "<group>"; };
+		C3E6D252253482E20078A178 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +108,11 @@
 			isa = PBXGroup;
 			children = (
 				C3E6D20D253301040078A178 /* AppDelegate.swift */,
+				C3E6D24625347A6C0078A178 /* AddRecordController.swift */,
+				C3E6D24525347A6C0078A178 /* ShowRecordController.swift */,
 				C3E6D20F253301040078A178 /* SceneDelegate.swift */,
 				C3E6D211253301040078A178 /* ViewController.swift */,
+				C3E6D252253482E20078A178 /* StudentTableViewCell.swift */,
 				C3E6D213253301050078A178 /* Main.storyboard */,
 				C3E6D219253301070078A178 /* Assets.xcassets */,
 				C3E6D21B253301070078A178 /* LaunchScreen.storyboard */,
@@ -264,6 +273,9 @@
 				C3E6D212253301040078A178 /* ViewController.swift in Sources */,
 				C3E6D20E253301040078A178 /* AppDelegate.swift in Sources */,
 				C3E6D210253301040078A178 /* SceneDelegate.swift in Sources */,
+				C3E6D24725347A6C0078A178 /* ShowRecordController.swift in Sources */,
+				C3E6D24825347A6C0078A178 /* AddRecordController.swift in Sources */,
+				C3E6D253253482E20078A178 /* StudentTableViewCell.swift in Sources */,
 				C3E6D218253301050078A178 /* myiosapp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

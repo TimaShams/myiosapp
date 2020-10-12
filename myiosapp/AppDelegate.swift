@@ -1,14 +1,15 @@
 //
 //  AppDelegate.swift
-//  myiosapp
+//  CoreDataSample
 //
-//  Created by MacBook Pro on 11/10/20.
+//  Created by vinh on 16/9/20.
+//  Copyright © 2020 UWS. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
@@ -69,11 +70,84 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             do {
                 try context.save()
             } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
+        }
+    }
+    
+    // all functions for core data are here
+    func getContext () -> NSManagedObjectContext {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        return appDelegate.persistentContainer.viewContext
+    }
+    
+    func storePersonInfo (identification: Int, surname: String, givenName: String, dateOfBirth: Date) {
+        let context = getContext()
+        
+        //retrieve the entity that we just created
+        let entity =  NSEntityDescription.entity(forEntityName: "Person", in: context)
+        
+        let transc = NSManagedObject(entity: entity!, insertInto: context)
+        
+        //set the entity values
+        transc.setValue(identification, forKey: "identification")
+        transc.setValue(surname, forKey: "surname")
+        transc.setValue(givenName, forKey: "givenName")
+        transc.setValue(dateOfBirth, forKey: "dateOfBirth")
+        
+        //save the object
+        do {
+            try context.save()
+            print("saved!")
+        } catch let error as NSError  {
+            print("Could not save \(error), \(error.userInfo)")
+        } catch {
+            
+        }
+    }
+    
+//    func getPersonInfo () -> String {
+//        var info = ""
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateFormat = "dd-MM-yyyy"
+//
+//        //create a fetch request, telling it about the entity
+//        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Person")
+//
+//        do {
+//            //go get the results
+//            let searchResults = try getContext().fetch(fetchRequest)
+//
+//            //I like to check the size of the returned results!
+//            print ("num of results = \(searchResults.count)")
+//
+//            //You need to convert to NSManagedObject to use 'for' loops
+//            for trans in searchResults as [NSManagedObject] {
+//                let id = String(trans.value(forKey: "identification") as! Int)
+//                let surname = trans.value(forKey: "surname") as! String
+//                let givenName = trans.value(forKey: "givenName") as! String
+//                let strDate = dateFormatter.string(from: trans.value(forKey: "dateOfBirth") as! Date)
+//                info = info + id + ", " + givenName + " " + surname + ", " + strDate + "\n"
+//            }
+//        } catch {
+//            print("Error with request: \(error)")
+//        }
+//        return info;
+//    }
+    
+    func removeRecords () {
+        let context = getContext()
+        // delete everything in the table Person
+        let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
+        
+        do {
+            try context.execute(deleteRequest)
+            try context.save()
+        } catch {
+            print ("There was an error")
         }
     }
 
