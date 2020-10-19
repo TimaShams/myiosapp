@@ -10,17 +10,17 @@
     <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
         <attribute name="dateOfBirth" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="givenName" optional="YES" attributeType="String"/>
-        <attribute name="identification" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="studentID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="surname" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Student" representedClassName="Student" syncable="YES" codeGenerationType="class">
         <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="courseid" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="course" optional="YES" attributeType="String"/>
         <attribute name="fname" optional="YES" attributeType="String"/>
         <attribute name="gender" optional="YES" attributeType="String"/>
         <attribute name="id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="lname" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lname" optional="YES" attributeType="String"/>
         <attribute name="long" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
     <entity name="StudentExam" representedClassName="StudentExam" syncable="YES" codeGenerationType="class">
@@ -28,9 +28,9 @@
         <attribute name="studentid" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <elements>
-        <element name="Student" positionX="-63" positionY="-18" width="128" height="163"/>
         <element name="Exams" positionX="-54" positionY="54" width="128" height="118"/>
-        <element name="StudentExam" positionX="-36" positionY="72" width="128" height="73"/>
         <element name="Person" positionX="-18" positionY="81" width="128" height="103"/>
+        <element name="Student" positionX="-63" positionY="-18" width="128" height="163"/>
+        <element name="StudentExam" positionX="-36" positionY="72" width="128" height="73"/>
     </elements>
 </model>

@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import GoogleMaps
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        GMSPlacesClient.provideAPIKey("AIzaSyB6KU-RrTTmlr5Ix0Lj0XK_POgPsf0jhsM")
+
         // Override point for customization after application launch.
         return true
     }
@@ -63,7 +68,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     // MARK: - Core Data Saving support
-
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {
@@ -77,26 +81,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    
     // all functions for core data are here
     func getContext () -> NSManagedObjectContext {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate.persistentContainer.viewContext
     }
     
-    func storePersonInfo (identification: Int, surname: String, givenName: String, dateOfBirth: Date) {
+
+    
+    // Save
+    func storeStudentInfo (student:MyStudent) {
         let context = getContext()
         
         //retrieve the entity that we just created
-        let entity =  NSEntityDescription.entity(forEntityName: "Person", in: context)
+        let entity =  NSEntityDescription.entity(forEntityName: "Student", in: context)
         
         let transc = NSManagedObject(entity: entity!, insertInto: context)
         
         //set the entity values
-        transc.setValue(identification, forKey: "identification")
-        transc.setValue(surname, forKey: "surname")
-        transc.setValue(givenName, forKey: "givenName")
-        transc.setValue(dateOfBirth, forKey: "dateOfBirth")
-        
+        transc.setValue(student.id, forKey: "id")
+        transc.setValue(student.fname, forKey: "fname")
+        transc.setValue(student.lname, forKey: "lname")
+        transc.setValue(student.gender, forKey: "gender")
+        transc.setValue(student.course, forKey: "course")
+        transc.setValue(student.age, forKey: "age")
+        transc.setValue(student.lat, forKey: "lat")
+        transc.setValue(student.long, forKey: "long")
         //save the object
         do {
             try context.save()
@@ -107,6 +118,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
     }
+    
+    
+    func getstudentInfo () -> [MyStudent] {
+
+        var students: [MyStudent] = []
+
+        //create a fetch request, telling it about the entity
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Student")
+
+        do {
+            //go get the results
+            let searchResults = try getContext().fetch(fetchRequest)
+
+            //I like to check the size of the returned results!
+            print ("num of results = \(searchResults.count)")
+
+            //You need to convert to NSManagedObject to use 'for' loops
+            for trans in searchResults as [NSManagedObject] {
+
+                let id = trans.value(forKey: "id") as! Int
+                let fname = trans.value(forKey: "fname") as! String
+                let lname = trans.value(forKey: "lname") as! String
+                let gender = trans.value(forKey: "gender") as! String
+                let course = trans.value(forKey: "course") as! String
+                let age = trans.value(forKey: "age") as! Int
+                let long = trans.value(forKey: "long") as! Double
+                let lat = trans.value(forKey: "lat") as! Double
+
+        
+                let student: MyStudent = MyStudent(id: id, fname: fname, lname: lname, gender: gender, course: course, age: age, lat: 0.0, long: 0.0)
+                
+                students.append(student)
+                //info = info + id + ", " + givenName + " " + surname + ", " + strDate + "\n"
+            }
+        } catch {
+            print("Error with request: \(error)")
+        }
+        return students
+    }
+
+    
     
 //    func getPersonInfo () -> String {
 //        var info = ""
@@ -137,10 +189,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        return info;
 //    }
     
-    func removeRecords () {
+    func removeAllStudents () {
         let context = getContext()
         // delete everything in the table Person
-        let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
+        let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Student")
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
         
         do {
@@ -150,6 +202,58 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print ("There was an error")
         }
     }
+    
+    
+    func deleteSingleStudent(id:Int) {
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Student")
+        fetchRequest.predicate = NSPredicate(format: "id = %i", id)
+        
+        do
+         {
+             let test = try managedContext.fetch(fetchRequest)
+             
+             let objectToDelete = test[0] as! NSManagedObject
+             managedContext.delete(objectToDelete)
+             do{
+                 try managedContext.save()
+                 print("Deleted")
+             }
+             catch
+             {
+                 print(error)
+             }
+         }
+         catch
+         {
+             print(error)
+         }
+        
+        
+    }
+    
+    
+    
+    func checkStudentExist(id: Int) -> Bool {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Student")
+        fetchRequest.includesSubentities = false
+        fetchRequest.predicate = NSPredicate(format: "id = %d", id)
+
+        var entitiesCount = 0
+
+        do {
+            entitiesCount = try getContext ().count(for: fetchRequest)
+        }
+        catch {
+            print("error executing fetch request: \(error)")
+        }
+
+        return entitiesCount > 0
+    }
+    
+    
 
 }
 
