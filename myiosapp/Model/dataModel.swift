@@ -19,6 +19,7 @@ struct MyStudent {
     var long : Double
     var exams: [MyExam]?
     var image: String
+    var address : String
 }
 
 

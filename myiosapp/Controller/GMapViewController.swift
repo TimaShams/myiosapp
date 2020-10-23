@@ -55,7 +55,7 @@ class GMapViewController: UIViewController, GMSAutocompleteViewControllerDelegat
 
 }
 
-extension ViewController: GMSAutocompleteViewControllerDelegate {
+extension StudentVC: GMSAutocompleteViewControllerDelegate {
 
   // Handle the user's selection.
   func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {

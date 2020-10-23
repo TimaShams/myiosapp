@@ -14,6 +14,7 @@
         <attribute name="surname" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Student" representedClassName="Student" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String"/>
         <attribute name="age" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="course" optional="YES" attributeType="String"/>
         <attribute name="fname" optional="YES" attributeType="String"/>
@@ -32,7 +33,7 @@
     <elements>
         <element name="Exam" positionX="-119.73828125" positionY="-35.90234375" width="128" height="118"/>
         <element name="Person" positionX="-18" positionY="81" width="128" height="103"/>
-        <element name="Student" positionX="-268.2890625" positionY="-45.359375" width="128" height="193"/>
+        <element name="Student" positionX="-268.2890625" positionY="-45.359375" width="128" height="208"/>
         <element name="StudentExam" positionX="44.7734375" positionY="-23.97265625" width="128" height="73"/>
     </elements>
 </model>

@@ -8,7 +8,8 @@ target 'myiosapp' do
   pod 'GooglePlaces', '3.10.0'
   pod 'MDatePickerView'
   pod 'DateTimePicker'
-
+  pod 'fluid-slider'
+  pod "ViewAnimator"
 
   # Pods for myiosapp
 

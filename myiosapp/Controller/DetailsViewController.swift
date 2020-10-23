@@ -10,14 +10,6 @@ import MapKit
 import CoreLocation
 
 
-extension DetailsViewController: BacktoAdd {
-  func returnLocation(lat_ : Double  , long_ : Double) {
-    self.lat = lat_
-    self.long = long_
-    print("ddddd")
-  }
-}
-
 extension DetailsViewController: ImageSelected {
     func imageSelected(emoji: String) {
         self.image = emoji
@@ -32,6 +24,7 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
     
     @IBOutlet weak var container: UIView!
     
+    @IBOutlet weak var map: MKMapView!
     static let notificationName = Notification.Name("edit")
 
     var lat = 0.0
@@ -44,13 +37,13 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
     
     var studentVar: MyStudent? = nil
 
+    var address = ""
+    
     @IBOutlet weak var avatarImage: UIImageView!
-    @IBOutlet weak var map: MKMapView!
     @IBOutlet weak var id_label: UILabel!
     @IBOutlet weak var fname_label: UILabel!
     @IBOutlet weak var lname_label: UILabel!
     @IBOutlet weak var course_label: UILabel!
-    @IBOutlet weak var address_label: UILabel!
     @IBOutlet weak var gender_label: UILabel!
     @IBOutlet weak var age_label: UILabel!
 
@@ -58,7 +51,6 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
     @IBOutlet weak var fname: UITextField!
     @IBOutlet weak var lname: UITextField!
     @IBOutlet weak var genderSelector: UISegmentedControl!
-    @IBOutlet weak var address: UITextField!
     @IBOutlet var ageSelector: UIStepperController!
     @IBOutlet weak var courseSelector: UIPickerView!
     @IBOutlet weak var course: UITextField!
@@ -73,7 +65,6 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
         fname_label.text = student.fname
         lname_label.text = student.lname
         course_label.text = student.course
-        address_label.text = String(student.lat)
         gender_label.text = student.gender
         age_label.text = String(student.age)
         let userLocation = CLLocationCoordinate2D(latitude: student.lat, longitude: student.long)
@@ -83,12 +74,17 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
         
         let annotation = MKPointAnnotation()
             annotation.coordinate = userLocation
-            annotation.title = student.fname
-            annotation.subtitle = "LATER"
+            annotation.title = student.address
             map.addAnnotation(annotation)
         
         avatarImage.image = UIImage(named: student.image)
+        image = student.image
+        lat = student.lat
+        long = student.long
+        address = student.address
     }
+
+    @IBOutlet weak var examButton: UIButton!
     
     @IBAction func showExams(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ExamViewController") as! ExamViewController
@@ -102,9 +98,8 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
         id.text = String(studentVar!.id)
         fname.text = studentVar!.fname
         lname.text = studentVar!.lname
-        //GENDER
+        course.text = studentVar!.course
         ageSelector.count = CGFloat(studentVar!.age)
-        address.text = String(studentVar!.lat)
     }
     
 
@@ -114,20 +109,45 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
         
     }
     
+    
+    func showErrorAlert(msg : String ){
+        
+        let alert = UIAlertController(title: "Alert", message: msg , preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+
+    
     @IBAction func save(_ sender: Any) {
 
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-        
-        let tempGender: String = (genderSelector.selectedSegmentIndex == 0) ? "Male" : "Female"
-        
-        appDelegate.deleteSingleStudent(id: studentVar!.id)
-        
-        studentVar = MyStudent(id: Int(id.text!)!, fname: fname.text!, lname: lname.text!, gender: tempGender, course: "courses[0]", age: Int(ageSelector.count), lat: lat, long: long ,image: image )
-    
-        appDelegate.insertStudent(student:studentVar!)
-        setLabels(student:studentVar!)
-        changeDisplay(editView: !false , normalView: !true)
-        self.view.layoutIfNeeded()
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
+        if(id.text == "")
+        {
+            showErrorAlert(msg: "Id is empty")
+        }else if(fname.text == ""){
+            showErrorAlert(msg: "First name is empty")
+        }else if(lname.text == ""){
+            showErrorAlert(msg: "Last name is empty")
+        }else if(course.text == ""){
+            showErrorAlert(msg: "Course is empty")
+        }else if(address == ""){
+            showErrorAlert(msg: "address is empty")
+        }else if(!appDelegate.isUniqueId(id:Int(id.text!)!)  && (Int(id.text!)! != studentVar?.id)){
+            showErrorAlert(msg: "Id is not uniq")
+        }
+        else
+        {
+            let tempGender: String = (genderSelector.selectedSegmentIndex == 0) ? "Male" : "Female"
+            appDelegate.deleteSingleStudent(id: studentVar!.id)
+            studentVar = MyStudent(id: Int(id.text!)!, fname: fname.text!, lname: lname.text!, gender: tempGender, course: course.text!, age : Int(ageSelector.count), lat: lat, long: long ,image: image , address : address )
+            appDelegate.insertStudent(student:studentVar!)
+            setLabels(student:studentVar!)
+            changeDisplay(editView: !false , normalView: !true)
+            self.view.layoutIfNeeded()
+            showErrorAlert(msg: "Updated")
+        }
 
     }
     
@@ -149,11 +169,27 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
         let dict = notification.userInfo as NSDictionary?
         lat = dict!["lat"] as! Double
         long = dict!["long"] as! Double
+        address = dict!["address"] as! String
+        
+        
+        let userLocation = CLLocationCoordinate2D(latitude: lat , longitude: long)
+        map.setCenter(userLocation, animated: true)
+        let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: 1000, longitudinalMeters: 1000)
+        map.setRegion(viewRegion, animated: false)
+        
+        let annotation = MKPointAnnotation()
+            annotation.coordinate = userLocation
+            annotation.title = dict!["address"] as! String
+            annotation.subtitle = "LATER"
+            map.addAnnotation(annotation)
+        
     }
     
     
     
     @IBOutlet weak var cancelButton: UIButton!
+    
+    @IBOutlet weak var changeMap: UIButton!
     
     func changeDisplay(editView:Bool , normalView:Bool){
         
@@ -163,24 +199,21 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
         lname.isHidden = editView
         course.isHidden = editView
         courseSelector.isHidden = editView
-        address.isHidden = editView
         genderSelector.isHidden = editView
         saveButton.isHidden = editView
         ageSelector.isHidden = editView
         cancelButton.isHidden = editView
-        container.isHidden = editView
         imageSelection.isHidden = editView
+        changeMap.isHidden = editView
         
         id_label.isHidden = normalView
         fname_label.isHidden = normalView
         lname_label.isHidden = normalView
         course_label.isHidden = normalView
-        address_label.isHidden = normalView
         gender_label.isHidden = normalView
         age_label.isHidden = normalView
         editButton.isHidden = normalView
-        map.isHidden = normalView
-        
+        examButton.isHidden = normalView
     }
 
     func stepperDidAddValues(stepper: UIStepperController) {

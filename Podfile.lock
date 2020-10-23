@@ -1,5 +1,7 @@
 PODS:
   - DateTimePicker (2.5.0)
+  - fluid-slider (1.1.0):
+    - pop
   - GoogleMaps (3.10.0):
     - GoogleMaps/Maps (= 3.10.0)
   - GoogleMaps/Base (3.10.0)
@@ -8,26 +10,36 @@ PODS:
   - GooglePlaces (3.10.0):
     - GoogleMaps/Base (= 3.10.0)
   - MDatePickerView (1.2.3)
+  - pop (1.0.12)
+  - ViewAnimator (3.0.1)
 
 DEPENDENCIES:
   - DateTimePicker
+  - fluid-slider
   - GoogleMaps (= 3.10.0)
   - GooglePlaces (= 3.10.0)
   - MDatePickerView
+  - ViewAnimator
 
 SPEC REPOS:
   trunk:
     - DateTimePicker
+    - fluid-slider
     - GoogleMaps
     - GooglePlaces
     - MDatePickerView
+    - pop
+    - ViewAnimator
 
 SPEC CHECKSUMS:
   DateTimePicker: 9a370913607f360b67ecfc7dcf331911c9b407a6
+  fluid-slider: 68037ac7247f16a89f3e24ff5d0167c8eea6f50b
   GoogleMaps: 8c080862ff2748ece9929471b30feb56a6c5079d
   GooglePlaces: 9a6f5f3a0c88da2aa1bf7426a65d3e004f5e69a1
   MDatePickerView: e26233885de2f13659c6101b3ed265eacf92c078
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  ViewAnimator: dd18d2f5c1e472f78d0065ff92750fe56cbd2f39
 
-PODFILE CHECKSUM: d5df3ee9b61ea0ca37d552eefb36d0582e40171a
+PODFILE CHECKSUM: 92567b801a7146c16a44cec53fef65f463aa0c6f
 
 COCOAPODS: 1.9.3

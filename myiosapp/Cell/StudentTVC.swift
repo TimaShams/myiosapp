@@ -7,20 +7,23 @@
 
 import UIKit
 
-class StudentTableViewCell: UITableViewCell {
+class StudentTVC: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        view.design()
     }
+    
     @IBOutlet weak var id: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var course: UILabel!
-    @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var view: UIView!
     @IBOutlet weak var avatarImage: UIImageView!
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
 
+
 }
+

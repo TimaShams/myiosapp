@@ -13,9 +13,12 @@
 		C36B96D825405F81009BD154 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B96D725405F81009BD154 /* LocationSearchTable.swift */; };
 		C36B96F1254231EE009BD154 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B96F0254231EE009BD154 /* GalleryViewController.swift */; };
 		C36B970025424086009BD154 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B96FF25424086009BD154 /* GalleryCell.swift */; };
+		C36B972E2542C59B009BD154 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B972D2542C59B009BD154 /* TestViewController.swift */; };
+		C36B97422542D56D009BD154 /* extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B97412542D56D009BD154 /* extentions.swift */; };
+		C36B974A2542EF3C009BD154 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B97492542EF3C009BD154 /* CustomTextField.swift */; };
 		C3E6D20E253301040078A178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6D20D253301040078A178 /* AppDelegate.swift */; };
 		C3E6D210253301040078A178 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6D20F253301040078A178 /* SceneDelegate.swift */; };
-		C3E6D212253301040078A178 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6D211253301040078A178 /* ViewController.swift */; };
+		C3E6D212253301040078A178 /* StudentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6D211253301040078A178 /* StudentVC.swift */; };
 		C3E6D215253301050078A178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E6D213253301050078A178 /* Main.storyboard */; };
 		C3E6D218253301050078A178 /* myiosapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3E6D216253301050078A178 /* myiosapp.xcdatamodeld */; };
 		C3E6D21A253301070078A178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3E6D219253301070078A178 /* Assets.xcassets */; };
@@ -24,7 +27,7 @@
 		C3E6D233253301070078A178 /* myiosappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6D232253301070078A178 /* myiosappUITests.swift */; };
 		C3E6D24725347A6C0078A178 /* ShowRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6D24525347A6C0078A178 /* ShowRecordController.swift */; };
 		C3E6D24825347A6C0078A178 /* AddRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6D24625347A6C0078A178 /* AddRecordController.swift */; };
-		C3E6D253253482E20078A178 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6D252253482E20078A178 /* StudentTableViewCell.swift */; };
+		C3E6D253253482E20078A178 /* StudentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6D252253482E20078A178 /* StudentTVC.swift */; };
 		C3E6D25B2534C1DC0078A178 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6D25A2534C1DC0078A178 /* DetailsViewController.swift */; };
 		C3E6D2782534CC1C0078A178 /* Pods_myiosapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E6D2772534CC1C0078A178 /* Pods_myiosapp.framework */; };
 		C3E6D2792534CC1C0078A178 /* Pods_myiosapp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3E6D2772534CC1C0078A178 /* Pods_myiosapp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -80,11 +83,14 @@
 		C36B96D725405F81009BD154 /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		C36B96F0254231EE009BD154 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		C36B96FF25424086009BD154 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		C36B972D2542C59B009BD154 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		C36B97412542D56D009BD154 /* extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extentions.swift; sourceTree = "<group>"; };
+		C36B97492542EF3C009BD154 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C38E44EBD3087AF1DC001448 /* Pods-myiosapp-myiosappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myiosapp-myiosappUITests.debug.xcconfig"; path = "Target Support Files/Pods-myiosapp-myiosappUITests/Pods-myiosapp-myiosappUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3E6D20A253301040078A178 /* myiosapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myiosapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E6D20D253301040078A178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E6D20F253301040078A178 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C3E6D211253301040078A178 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3E6D211253301040078A178 /* StudentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentVC.swift; sourceTree = "<group>"; };
 		C3E6D214253301050078A178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3E6D217253301050078A178 /* myiosapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = myiosapp.xcdatamodel; sourceTree = "<group>"; };
 		C3E6D219253301070078A178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,7 +104,7 @@
 		C3E6D234253301070078A178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3E6D24525347A6C0078A178 /* ShowRecordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowRecordController.swift; sourceTree = "<group>"; };
 		C3E6D24625347A6C0078A178 /* AddRecordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecordController.swift; sourceTree = "<group>"; };
-		C3E6D252253482E20078A178 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		C3E6D252253482E20078A178 /* StudentTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTVC.swift; sourceTree = "<group>"; };
 		C3E6D25A2534C1DC0078A178 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		C3E6D2772534CC1C0078A178 /* Pods_myiosapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_myiosapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E6D2AD2534D8590078A178 /* GMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +171,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C36B97452542EEE7009BD154 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				C3E6D213253301050078A178 /* Main.storyboard */,
+				C3E6D21B253301070078A178 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		C36B97482542EF25009BD154 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C36B97412542D56D009BD154 /* extentions.swift */,
+				C36B97492542EF3C009BD154 /* CustomTextField.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		C3E6D201253301040078A178 = {
 			isa = PBXGroup;
 			children = (
@@ -194,13 +218,12 @@
 				C3E73842253DBB0E0043CC73 /* Student_Add */,
 				C3E7384C253DC2D70043CC73 /* View */,
 				C3E7384D253DC2DF0043CC73 /* Model */,
+				C36B97452542EEE7009BD154 /* StoryBoards */,
 				C3E7384E253DC2EE0043CC73 /* Controller */,
 				C3E7385B253E00690043CC73 /* Cell */,
 				C3E6D20D253301040078A178 /* AppDelegate.swift */,
 				C3E6D20F253301040078A178 /* SceneDelegate.swift */,
-				C3E6D213253301050078A178 /* Main.storyboard */,
 				C3E6D219253301070078A178 /* Assets.xcassets */,
-				C3E6D21B253301070078A178 /* LaunchScreen.storyboard */,
 				C3E6D21E253301070078A178 /* Info.plist */,
 				C3E6D216253301050078A178 /* myiosapp.xcdatamodeld */,
 				C3E6D2B125369C800078A178 /* UIStepperController.swift */,
@@ -252,7 +275,8 @@
 		C3E7384E253DC2EE0043CC73 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C3E6D211253301040078A178 /* ViewController.swift */,
+				C3E6D211253301040078A178 /* StudentVC.swift */,
+				C36B972D2542C59B009BD154 /* TestViewController.swift */,
 				C3E6D2AD2534D8590078A178 /* GMapViewController.swift */,
 				C36B96D325405ECD009BD154 /* MapViewController.swift */,
 				C3E6D24525347A6C0078A178 /* ShowRecordController.swift */,
@@ -268,9 +292,10 @@
 		C3E7385B253E00690043CC73 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				C3E6D252253482E20078A178 /* StudentTableViewCell.swift */,
+				C3E6D252253482E20078A178 /* StudentTVC.swift */,
 				C3E73857253E00600043CC73 /* ExamTableViewCell.swift */,
 				C36B96FF25424086009BD154 /* GalleryCell.swift */,
+				C36B97482542EF25009BD154 /* Helper */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -550,9 +575,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3E6D212253301040078A178 /* ViewController.swift in Sources */,
+				C3E6D212253301040078A178 /* StudentVC.swift in Sources */,
 				C3E6D2B225369C800078A178 /* UIStepperController.swift in Sources */,
 				C3E6D20E253301040078A178 /* AppDelegate.swift in Sources */,
+				C36B97422542D56D009BD154 /* extentions.swift in Sources */,
 				C3E6D210253301040078A178 /* SceneDelegate.swift in Sources */,
 				C3E6D25B2534C1DC0078A178 /* DetailsViewController.swift in Sources */,
 				C3E73854253DFE840043CC73 /* ExamViewController.swift in Sources */,
@@ -560,10 +586,12 @@
 				C3E6D2AE2534D8590078A178 /* GMapViewController.swift in Sources */,
 				C3E73858253E00600043CC73 /* ExamTableViewCell.swift in Sources */,
 				C3E73883253F68DD0043CC73 /* AddExamViewController.swift in Sources */,
+				C36B972E2542C59B009BD154 /* TestViewController.swift in Sources */,
+				C36B974A2542EF3C009BD154 /* CustomTextField.swift in Sources */,
 				C3E7389B253F71350043CC73 /* DateViewController.swift in Sources */,
 				C3E6D24725347A6C0078A178 /* ShowRecordController.swift in Sources */,
 				C3E6D24825347A6C0078A178 /* AddRecordController.swift in Sources */,
-				C3E6D253253482E20078A178 /* StudentTableViewCell.swift in Sources */,
+				C3E6D253253482E20078A178 /* StudentTVC.swift in Sources */,
 				C36B96D825405F81009BD154 /* LocationSearchTable.swift in Sources */,
 				C36B970025424086009BD154 /* GalleryCell.swift in Sources */,
 				C36B96F1254231EE009BD154 /* GalleryViewController.swift in Sources */,

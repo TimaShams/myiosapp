@@ -48,8 +48,6 @@ extension GalleryViewController: UICollectionViewDataSource,UICollectionViewDele
         
         cell.avatarImage.image = UIImage(named: avatar[indexPath.row])
 
-        //cell.label.text = avatar[indexPath.row]
-        
         return cell
     }
     
@@ -58,10 +56,8 @@ extension GalleryViewController: UICollectionViewDataSource,UICollectionViewDele
         // handle tap events
         self.delegate?.imageSelected(emoji:avatar[indexPath.row])
         print(avatar[indexPath.row])
+        dismiss(animated: true, completion: nil)
     }
-    
-    
-    
     
     
 }

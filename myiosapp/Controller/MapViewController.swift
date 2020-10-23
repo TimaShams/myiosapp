@@ -5,16 +5,10 @@ protocol HandleMapSearch {
     func dropPinZoomIn(placemark:MKPlacemark)
 }
 
-protocol BacktoAdd {
-  func returnLocation(lat_ : Double  , long_ : Double)
-}
-
-
 class MapViewController : UIViewController {
     
     var mainViewController:AddRecordController?
     
-    var delegate: BacktoAdd?
     var selectedPin:MKPlacemark? = nil
     let locationManager = CLLocationManager()
     var resultSearchController:UISearchController? = nil
@@ -72,7 +66,7 @@ extension MapViewController : CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("error:: (error)")
+        print("error::",error)
     }
 }
 
@@ -94,22 +88,13 @@ extension MapViewController: HandleMapSearch {
         let region = MKCoordinateRegion(center: placemark.coordinate, span: span)
         mapView.setRegion(region, animated: true)
     
-        print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
         print(placemark.coordinate.latitude)
-        self.delegate?.returnLocation(lat_: placemark.coordinate.latitude , long_: placemark.coordinate.longitude )
-        
-        mainViewController?.onUserAction(data: "The quick brown fox jumps over the lazy dog")
 
-        NotificationCenter.default.post(name: AddRecordController.notificationName, object: nil, userInfo:["lat": placemark.coordinate.latitude, "long": placemark.coordinate.longitude])
+        NotificationCenter.default.post(name: AddRecordController.notificationName, object: nil, userInfo:["lat": placemark.coordinate.latitude, "long": placemark.coordinate.longitude , "address" : placemark.title!])
         
-        NotificationCenter.default.post(name: DetailsViewController.notificationName, object: nil, userInfo:["lat": placemark.coordinate.latitude, "long": placemark.coordinate.longitude])
-
-        
-        self.dismiss(animated: true, completion: nil)
+        NotificationCenter.default.post(name: DetailsViewController.notificationName, object: nil, userInfo:["lat": placemark.coordinate.latitude, "long": placemark.coordinate.longitude, "address" : placemark.title!])
 
     }
-    
-    
     
 }
 

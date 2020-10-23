@@ -13,7 +13,7 @@
 			buildPhases = (
 			);
 			dependencies = (
-				E5B82B1B3399F051D08AD3140D0E175C /* PBXTargetDependency */,
+				49C9E91A5D0D5D95C62A2F9413BEE3FA /* PBXTargetDependency */,
 			);
 			name = GooglePlaces;
 		};
@@ -29,112 +29,232 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		00094E93266873E86DE2435119375A7D /* MDatePickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3654FF8B5E1FC110816E91AB0A10AD /* MDatePickerView-dummy.m */; };
-		000BCCDDE27A42800C43711FA062FE7F /* DateTimePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = C606977201DAA31DECAF930F0221B5AA /* DateTimePicker.xib */; };
-		00CF9F2EA1047BBA5A8DA984A2A0AE35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		1614348BFE1B6F09E37A13885BDD46EF /* DateTimePicker+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECFDC0C7859C01CF5684A3168D5EA83 /* DateTimePicker+UITableView.swift */; };
-		165934623715D9E5C7FF1748B1D7C18C /* Bundle+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506E6FD6E7A21F309909BA7260F04BB6 /* Bundle+Resource.swift */; };
-		1C306DEB5FA0D4EB305CD7BB068979D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		21E5AF21BEC8C0F09B1654E6DD3D91AB /* DateTimePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C82E6CD9B59836EE5A790487BA7FD21F /* DateTimePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22279843759931AB1B3207F4E9464594 /* FullDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FD9D1F6DFB57F42897D8A319FC24D4 /* FullDateCollectionViewCell.swift */; };
-		2A1D48DB941C9E09C13B484622D96122 /* MDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44F2262572A3FD3AC4A43ACDADB88E /* MDatePickerView.swift */; };
-		310C9C13929C231E3389918DF1749777 /* ColDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F415658E0204343B6F601B30F08D2B2 /* ColDateCell.swift */; };
+		00094E93266873E86DE2435119375A7D /* MDatePickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB10ABC9CABDE0EA36CC2BED7F3E70A /* MDatePickerView-dummy.m */; };
+		00CF9F2EA1047BBA5A8DA984A2A0AE35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */; };
+		037478A488E6E3797C18F7078168AA01 /* pop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCFD3C12B3EE6359827D315840CBD704 /* pop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06604C03A58B63F8CBF474CF854B6D41 /* POPDecayAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = F11CE3C53862EAF98A525DB7F1B4118E /* POPDecayAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		081AD2D7A4E79B029748CBBDD242D524 /* ViewAnimator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 434377ACEBF2E4E25E6F592268E05D70 /* ViewAnimator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CAEF932F9993841278DB0939A488F39 /* POPAnimatorPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CBDFF6909EC89AC231E1E2A6267DF3 /* POPAnimatorPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0EC22D9CD06C0FAED17878DD8BAA42C7 /* POPAnimationRuntime.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9812B75AFC304988D51664D454122E4C /* POPAnimationRuntime.mm */; };
+		10A2A95718AFE6AF478DC6451E27FFA0 /* Pods-myiosapp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8AC0C2AF0E876A137EDC1C598BE6427 /* Pods-myiosapp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		151E8FBCDC0E5508A086F6FF0BE3A7A2 /* POPSpringAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C6B8FB4E2A9905A3D2C763ACD7E4AFD /* POPSpringAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1614348BFE1B6F09E37A13885BDD46EF /* DateTimePicker+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1A11E8D58540272A06EA9C7850EED0 /* DateTimePicker+UITableView.swift */; };
+		16277F2E3455133F45D6BA9B3E89C891 /* ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C83F7A0E76E03B08121ADAA61381F0 /* ViewAnimator.swift */; };
+		165934623715D9E5C7FF1748B1D7C18C /* Bundle+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C318E988D2142B1D9379B91ACEF037B5 /* Bundle+Resource.swift */; };
+		1B8F637CEC9C8185167112D244AAAA09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */; };
+		1BC25F26EBA9F6EBBEB08C07515FDCB6 /* pop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AF7904E543D67FDABBE9FCF7E7AA43 /* pop-dummy.m */; };
+		1CED6D13C3BC270D3464B0E6512AA2DB /* POPBasicAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 783D95A6EA559070E496AAE40DF306C3 /* POPBasicAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		21E5AF21BEC8C0F09B1654E6DD3D91AB /* DateTimePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FC909BBCAAA8640921B8C17883EB9B /* DateTimePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22279843759931AB1B3207F4E9464594 /* FullDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B714F6CDC622D08DBFCF5C3CF4BF83 /* FullDateCollectionViewCell.swift */; };
+		2A1D48DB941C9E09C13B484622D96122 /* MDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71FA930FF83ABE5085BEA2C2EA2C46 /* MDatePickerView.swift */; };
+		2BC84B982035B82B083A3D1BB5F1C0BE /* POPDecayAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F20EA92152B6B24D4ADE6D04CBC180F1 /* POPDecayAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2F5BC312C0F8DFA7521246A1B097197E /* POPAnimationTracer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC92E805491D1CBEAE50D68BFBF5F8D /* POPAnimationTracer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FEAB0499BBFD91C1434FB7F0C358A8E /* POP.h in Headers */ = {isa = PBXBuildFile; fileRef = D38F2D82506A1EE4A49282576023B542 /* POP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		310C9C13929C231E3389918DF1749777 /* ColDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561D896303900D65983E4ED116CA2F7 /* ColDateCell.swift */; };
+		32F4CD5AE6E32F07CAC772ED4EACCE26 /* POPAnimationEventInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 930DBA98362DCBDFB80EC5616EA8BC66 /* POPAnimationEventInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		35A0E324BDD2B80517591A67A91A8B43 /* Pods-myiosappTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 743B33AA5296FA3550E31999BD1FF76D /* Pods-myiosappTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38556430DE05DB379B6BEB51FFC3AB7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
-		3ABBFC464400F6BA9BC5436517DDAB73 /* DateTimePicker+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86599D347FE1FC32B756C3EF83374B7 /* DateTimePicker+CollectionView.swift */; };
-		3BA63CDA93DF2AE03083C4A3A242635D /* Pods-myiosapp-myiosappUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68D272F058CB4648D6A5BCB5972DB60C /* Pods-myiosapp-myiosappUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5136442ADA09DCB9B949A6BFB5F4E7F2 /* Pods-myiosapp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A54EBB7DEB90AEE38AFF4EAAE069FDE5 /* Pods-myiosapp-dummy.m */; };
-		555FB7685768C1DFA5621E415C2783A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		74CBDE6C227D7FBA43DEBD76A32BF7F9 /* DateTimePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE24CAAB508E4C5228DCA8692019D94 /* DateTimePicker-dummy.m */; };
+		38556430DE05DB379B6BEB51FFC3AB7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FC6BA7CB64EE10B4D6FC3B144D2B66 /* UIKit.framework */; };
+		39B69D3C36156890A157D2F9F0495309 /* fluid-slider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB84FBBEE4D90977AA82BC67A75CF128 /* fluid-slider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3ABBFC464400F6BA9BC5436517DDAB73 /* DateTimePicker+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9226D87552827B97BE1D302CB8D3FCE1 /* DateTimePicker+CollectionView.swift */; };
+		3AE69E74E818584C53F0F5B3CBDA0D7A /* POPSpringSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = EB17E78C3D7BB5C696563EE3273F5ACF /* POPSpringSolver.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3E73FE19564CC831F0CE5D37E1FE890A /* POPCGUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2E588F460705E3D084197592D81EFC81 /* POPCGUtils.mm */; };
+		3FD16B601F57FC15298B2C38DD872C2D /* ViewAnimatorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3577A874BC25D799457F230A951A2 /* ViewAnimatorConfig.swift */; };
+		42470D84757CB7854FDB51359C022F3B /* Pods-myiosapp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A54EBB7DEB90AEE38AFF4EAAE069FDE5 /* Pods-myiosapp-dummy.m */; };
+		426E5077044B2FB9811262D17D3B7255 /* POPAnimatableProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = DF69468890658509AEE886A1542B4E5F /* POPAnimatableProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EE5E89A7E7E8900A7D52ACED5BA8AE /* POPAnimationTracer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8616C2301FD7D7C9B1345A6F366B935E /* POPAnimationTracer.mm */; };
+		471B4F54D4C9062A3DDB9F9E293DA1F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */; };
+		4976057965D643E01F01A5805440FAB1 /* Pods-myiosapp-myiosappUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0568F49FBD0984DB59CC5F0FF0E3D558 /* Pods-myiosapp-myiosappUITests-dummy.m */; };
+		4982AE6FAF36005CC32F7BB544DC7D43 /* POPLayerExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = CFA5813F6B541346A4614BA4484749B4 /* POPLayerExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A668A831CC56A8703854F7F21C093CB /* UICollectionView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA12A9211F775A0B0DD287D49E470475 /* UICollectionView + ViewAnimator.swift */; };
+		4D85F70812775ACFC569B1E0C05959AE /* POPAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8951BD98844104D28CD08FA888D8F5AC /* POPAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FEB1A6840190478600B306D1229F098 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */; };
+		5304FBEEAFD659DE79644263D22C3550 /* Pods-myiosapp-myiosappUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68D272F058CB4648D6A5BCB5972DB60C /* Pods-myiosapp-myiosappUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537106EEB343082C764176388C4AB8DA /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AA292DBE0FCC259E9C8F284CA91E2A /* Filters.swift */; };
+		61A73E6A5C756FFAAE2A7AB914565256 /* POPAnimationPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B7914114AAED88E45C0D4789D107E5 /* POPAnimationPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		648A4691225EE60D849203C0F404913B /* POPMath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5F9F4954416B6C738D55FB6F68344 /* POPMath.mm */; };
+		65030FA7930AFE8D119A58AF8C70D7B4 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A1286D94529D00FF0BB9E1BDC9D17E0 /* TransformationMatrix.cpp */; };
+		67309109166AB7855A41C462C96BEB7D /* POPAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 18925F499558E81E6573644650DB1164 /* POPAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		71BAD60B0391B4122E5D97E17D4A0DAC /* POPAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = BA2A134AEFEE62F679E74CF14F5DFA97 /* POPAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74CBDE6C227D7FBA43DEBD76A32BF7F9 /* DateTimePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F754CA75321F75DC04C0D5F66E3164C /* DateTimePicker-dummy.m */; };
 		75280882EFE49C21DCED564E79B9A9A9 /* DateTimePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B04C1EBC2EC90A2DFFEDDD0CF4473840 /* DateTimePicker.bundle */; };
-		8306861861D971594FA56C5B4EC6EBDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		87E0F8B9B06BC18A48633C5FFC99B270 /* MDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = DD1EC781608350B3E38352EC8193E470 /* MDatePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7654D9CA761CE5A7E9CDE4000D6FE329 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */; };
+		772552C3C94BF8300230B512CC26CA44 /* POPBasicAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29B00961BB90AED06D68F5A24D54F2AE /* POPBasicAnimation.mm */; };
+		7C54A74AC05982FE3450C651CDB258A1 /* POPPropertyAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 05CCA9CB465DCE7863A3D25EB8472191 /* POPPropertyAnimation.mm */; };
+		7D0B7903FBA88703938682451BD70993 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49213B04767A9E8E142672E843DBC8BC /* Animation.swift */; };
+		8213468D89321894812E74AB071391B8 /* POPVector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8396F9223AFAE2821E3B9F0D4CE6165A /* POPVector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82A27E3326C5AE361CF0331D9FE6DC4A /* POPMath.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C5C02E10595B2DD6FF0B7481699040 /* POPMath.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8306861861D971594FA56C5B4EC6EBDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */; };
+		86302E565309FC08ADDCF4F2D2581BBE /* TransformationMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = E8FFE3525B36589735D74530F9BFEB04 /* TransformationMatrix.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		86DE2FE9DE4AEA1B39AD5959F0CB875B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */; };
+		87E0F8B9B06BC18A48633C5FFC99B270 /* MDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD8C04D46CCC9665B7787031A6FEBD6 /* MDatePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E8BAA74DA034C94C90733288B5836E5 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150C44563628B75CE2C00A6CB6982776 /* Slider.swift */; };
+		92E827731F7020DEA05B559709732538 /* UnitBezier.h in Headers */ = {isa = PBXBuildFile; fileRef = E85994C339D088894F725D3D31DA83A1 /* UnitBezier.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		93B72A81D6BD44A5FE9EC807562EF380 /* Pods-myiosappTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B45D7C17C1222991473943518DB21D61 /* Pods-myiosappTests-dummy.m */; };
-		A12D588300E650EAC1DA6C31E60D3E9A /* Pods-myiosapp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8AC0C2AF0E876A137EDC1C598BE6427 /* Pods-myiosapp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A699148E1B7662D53864D22778E6A0D4 /* MDatePickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 495D1FB069D55A94AF50B6732A4D6F2B /* MDatePickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF625052D99A843D4312F581DCE17815 /* TextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF715F38EAB8F62B4DE8CF6B21483A /* TextLabel.swift */; };
-		B2C565D88D7E1D7205015F64CDD0F03F /* StepCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22568005AC00C40AE94161CB6FE1F97 /* StepCollectionViewFlowLayout.swift */; };
-		B6C64F8A2D8D2A7262CEBCF6ACCE124A /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD7ED44F2D148479BDC094CD683236D /* CalendarController.swift */; };
-		C27B89BC876933074C8A4D4998DAC4B7 /* ColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2D7DEA27B24EAB73D1C6ABFFDC492 /* ColCell.swift */; };
-		E7A56871A06A700D6BF7140281493FAB /* DateTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E40F1DC639C658D8102A2A2303C70 /* DateTimePicker.swift */; };
-		E98CB7FA4F9A67C1EC24E6C562B9217F /* FullDateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C25EFD0EE532B96879B68A4F87094E3F /* FullDateCollectionViewCell.xib */; };
-		EF113308A90A57DB288CB2579D2FF1A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		F7E4D8CC41357A506980E7E789DE2139 /* Pods-myiosapp-myiosappUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0568F49FBD0984DB59CC5F0FF0E3D558 /* Pods-myiosapp-myiosappUITests-dummy.m */; };
-		F8EFAA181BDDCA4B3C34D7891A46F8BB /* CustomDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CD535A91B0DFA77E56E32CE105DEBC /* CustomDatePickerView.swift */; };
+		9560C8A21628E2EC5A81B94A3CFD7FDF /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180CC7CECBB75B280ECBFCD59FCB601F /* pop.framework */; };
+		96B3D304678AA97C3E48D782B828296D /* POPGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29A5265A6267504685E58F3535968A81 /* POPGeometry.mm */; };
+		97EF178463D3327E8772ECC323AC629B /* POPAnimatableProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = E2F46758FDA8370450E95B7285C6EC4A /* POPAnimatableProperty.mm */; };
+		99E3008173F04A293F02EAF2F9F58883 /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D627D6E802F7F056FFF9D5B79C7BD1EB /* AnimationType.swift */; };
+		9C087AF9BDDD44D324245C091C6E8FE4 /* POPBasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1CA53755530BF7394EDE4C32A1BAC9 /* POPBasicAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F2F198A12F6910AB3041E1E2C9B6022 /* POPCustomAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 639A579B4D56EEAF36D04F47E7308A5D /* POPCustomAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1F89DD6B4B27A794C54D3415822DBE2 /* UITableView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A631BEE34207F4710D86B6C8C077DA /* UITableView + ViewAnimator.swift */; };
+		A3928328771AEFF00D13A708F5622E7D /* POPCGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4403F62D2DDF0ADE0A29D842A3BDAD90 /* POPCGUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A699148E1B7662D53864D22778E6A0D4 /* MDatePickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D34564031CE4E8EB3F6C532A4861AB /* MDatePickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7137176DF7EFF8C8D21838EF12AA032 /* POPAnimationTracerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 35410DEF6B0B6C54125534CBC80FE79C /* POPAnimationTracerInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A8CE4799E2D6969B0D38837DD07F1D16 /* POPLayerExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = 836DC132FBC73A7B959198268A997D14 /* POPLayerExtras.mm */; };
+		A99642DE94D50AF162EE08897D253A5C /* FloatConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 287ACBCD3DD7E48262945F66D0870487 /* FloatConversion.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ACDAEE483B3891358F0C0A55E1AACCB1 /* POPPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 01755E61246824509AE2CC0FC1BC2BE4 /* POPPropertyAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF625052D99A843D4312F581DCE17815 /* TextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5DE7AB61CA23A690BA593A4D77CD6 /* TextLabel.swift */; };
+		B17106E7FC3FCF4B0A9771F88D085FEF /* POPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 16342EBE8BAA262D501AEE390D08E810 /* POPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1B11B41A3FA4B7642C035874CAA9A41 /* POPAnimationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 318CD223521916B00CC3F1EB7A562C12 /* POPAnimationEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2C565D88D7E1D7205015F64CDD0F03F /* StepCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15373D3D1B62525DA1313E9C99C5C5BD /* StepCollectionViewFlowLayout.swift */; };
+		B40534815E22FBB2CBF7E4EBB10DC02F /* POPAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 08A7EBB71CDDF0D545BDA2EC037B4496 /* POPAnimator.mm */; };
+		B67F16376FF3249BCAE0DC49AD821673 /* fluid-slider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D14C26178011DA8F8E4BDDA93672831 /* fluid-slider-dummy.m */; };
+		B6C64F8A2D8D2A7262CEBCF6ACCE124A /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E83A8FD0EC82955EBD63E04758D2A0 /* CalendarController.swift */; };
+		BA985CED52C70B9844B3B648E64123CD /* POPAnimationExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F75E0FC97E7B93479F692AFCEDBF7E /* POPAnimationExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAE56100646B100E9BAF596122C13ABC /* POPPropertyAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = B674B95919EAE4C8F01BDF08989AE8EC /* POPPropertyAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BAF74ED4BC68DFA60CD11169C4E34AE2 /* POPSpringAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1819C091DB64DC6C48648F951B7628 /* POPSpringAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C27B89BC876933074C8A4D4998DAC4B7 /* ColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3702DE37A771D156265AE450DB7C4 /* ColCell.swift */; };
+		C2D693B1DE33906A0CFBA4A5161AAD82 /* POPAnimationRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = BB31C7C55234A41501219A25AE36DD7C /* POPAnimationRuntime.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D681DB40926E2B6606559690FB7A8143 /* POPAnimationExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = B350916F9D8FD46C387A0DB9334439D5 /* POPAnimationExtras.mm */; };
+		D814CDB6E25BF890490D9E0B46CE7593 /* ViewAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DE5F96F2D0A4D914F79C8204E2CAB /* ViewAnimator-dummy.m */; };
+		D8AC323AF26EF7ADAF77D84C4CBD33EC /* POPAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18423C7F7D6FE203A11D4AA36C44214F /* POPAnimation.mm */; };
+		D9201498B896E34281419483FFAB1F54 /* POPAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = CC82C4623DB21397A762459D44643E23 /* POPAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E01C0634B5B14DF30629367712A62C0A /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 156DEFC597A7F1BF5993862D0B29D827 /* POPVector.mm */; };
+		E4DC6083485231564387958956533A31 /* POPAnimationEvent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 37C3974B67070E5ADFA8F3AB0DE22482 /* POPAnimationEvent.mm */; };
+		E594F832F193C64FBE144B7579A6CA6F /* POPDecayAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = A426404C576459A5DE6AEE3D070CB778 /* POPDecayAnimation.mm */; };
+		E7A56871A06A700D6BF7140281493FAB /* DateTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82D74D80EF01394CE9D2A9FE02E75BF /* DateTimePicker.swift */; };
+		E8B7356AB70DFBDF4B0E636E772C6A30 /* POPSpringAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 08BB270FE741F5D39396601F5EF4385A /* POPSpringAnimation.mm */; };
+		E910A22A819444F1998A6E54F00CCF08 /* POPGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = D2986139C062AD583CF3EB95CD1A4953 /* POPGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAE49325AE3D2587B322C8C6CA40746A /* POPCustomAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 895AC929920F38CD05115F52B99A384D /* POPCustomAnimation.mm */; };
+		EAF4B7C92829BA11A32CD01AC2CBA1CD /* FullDateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D34ECB0109DC88071A6E32AA33AA46A /* FullDateCollectionViewCell.xib */; };
+		EF113308A90A57DB288CB2579D2FF1A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */; };
+		EF87FA7DD8D25779E9E91DCBC382D434 /* ValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A0AB03596F7E181DF9FC738638604 /* ValueView.swift */; };
+		F0693F9E585DAD36A2ACF2A8E9FFBFAD /* DateTimePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EAFD26E0487E2D91F5C87F9713F1BAD /* DateTimePicker.xib */; };
+		F8EFAA181BDDCA4B3C34D7891A46F8BB /* CustomDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E385E4673F24C57132FF4776790726 /* CustomDatePickerView.swift */; };
+		FDFC5C8CE5972411C71EF124F7EC1B33 /* POPAnimatablePropertyTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = FED15EC2235509ED29811EB9CC51C3E3 /* POPAnimatablePropertyTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		271E5F8CA9BC1D7722993C0F09AADB57 /* PBXContainerItemProxy */ = {
+		1175FD5A1123706B1413C543D6225B76 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
 			remoteInfo = GoogleMaps;
 		};
-		3DCD9951B1BA4D6D72721E40FCB3BBB2 /* PBXContainerItemProxy */ = {
+		129A5610FA52B5CA8BE2B5795FB9543C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF030B04A631ADB65190BABE8925EC5;
+			remoteInfo = MDatePickerView;
+		};
+		1A73C2423F182850EEEF9F2BB1400CEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDE5D5EAAD327B650F11E4D21FAA723D;
+			remoteInfo = "fluid-slider";
+		};
+		39CCBC1B004BEA45EC5E4B1D37018C5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF030B04A631ADB65190BABE8925EC5;
+			remoteInfo = MDatePickerView;
+		};
+		44F28FD68282E7E63EFC784A6792665D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91BFC2827E7E6E2B51AB2CFF58AC6317;
+			remoteInfo = ViewAnimator;
+		};
+		5D153D5E55987829FE45D0160E47ADB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91BFC2827E7E6E2B51AB2CFF58AC6317;
+			remoteInfo = ViewAnimator;
+		};
+		5EB8506CB788EC1B01C4969573E8B76F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
 			remoteInfo = GoogleMaps;
 		};
-		4EF98A736FF5D957E98954E180F935D2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
-			remoteInfo = GooglePlaces;
-		};
-		5F869F89F3EB4DDB1E4B7D875F2A1883 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
-			remoteInfo = GooglePlaces;
-		};
-		7889D5132E6607FB80BD88BCEEAA214B /* PBXContainerItemProxy */ = {
+		6BDC6506F2D9364FC3DDB429FAF8C5E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 31E89965CFA54DE4BCC99C05112D7483;
 			remoteInfo = DateTimePicker;
 		};
-		7F23C4386C73BF32E479C153A2C33B12 /* PBXContainerItemProxy */ = {
+		6E6D676C6F6CF47E526B0D285986940C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2A4954A4FAA4F3EEC3167E1F7D061B82;
-			remoteInfo = "Pods-myiosapp";
+			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
+			remoteInfo = GooglePlaces;
 		};
-		B87D1264B16C8AA4F91336A5442C787F /* PBXContainerItemProxy */ = {
+		6FE8EBF4B6B662E798AA761D6FBA9D8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
+			remoteInfo = GooglePlaces;
+		};
+		7C319604ECF9D95076BEDAECBEFBB689 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0483D7F620C992E5C4BD62A7266EABB4;
+			remoteInfo = pop;
+		};
+		8891E64E9BB42A1DD636169DF741098C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0483D7F620C992E5C4BD62A7266EABB4;
+			remoteInfo = pop;
+		};
+		9287EEEA8B618C9FC629AFBFEC485692 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 31E89965CFA54DE4BCC99C05112D7483;
 			remoteInfo = DateTimePicker;
 		};
-		C0C218CEB66B0E558A00A0F4541A4AA8 /* PBXContainerItemProxy */ = {
+		B1DE666384F9D0185035A3899BB03131 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ECF030B04A631ADB65190BABE8925EC5;
-			remoteInfo = MDatePickerView;
+			remoteGlobalIDString = EDE5D5EAAD327B650F11E4D21FAA723D;
+			remoteInfo = "fluid-slider";
 		};
-		C63322E21E206F29A27F788C1667BE3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ECF030B04A631ADB65190BABE8925EC5;
-			remoteInfo = MDatePickerView;
-		};
-		D51F5E171728B0B0606D7F39DD501A6E /* PBXContainerItemProxy */ = {
+		C1248EC849FBD8ADC01A507C5F535EA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E0775EC5F6DBAA5D2C37BCFB14908273;
 			remoteInfo = "DateTimePicker-DateTimePicker";
 		};
-		F8FDCF4E6B6CA2CE4870501B8E792E25 /* PBXContainerItemProxy */ = {
+		C6DDA99539AABD4C9DE3056FBDA8F448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A4954A4FAA4F3EEC3167E1F7D061B82;
+			remoteInfo = "Pods-myiosapp";
+		};
+		C757D29145BD3725A0DF5D22DC291D70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0483D7F620C992E5C4BD62A7266EABB4;
+			remoteInfo = pop;
+		};
+		DE8A41F98AF862ED0F56B8F816E61006 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -144,83 +264,169 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01755E61246824509AE2CC0FC1BC2BE4 /* POPPropertyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimation.h; path = pop/POPPropertyAnimation.h; sourceTree = "<group>"; };
 		018B2C5DB7D6690A4F2A09410D73F184 /* Pods-myiosapp-myiosappUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosapp-myiosappUITests-Info.plist"; sourceTree = "<group>"; };
+		03975A695D7049069ED4F17A13FCCAAC /* GooglePlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.debug.xcconfig; sourceTree = "<group>"; };
 		0568F49FBD0984DB59CC5F0FF0E3D558 /* Pods-myiosapp-myiosappUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-myiosapp-myiosappUITests-dummy.m"; sourceTree = "<group>"; };
+		05CCA9CB465DCE7863A3D25EB8472191 /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
+		08A7EBB71CDDF0D545BDA2EC037B4496 /* POPAnimator.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimator.mm; path = pop/POPAnimator.mm; sourceTree = "<group>"; };
+		08BB270FE741F5D39396601F5EF4385A /* POPSpringAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPSpringAnimation.mm; path = pop/POPSpringAnimation.mm; sourceTree = "<group>"; };
+		08EE2D30C58260D1DF5C85A22BF62619 /* ViewAnimator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ViewAnimator-Info.plist"; sourceTree = "<group>"; };
 		0A0F8343E0622641EE4D6610159CFEF3 /* Pods_myiosapp_myiosappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_myiosapp_myiosappUITests.framework; path = "Pods-myiosapp-myiosappUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EAFD26E0487E2D91F5C87F9713F1BAD /* DateTimePicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DateTimePicker.xib; path = Source/DateTimePicker.xib; sourceTree = "<group>"; };
 		119CE9DBC2F06B9E874560517F6F3A38 /* Pods-myiosappTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-myiosappTests.modulemap"; sourceTree = "<group>"; };
-		12D6D7A0B914E447BC5A19BEF8B21F7E /* DateTimePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTimePicker.debug.xcconfig; sourceTree = "<group>"; };
-		1D44F2262572A3FD3AC4A43ACDADB88E /* MDatePickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MDatePickerView.swift; path = MDatePickerView/MDatePickerView.swift; sourceTree = "<group>"; };
+		150C44563628B75CE2C00A6CB6982776 /* Slider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Slider.swift; path = Sources/Slider.swift; sourceTree = "<group>"; };
+		15373D3D1B62525DA1313E9C99C5C5BD /* StepCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepCollectionViewFlowLayout.swift; path = Source/StepCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		156DEFC597A7F1BF5993862D0B29D827 /* POPVector.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPVector.mm; path = pop/POPVector.mm; sourceTree = "<group>"; };
+		16342EBE8BAA262D501AEE390D08E810 /* POPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDefines.h; path = pop/POPDefines.h; sourceTree = "<group>"; };
+		17B714F6CDC622D08DBFCF5C3CF4BF83 /* FullDateCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullDateCollectionViewCell.swift; path = Source/FullDateCollectionViewCell.swift; sourceTree = "<group>"; };
+		17E1BD4501179A45894A9D52FF0DA0C7 /* DateTimePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DateTimePicker.modulemap; sourceTree = "<group>"; };
+		180CC7CECBB75B280ECBFCD59FCB601F /* pop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		180DA42748C2E239ED1FE122BD25004A /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		18423C7F7D6FE203A11D4AA36C44214F /* POPAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimation.mm; path = pop/POPAnimation.mm; sourceTree = "<group>"; };
+		18925F499558E81E6573644650DB1164 /* POPAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAction.h; path = pop/POPAction.h; sourceTree = "<group>"; };
 		1F290DF3FF45BF5729138E36759CE418 /* Pods-myiosappTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosappTests-Info.plist"; sourceTree = "<group>"; };
-		22CD535A91B0DFA77E56E32CE105DEBC /* CustomDatePickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDatePickerView.swift; path = MDatePickerView/CustomDatePickerView.swift; sourceTree = "<group>"; };
-		234E40F1DC639C658D8102A2A2303C70 /* DateTimePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTimePicker.swift; path = Source/DateTimePicker.swift; sourceTree = "<group>"; };
+		1F754CA75321F75DC04C0D5F66E3164C /* DateTimePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTimePicker-dummy.m"; sourceTree = "<group>"; };
+		22C83F7A0E76E03B08121ADAA61381F0 /* ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAnimator.swift; path = Sources/ViewAnimator.swift; sourceTree = "<group>"; };
 		2518AB918B2E0C87D18F047A69F71884 /* Pods-myiosapp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosapp-acknowledgements.plist"; sourceTree = "<group>"; };
+		287ACBCD3DD7E48262945F66D0870487 /* FloatConversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FloatConversion.h; path = pop/WebCore/FloatConversion.h; sourceTree = "<group>"; };
+		29A5265A6267504685E58F3535968A81 /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
+		29B00961BB90AED06D68F5A24D54F2AE /* POPBasicAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPBasicAnimation.mm; path = pop/POPBasicAnimation.mm; sourceTree = "<group>"; };
 		2AA62DE193049CD2A2378DB442EAD09B /* Pods_myiosappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_myiosappTests.framework; path = "Pods-myiosappTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B6ED317A276CF18BFC77EBEDED2CC8C /* DateTimePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DateTimePicker.modulemap; sourceTree = "<group>"; };
-		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		2C6B8FB4E2A9905A3D2C763ACD7E4AFD /* POPSpringAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimation.h; path = pop/POPSpringAnimation.h; sourceTree = "<group>"; };
+		2DC92E805491D1CBEAE50D68BFBF5F8D /* POPAnimationTracer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracer.h; path = pop/POPAnimationTracer.h; sourceTree = "<group>"; };
+		2E588F460705E3D084197592D81EFC81 /* POPCGUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCGUtils.mm; path = pop/POPCGUtils.mm; sourceTree = "<group>"; };
+		30A631BEE34207F4710D86B6C8C077DA /* UITableView + ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView + ViewAnimator.swift"; path = "Sources/Extensions/UITableView + ViewAnimator.swift"; sourceTree = "<group>"; };
+		318CD223521916B00CC3F1EB7A562C12 /* POPAnimationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEvent.h; path = pop/POPAnimationEvent.h; sourceTree = "<group>"; };
+		32AF7904E543D67FDABBE9FCF7E7AA43 /* pop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "pop-dummy.m"; sourceTree = "<group>"; };
 		330B9CD75AEBD651CED37AE8F639B90E /* Pods-myiosapp-myiosappUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosapp-myiosappUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3468E562530AD6E70DB04708927B9826 /* ViewAnimator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewAnimator-prefix.pch"; sourceTree = "<group>"; };
+		34DE98CFDB115AD61004F87FBAB30461 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		35410DEF6B0B6C54125534CBC80FE79C /* POPAnimationTracerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracerInternal.h; path = pop/POPAnimationTracerInternal.h; sourceTree = "<group>"; };
+		35D8EC291AAFB6975DD1BE17DA9022BF /* ViewAnimator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ViewAnimator.modulemap; sourceTree = "<group>"; };
+		37C3974B67070E5ADFA8F3AB0DE22482 /* POPAnimationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationEvent.mm; path = pop/POPAnimationEvent.mm; sourceTree = "<group>"; };
 		38266E982935A717CCA2CFEA126941A9 /* Pods-myiosappTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosappTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		397348F7C640CB778BAA7827358F0528 /* MDatePickerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MDatePickerView.release.xcconfig; sourceTree = "<group>"; };
 		39B0EC06BDBFA53C74CBF1D7EC1B25F3 /* Pods-myiosapp-myiosappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosapp-myiosappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3A1DE5F96F2D0A4D914F79C8204E2CAB /* ViewAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ViewAnimator-dummy.m"; sourceTree = "<group>"; };
 		3AB7633D9A72E16F25FAF90190F735C0 /* Pods-myiosapp-myiosappUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-myiosapp-myiosappUITests-frameworks.sh"; sourceTree = "<group>"; };
-		40AF715F38EAB8F62B4DE8CF6B21483A /* TextLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextLabel.swift; path = MDatePickerView/Utils/TextLabel.swift; sourceTree = "<group>"; };
-		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		495D1FB069D55A94AF50B6732A4D6F2B /* MDatePickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MDatePickerView-umbrella.h"; sourceTree = "<group>"; };
-		506E6FD6E7A21F309909BA7260F04BB6 /* Bundle+Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Resource.swift"; path = "Source/Bundle+Resource.swift"; sourceTree = "<group>"; };
-		594A510EAD2FCB8143D67386E9E5183C /* MDatePickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MDatePickerView-prefix.pch"; sourceTree = "<group>"; };
-		5C056CF543B84F753C429C1A1E04A51E /* DateTimePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTimePicker-prefix.pch"; sourceTree = "<group>"; };
+		434377ACEBF2E4E25E6F592268E05D70 /* ViewAnimator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewAnimator-umbrella.h"; sourceTree = "<group>"; };
+		4403F62D2DDF0ADE0A29D842A3BDAD90 /* POPCGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCGUtils.h; path = pop/POPCGUtils.h; sourceTree = "<group>"; };
+		445105FD8F42359F51930D69476BC412 /* MDatePickerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MDatePickerView.debug.xcconfig; sourceTree = "<group>"; };
+		46361C582BA005BD6A94BB456EAFC558 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		466A0AB03596F7E181DF9FC738638604 /* ValueView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueView.swift; path = Sources/ValueView.swift; sourceTree = "<group>"; };
+		49213B04767A9E8E142672E843DBC8BC /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = Sources/Protocols/Animation.swift; sourceTree = "<group>"; };
+		4A08864F0185DCAE4C7C7451F42B588D /* GooglePlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.release.xcconfig; sourceTree = "<group>"; };
+		4BD8C04D46CCC9665B7787031A6FEBD6 /* MDatePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDatePickerView.h; path = MDatePickerView/MDatePickerView.h; sourceTree = "<group>"; };
+		4D1A11E8D58540272A06EA9C7850EED0 /* DateTimePicker+UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateTimePicker+UITableView.swift"; path = "Source/DateTimePicker+UITableView.swift"; sourceTree = "<group>"; };
+		51305B2D9D8DA36D89CC277D729083D2 /* pop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = pop.framework; path = pop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B7914114AAED88E45C0D4789D107E5 /* POPAnimationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationPrivate.h; path = pop/POPAnimationPrivate.h; sourceTree = "<group>"; };
+		52D3577A874BC25D799457F230A951A2 /* ViewAnimatorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAnimatorConfig.swift; path = Sources/ViewAnimatorConfig.swift; sourceTree = "<group>"; };
+		538C922CBA9F4B82B005C4EB64FF4A75 /* DateTimePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DateTimePicker-Info.plist"; sourceTree = "<group>"; };
+		53B5DE7AB61CA23A690BA593A4D77CD6 /* TextLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextLabel.swift; path = MDatePickerView/Utils/TextLabel.swift; sourceTree = "<group>"; };
+		5C63CCBBD614D09EF1924CAC0C6F1566 /* GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.debug.xcconfig; sourceTree = "<group>"; };
+		5D34ECB0109DC88071A6E32AA33AA46A /* FullDateCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FullDateCollectionViewCell.xib; path = Source/FullDateCollectionViewCell.xib; sourceTree = "<group>"; };
+		639A579B4D56EEAF36D04F47E7308A5D /* POPCustomAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCustomAnimation.h; path = pop/POPCustomAnimation.h; sourceTree = "<group>"; };
+		63D8A119D1C471B917B1779E8BC2D410 /* pop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = pop.debug.xcconfig; sourceTree = "<group>"; };
+		6561D896303900D65983E4ED116CA2F7 /* ColDateCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColDateCell.swift; path = MDatePickerView/ColDateCell.swift; sourceTree = "<group>"; };
+		67E385E4673F24C57132FF4776790726 /* CustomDatePickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDatePickerView.swift; path = MDatePickerView/CustomDatePickerView.swift; sourceTree = "<group>"; };
 		68D272F058CB4648D6A5BCB5972DB60C /* Pods-myiosapp-myiosappUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-myiosapp-myiosappUITests-umbrella.h"; sourceTree = "<group>"; };
-		6F6139191C764BD1D4CDB8B18CD2A2B9 /* GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.release.xcconfig; sourceTree = "<group>"; };
+		6BBEAF220A5F628CD4617C784A056F33 /* MDatePickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MDatePickerView.modulemap; sourceTree = "<group>"; };
+		6D756BE7A43EF1FD550719EA66F8B26D /* MDatePickerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MDatePickerView.release.xcconfig; sourceTree = "<group>"; };
 		743B33AA5296FA3550E31999BD1FF76D /* Pods-myiosappTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-myiosappTests-umbrella.h"; sourceTree = "<group>"; };
-		7CCDE40C66A7132E879998FA714EE8DB /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		7CE24CAAB508E4C5228DCA8692019D94 /* DateTimePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTimePicker-dummy.m"; sourceTree = "<group>"; };
-		827E92B541763036E15800A565F87383 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		830564AE1207736FC61654C3F91CC2A9 /* MDatePickerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MDatePickerView.debug.xcconfig; sourceTree = "<group>"; };
+		77AA292DBE0FCC259E9C8F284CA91E2A /* Filters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filters.swift; path = Sources/Filters.swift; sourceTree = "<group>"; };
+		783D95A6EA559070E496AAE40DF306C3 /* POPBasicAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimationInternal.h; path = pop/POPBasicAnimationInternal.h; sourceTree = "<group>"; };
+		7A1286D94529D00FF0BB9E1BDC9D17E0 /* TransformationMatrix.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = TransformationMatrix.cpp; path = pop/WebCore/TransformationMatrix.cpp; sourceTree = "<group>"; };
+		836DC132FBC73A7B959198268A997D14 /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
+		8396F9223AFAE2821E3B9F0D4CE6165A /* POPVector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPVector.h; path = pop/POPVector.h; sourceTree = "<group>"; };
 		84B843FF6CF907B9F0350B5BB4C86A0F /* MDatePickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MDatePickerView.framework; path = MDatePickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BC162C5876417ADE4A44494C2DFB1F /* Pods-myiosapp-myiosappUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-myiosapp-myiosappUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8523FE3EC60DF209CB50AE2CDD9B949D /* GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.release.xcconfig; sourceTree = "<group>"; };
+		8616C2301FD7D7C9B1345A6F366B935E /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
 		87EFCF063034E0850A237436CDBB5130 /* Pods-myiosapp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-myiosapp-frameworks.sh"; sourceTree = "<group>"; };
+		88D34564031CE4E8EB3F6C532A4861AB /* MDatePickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MDatePickerView-umbrella.h"; sourceTree = "<group>"; };
+		8951BD98844104D28CD08FA888D8F5AC /* POPAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimator.h; path = pop/POPAnimator.h; sourceTree = "<group>"; };
+		895AC929920F38CD05115F52B99A384D /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
+		8AE5F9F4954416B6C738D55FB6F68344 /* POPMath.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPMath.mm; path = pop/POPMath.mm; sourceTree = "<group>"; };
 		8BC1E129420313B245EC832CD0A62D3C /* Pods-myiosapp-myiosappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosapp-myiosappUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		8ECFDC0C7859C01CF5684A3168D5EA83 /* DateTimePicker+UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateTimePicker+UITableView.swift"; path = "Source/DateTimePicker+UITableView.swift"; sourceTree = "<group>"; };
+		8D14C26178011DA8F8E4BDDA93672831 /* fluid-slider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "fluid-slider-dummy.m"; sourceTree = "<group>"; };
+		8D95AEF249EB2DA1529C6F368A79B362 /* fluid-slider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "fluid-slider.modulemap"; sourceTree = "<group>"; };
 		8F0AEF4F646A5A6F7CB7843D8CB2D0BE /* Pods-myiosapp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-myiosapp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8F415658E0204343B6F601B30F08D2B2 /* ColDateCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColDateCell.swift; path = MDatePickerView/ColDateCell.swift; sourceTree = "<group>"; };
+		8F9315E8670718A5904C44B6D2613C1D /* fluid-slider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "fluid-slider.debug.xcconfig"; sourceTree = "<group>"; };
+		9226D87552827B97BE1D302CB8D3FCE1 /* DateTimePicker+CollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateTimePicker+CollectionView.swift"; path = "Source/DateTimePicker+CollectionView.swift"; sourceTree = "<group>"; };
+		930DBA98362DCBDFB80EC5616EA8BC66 /* POPAnimationEventInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEventInternal.h; path = pop/POPAnimationEventInternal.h; sourceTree = "<group>"; };
+		97E83A8FD0EC82955EBD63E04758D2A0 /* CalendarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarController.swift; path = MDatePickerView/Utils/CalendarController.swift; sourceTree = "<group>"; };
+		9812B75AFC304988D51664D454122E4C /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationRuntime.mm; path = pop/POPAnimationRuntime.mm; sourceTree = "<group>"; };
 		9B25A40073C4478922C0A2F87102A5AD /* Pods-myiosapp-myiosappUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-myiosapp-myiosappUITests-resources.sh"; sourceTree = "<group>"; };
 		9B77A7CEE985E68C58489789DDFB5E49 /* Pods-myiosapp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-myiosapp.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1FBC8F6675D980A1A6161EA7C0A3034 /* GooglePlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.release.xcconfig; sourceTree = "<group>"; };
 		A216CE184E808B5C983069B9F9BDEB78 /* Pods-myiosapp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosapp-Info.plist"; sourceTree = "<group>"; };
+		A426404C576459A5DE6AEE3D070CB778 /* POPDecayAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPDecayAnimation.mm; path = pop/POPDecayAnimation.mm; sourceTree = "<group>"; };
+		A4C5C02E10595B2DD6FF0B7481699040 /* POPMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPMath.h; path = pop/POPMath.h; sourceTree = "<group>"; };
 		A54EBB7DEB90AEE38AFF4EAAE069FDE5 /* Pods-myiosapp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-myiosapp-dummy.m"; sourceTree = "<group>"; };
+		A6AEC26E1D05ED6F80DCC02371130659 /* ViewAnimator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViewAnimator.release.xcconfig; sourceTree = "<group>"; };
+		A76921F7329D552AD6FA723972B6337A /* ViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ViewAnimator.framework; path = ViewAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AC0C2AF0E876A137EDC1C598BE6427 /* Pods-myiosapp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-myiosapp-umbrella.h"; sourceTree = "<group>"; };
-		ADD7ED44F2D148479BDC094CD683236D /* CalendarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarController.swift; path = MDatePickerView/Utils/CalendarController.swift; sourceTree = "<group>"; };
+		A9CBDFF6909EC89AC231E1E2A6267DF3 /* POPAnimatorPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatorPrivate.h; path = pop/POPAnimatorPrivate.h; sourceTree = "<group>"; };
+		A9F75E0FC97E7B93479F692AFCEDBF7E /* POPAnimationExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationExtras.h; path = pop/POPAnimationExtras.h; sourceTree = "<group>"; };
+		AB67EAFD51F96756B2E197606C6119DD /* fluid-slider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fluid-slider-prefix.pch"; sourceTree = "<group>"; };
+		ACB10ABC9CABDE0EA36CC2BED7F3E70A /* MDatePickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MDatePickerView-dummy.m"; sourceTree = "<group>"; };
+		AFC3702DE37A771D156265AE450DB7C4 /* ColCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColCell.swift; path = MDatePickerView/Utils/ColCell.swift; sourceTree = "<group>"; };
 		B04C1EBC2EC90A2DFFEDDD0CF4473840 /* DateTimePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DateTimePicker.bundle; path = "DateTimePicker-DateTimePicker.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26CB6AD16677CB8E5B8A5059EA05677 /* DateTimePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DateTimePicker.framework; path = DateTimePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B350916F9D8FD46C387A0DB9334439D5 /* POPAnimationExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationExtras.mm; path = pop/POPAnimationExtras.mm; sourceTree = "<group>"; };
 		B45D7C17C1222991473943518DB21D61 /* Pods-myiosappTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-myiosappTests-dummy.m"; sourceTree = "<group>"; };
-		B868075FFD5F005CD19CBF222EA943FD /* DateTimePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DateTimePicker-Info.plist"; sourceTree = "<group>"; };
-		BA3654FF8B5E1FC110816E91AB0A10AD /* MDatePickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MDatePickerView-dummy.m"; sourceTree = "<group>"; };
+		B6668396800CCABE72B35F324D638BD3 /* DateTimePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTimePicker.release.xcconfig; sourceTree = "<group>"; };
+		B674B95919EAE4C8F01BDF08989AE8EC /* POPPropertyAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimationInternal.h; path = pop/POPPropertyAnimationInternal.h; sourceTree = "<group>"; };
+		B84D99D8B5C64EE489CC9E416C166C98 /* pop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = pop.modulemap; sourceTree = "<group>"; };
+		BA2A134AEFEE62F679E74CF14F5DFA97 /* POPAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimation.h; path = pop/POPAnimation.h; sourceTree = "<group>"; };
 		BA53CB13D4CF14A20A625C87AB1A2D5E /* Pods-myiosappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosappTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BB463965F8BFCCF39D6C2E616093F318 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		C0FD9D1F6DFB57F42897D8A319FC24D4 /* FullDateCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullDateCollectionViewCell.swift; path = Source/FullDateCollectionViewCell.swift; sourceTree = "<group>"; };
-		C25EFD0EE532B96879B68A4F87094E3F /* FullDateCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FullDateCollectionViewCell.xib; path = Source/FullDateCollectionViewCell.xib; sourceTree = "<group>"; };
+		BB31C7C55234A41501219A25AE36DD7C /* POPAnimationRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationRuntime.h; path = pop/POPAnimationRuntime.h; sourceTree = "<group>"; };
+		BBEB7F45E1EBEC947D5EBEDDE752D049 /* fluid_slider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = fluid_slider.framework; path = "fluid-slider.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BF1CA53755530BF7394EDE4C32A1BAC9 /* POPBasicAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimation.h; path = pop/POPBasicAnimation.h; sourceTree = "<group>"; };
+		C2FC909BBCAAA8640921B8C17883EB9B /* DateTimePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTimePicker-umbrella.h"; sourceTree = "<group>"; };
+		C318E988D2142B1D9379B91ACEF037B5 /* Bundle+Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Resource.swift"; path = "Source/Bundle+Resource.swift"; sourceTree = "<group>"; };
 		C40315251ECD2279C5597C2202A6DC25 /* Pods_myiosapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_myiosapp.framework; path = "Pods-myiosapp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C606977201DAA31DECAF930F0221B5AA /* DateTimePicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DateTimePicker.xib; path = Source/DateTimePicker.xib; sourceTree = "<group>"; };
-		C82E6CD9B59836EE5A790487BA7FD21F /* DateTimePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTimePicker-umbrella.h"; sourceTree = "<group>"; };
-		C848A2EBF6A405DD8DEDDF520E0B6986 /* GooglePlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.debug.xcconfig; sourceTree = "<group>"; };
-		CB0446851F3319B3A19E65FAA1A25C18 /* GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.debug.xcconfig; sourceTree = "<group>"; };
-		CF5BB571157902163AECBE5D8DD73AE1 /* ResourceBundle-DateTimePicker-DateTimePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-DateTimePicker-DateTimePicker-Info.plist"; sourceTree = "<group>"; };
-		D2AB83AC92CAF12305F4685BFBDF6E4E /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		C5CE580FD1228674FE90FD03A6974FC6 /* fluid-slider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "fluid-slider.release.xcconfig"; sourceTree = "<group>"; };
+		C897FD476DB3F67ECAF5E7DA151A92EC /* DateTimePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTimePicker.debug.xcconfig; sourceTree = "<group>"; };
+		CBEB4BFC661CC357440F585FC6736CAF /* MDatePickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MDatePickerView-prefix.pch"; sourceTree = "<group>"; };
+		CC82C4623DB21397A762459D44643E23 /* POPAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationInternal.h; path = pop/POPAnimationInternal.h; sourceTree = "<group>"; };
+		CCFD3C12B3EE6359827D315840CBD704 /* pop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pop-umbrella.h"; sourceTree = "<group>"; };
+		CE71FA930FF83ABE5085BEA2C2EA2C46 /* MDatePickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MDatePickerView.swift; path = MDatePickerView/MDatePickerView.swift; sourceTree = "<group>"; };
+		CFA5813F6B541346A4614BA4484749B4 /* POPLayerExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPLayerExtras.h; path = pop/POPLayerExtras.h; sourceTree = "<group>"; };
+		D2458F6CC455AC9F7E7BE314428AF217 /* pop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pop-prefix.pch"; sourceTree = "<group>"; };
+		D2986139C062AD583CF3EB95CD1A4953 /* POPGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPGeometry.h; path = pop/POPGeometry.h; sourceTree = "<group>"; };
+		D34A2E688144C5826DD7F72A6C785CC9 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		D38F2D82506A1EE4A49282576023B542 /* POP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POP.h; path = pop/POP.h; sourceTree = "<group>"; };
+		D627D6E802F7F056FFF9D5B79C7BD1EB /* AnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationType.swift; path = Sources/Models/AnimationType.swift; sourceTree = "<group>"; };
+		D6CEDBD5656D632AC7EF8E693B03003A /* ResourceBundle-DateTimePicker-DateTimePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-DateTimePicker-DateTimePicker-Info.plist"; sourceTree = "<group>"; };
+		D6FC6BA7CB64EE10B4D6FC3B144D2B66 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D708B9DB9EBC27D45B2DC3637A8CAAE3 /* Pods-myiosappTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-myiosappTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DD1EC781608350B3E38352EC8193E470 /* MDatePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDatePickerView.h; path = MDatePickerView/MDatePickerView.h; sourceTree = "<group>"; };
-		E1B2D7DEA27B24EAB73D1C6ABFFDC492 /* ColCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColCell.swift; path = MDatePickerView/Utils/ColCell.swift; sourceTree = "<group>"; };
+		DCAF5028AE48856F303485E1EA71FCA6 /* MDatePickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MDatePickerView-Info.plist"; sourceTree = "<group>"; };
+		DF1819C091DB64DC6C48648F951B7628 /* POPSpringAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimationInternal.h; path = pop/POPSpringAnimationInternal.h; sourceTree = "<group>"; };
+		DF69468890658509AEE886A1542B4E5F /* POPAnimatableProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatableProperty.h; path = pop/POPAnimatableProperty.h; sourceTree = "<group>"; };
+		E072F95D5A3393037CBAA16961144345 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		E1DCA38AB40232921CB26B520C3C9F42 /* pop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = pop.release.xcconfig; sourceTree = "<group>"; };
 		E1EDBCB98529BFF3B762C4B4F7A52B6D /* Pods-myiosapp-myiosappUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-myiosapp-myiosappUITests.modulemap"; sourceTree = "<group>"; };
-		E22568005AC00C40AE94161CB6FE1F97 /* StepCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepCollectionViewFlowLayout.swift; path = Source/StepCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		E2F46758FDA8370450E95B7285C6EC4A /* POPAnimatableProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimatableProperty.mm; path = pop/POPAnimatableProperty.mm; sourceTree = "<group>"; };
 		E3A8794F65C129FFD428B72CEECBE205 /* Pods-myiosappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosappTests.release.xcconfig"; sourceTree = "<group>"; };
+		E85994C339D088894F725D3D31DA83A1 /* UnitBezier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UnitBezier.h; path = pop/WebCore/UnitBezier.h; sourceTree = "<group>"; };
+		E8FFE3525B36589735D74530F9BFEB04 /* TransformationMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TransformationMatrix.h; path = pop/WebCore/TransformationMatrix.h; sourceTree = "<group>"; };
 		E910E12B73DA9388A999291B5231E0E9 /* Pods-myiosapp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-myiosapp-resources.sh"; sourceTree = "<group>"; };
-		EA7472AB551C52DE065713A47E38EB5F /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		EA12A9211F775A0B0DD287D49E470475 /* UICollectionView + ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView + ViewAnimator.swift"; path = "Sources/Extensions/UICollectionView + ViewAnimator.swift"; sourceTree = "<group>"; };
+		EB17E78C3D7BB5C696563EE3273F5ACF /* POPSpringSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringSolver.h; path = pop/POPSpringSolver.h; sourceTree = "<group>"; };
 		EE69FDE8CFB1C213D849515E2115D53A /* Pods-myiosapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosapp.release.xcconfig"; sourceTree = "<group>"; };
-		F1A83007E49F5D539881C770012CED1D /* DateTimePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTimePicker.release.xcconfig; sourceTree = "<group>"; };
-		F2355B13B0A53B202CDFC170524D4311 /* MDatePickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MDatePickerView-Info.plist"; sourceTree = "<group>"; };
-		F86599D347FE1FC32B756C3EF83374B7 /* DateTimePicker+CollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateTimePicker+CollectionView.swift"; path = "Source/DateTimePicker+CollectionView.swift"; sourceTree = "<group>"; };
+		EE84E9017F35EFA4321716B70ACF622A /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		F01C82C8896D06FF37CA76FE53B7864D /* DateTimePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTimePicker-prefix.pch"; sourceTree = "<group>"; };
+		F11CE3C53862EAF98A525DB7F1B4118E /* POPDecayAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimation.h; path = pop/POPDecayAnimation.h; sourceTree = "<group>"; };
+		F1A0AE33683F7F32EA4EC58893B08925 /* ViewAnimator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViewAnimator.debug.xcconfig; sourceTree = "<group>"; };
+		F20EA92152B6B24D4ADE6D04CBC180F1 /* POPDecayAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimationInternal.h; path = pop/POPDecayAnimationInternal.h; sourceTree = "<group>"; };
+		F2F040E35C69B16D7AE9F6454501A038 /* pop-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "pop-Info.plist"; sourceTree = "<group>"; };
+		F82D74D80EF01394CE9D2A9FE02E75BF /* DateTimePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTimePicker.swift; path = Source/DateTimePicker.swift; sourceTree = "<group>"; };
 		FA51617B59FCC42B84BD632F2855A6FA /* Pods-myiosapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosapp.debug.xcconfig"; sourceTree = "<group>"; };
-		FBBADDFEA7A81C6C62197DBD94A1D719 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		FE0BBFDBC4221DDD6D5A110E7E53F64C /* MDatePickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MDatePickerView.modulemap; sourceTree = "<group>"; };
+		FA8BDB3BECBCF4870086E9CC0F6A29A7 /* fluid-slider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "fluid-slider-Info.plist"; sourceTree = "<group>"; };
+		FB84FBBEE4D90977AA82BC67A75CF128 /* fluid-slider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fluid-slider-umbrella.h"; sourceTree = "<group>"; };
+		FED15EC2235509ED29811EB9CC51C3E3 /* POPAnimatablePropertyTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatablePropertyTypes.h; path = pop/POPAnimatablePropertyTypes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +435,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF113308A90A57DB288CB2579D2FF1A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A3BACB237E3492BC8DF022B4948A2D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FEB1A6840190478600B306D1229F098 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301B616A1D62AA6DA1EFD7BC6C303504 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B8F637CEC9C8185167112D244AAAA09 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,59 +471,139 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7ECDB948C72E6ECB0DF3BD9D5D3BF52E /* Frameworks */ = {
+		6118079B4FF1B5035B422EF7C984C661 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C306DEB5FA0D4EB305CD7BB068979D1 /* Foundation.framework in Frameworks */,
+				7654D9CA761CE5A7E9CDE4000D6FE329 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D58A30220334CDA2883A52A42B96F64E /* Frameworks */ = {
+		D48196F5350CEAADF0F0F77AE852895A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471B4F54D4C9062A3DDB9F9E293DA1F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E526A30B3FE076C924FF2B0338DD7860 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8C3A18D6A5F35B2DA3B64EC3783B521 /* Frameworks */ = {
+		ECCBF2FC5FA2666D9D3DE0EB2A1AA22F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				555FB7685768C1DFA5621E415C2783A4 /* Foundation.framework in Frameworks */,
+				86DE2FE9DE4AEA1B39AD5959F0CB875B /* Foundation.framework in Frameworks */,
+				9560C8A21628E2EC5A81B94A3CFD7FDF /* pop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		014726A509CC7D0CAA35981F16F74FFF /* Products */ = {
+		0054B3F75522936F935622FFFEC22617 /* GooglePlaces */ = {
 			isa = PBXGroup;
 			children = (
-				B04C1EBC2EC90A2DFFEDDD0CF4473840 /* DateTimePicker.bundle */,
-				B26CB6AD16677CB8E5B8A5059EA05677 /* DateTimePicker.framework */,
-				84B843FF6CF907B9F0350B5BB4C86A0F /* MDatePickerView.framework */,
-				C40315251ECD2279C5597C2202A6DC25 /* Pods_myiosapp.framework */,
-				0A0F8343E0622641EE4D6610159CFEF3 /* Pods_myiosapp_myiosappUITests.framework */,
-				2AA62DE193049CD2A2378DB442EAD09B /* Pods_myiosappTests.framework */,
+				65174DF56830DAE1F38F4ADC37CE1F63 /* Frameworks */,
+				F4B2E6A642723B6FC31879F764B88049 /* Resources */,
+				2F07F98A6AF2DBA563739C7C699B33E8 /* Support Files */,
 			);
-			name = Products;
+			name = GooglePlaces;
+			path = GooglePlaces;
 			sourceTree = "<group>";
 		};
-		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+		0E1A41C8DAF0C171DAA7BFC8666794D3 /* DateTimePicker */ = {
 			isa = PBXGroup;
 			children = (
-				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+				C318E988D2142B1D9379B91ACEF037B5 /* Bundle+Resource.swift */,
+				F82D74D80EF01394CE9D2A9FE02E75BF /* DateTimePicker.swift */,
+				9226D87552827B97BE1D302CB8D3FCE1 /* DateTimePicker+CollectionView.swift */,
+				4D1A11E8D58540272A06EA9C7850EED0 /* DateTimePicker+UITableView.swift */,
+				17B714F6CDC622D08DBFCF5C3CF4BF83 /* FullDateCollectionViewCell.swift */,
+				15373D3D1B62525DA1313E9C99C5C5BD /* StepCollectionViewFlowLayout.swift */,
+				127A72BF08693957BB933811D0FFD5D1 /* Resources */,
+				15C3EEBE2BEFC435170F029A365834B6 /* Support Files */,
+			);
+			name = DateTimePicker;
+			path = DateTimePicker;
+			sourceTree = "<group>";
+		};
+		0EB6BC715429D7DA67C21CE97DE6F50E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				180CC7CECBB75B280ECBFCD59FCB601F /* pop.framework */,
+				4CEAFEDDA432EEAD5A4D8F65A786C4E7 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1973A8F54052C0C323B45C401D583BEE /* Resources */ = {
+		11E8ADCAE95E82BEFB00E490321597B1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EA7472AB551C52DE065713A47E38EB5F /* GooglePlaces.bundle */,
+				46361C582BA005BD6A94BB456EAFC558 /* GoogleMaps.bundle */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		127A72BF08693957BB933811D0FFD5D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0EAFD26E0487E2D91F5C87F9713F1BAD /* DateTimePicker.xib */,
+				5D34ECB0109DC88071A6E32AA33AA46A /* FullDateCollectionViewCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		150F761CCEAE2158BAA4F4B022C01EB5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BBEAF220A5F628CD4617C784A056F33 /* MDatePickerView.modulemap */,
+				ACB10ABC9CABDE0EA36CC2BED7F3E70A /* MDatePickerView-dummy.m */,
+				DCAF5028AE48856F303485E1EA71FCA6 /* MDatePickerView-Info.plist */,
+				CBEB4BFC661CC357440F585FC6736CAF /* MDatePickerView-prefix.pch */,
+				88D34564031CE4E8EB3F6C532A4861AB /* MDatePickerView-umbrella.h */,
+				445105FD8F42359F51930D69476BC412 /* MDatePickerView.debug.xcconfig */,
+				6D756BE7A43EF1FD550719EA66F8B26D /* MDatePickerView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MDatePickerView";
+			sourceTree = "<group>";
+		};
+		15C3EEBE2BEFC435170F029A365834B6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				17E1BD4501179A45894A9D52FF0DA0C7 /* DateTimePicker.modulemap */,
+				1F754CA75321F75DC04C0D5F66E3164C /* DateTimePicker-dummy.m */,
+				538C922CBA9F4B82B005C4EB64FF4A75 /* DateTimePicker-Info.plist */,
+				F01C82C8896D06FF37CA76FE53B7864D /* DateTimePicker-prefix.pch */,
+				C2FC909BBCAAA8640921B8C17883EB9B /* DateTimePicker-umbrella.h */,
+				C897FD476DB3F67ECAF5E7DA151A92EC /* DateTimePicker.debug.xcconfig */,
+				B6668396800CCABE72B35F324D638BD3 /* DateTimePicker.release.xcconfig */,
+				D6CEDBD5656D632AC7EF8E693B03003A /* ResourceBundle-DateTimePicker-DateTimePicker-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DateTimePicker";
+			sourceTree = "<group>";
+		};
+		16611C0954F34641D34DD3FC965EE41A /* MDatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				97E83A8FD0EC82955EBD63E04758D2A0 /* CalendarController.swift */,
+				AFC3702DE37A771D156265AE450DB7C4 /* ColCell.swift */,
+				6561D896303900D65983E4ED116CA2F7 /* ColDateCell.swift */,
+				67E385E4673F24C57132FF4776790726 /* CustomDatePickerView.swift */,
+				4BD8C04D46CCC9665B7787031A6FEBD6 /* MDatePickerView.h */,
+				CE71FA930FF83ABE5085BEA2C2EA2C46 /* MDatePickerView.swift */,
+				53B5DE7AB61CA23A690BA593A4D77CD6 /* TextLabel.swift */,
+				150F761CCEAE2158BAA4F4B022C01EB5 /* Support Files */,
+			);
+			name = MDatePickerView;
+			path = MDatePickerView;
 			sourceTree = "<group>";
 		};
 		283ED691EA70F6B218920439E8E0EF01 /* Targets Support Files */ = {
@@ -314,47 +616,101 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		354E1B034F4BFB95EE9B64CDF8B43424 /* Support Files */ = {
+		2F07F98A6AF2DBA563739C7C699B33E8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2B6ED317A276CF18BFC77EBEDED2CC8C /* DateTimePicker.modulemap */,
-				7CE24CAAB508E4C5228DCA8692019D94 /* DateTimePicker-dummy.m */,
-				B868075FFD5F005CD19CBF222EA943FD /* DateTimePicker-Info.plist */,
-				5C056CF543B84F753C429C1A1E04A51E /* DateTimePicker-prefix.pch */,
-				C82E6CD9B59836EE5A790487BA7FD21F /* DateTimePicker-umbrella.h */,
-				12D6D7A0B914E447BC5A19BEF8B21F7E /* DateTimePicker.debug.xcconfig */,
-				F1A83007E49F5D539881C770012CED1D /* DateTimePicker.release.xcconfig */,
-				CF5BB571157902163AECBE5D8DD73AE1 /* ResourceBundle-DateTimePicker-DateTimePicker-Info.plist */,
+				03975A695D7049069ED4F17A13FCCAAC /* GooglePlaces.debug.xcconfig */,
+				4A08864F0185DCAE4C7C7451F42B588D /* GooglePlaces.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/DateTimePicker";
+			path = "../Target Support Files/GooglePlaces";
 			sourceTree = "<group>";
 		};
-		3FF453C1E2BA9988CABC77C41A857C79 /* Pods */ = {
+		393F82D0CA8E3A755B6749BDB23777BF /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				818197AB28EFF82C63F82A3041FE013C /* DateTimePicker */,
-				99F3C9CEDD8398620C99EB02A0F90F47 /* GoogleMaps */,
-				BB4CD83126D5058BFF54EC4E6536579D /* GooglePlaces */,
-				71E8E2915485B4EE7F23CAD0102BC80B /* MDatePickerView */,
+				CA014397E3E67DD1949F66A3789744D2 /* Frameworks */,
+				11E8ADCAE95E82BEFB00E490321597B1 /* Resources */,
 			);
-			name = Pods;
+			name = Maps;
 			sourceTree = "<group>";
 		};
-		4084B5CDDA62B78A6AD1D007082A7848 /* Frameworks */ = {
+		412A4E6DC479DA6464E99F3D66226328 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				D2AB83AC92CAF12305F4685BFBDF6E4E /* GooglePlaces.framework */,
+				AF29C670A4331964C8FF8C1FB6BBF3E9 /* Frameworks */,
 			);
-			name = Frameworks;
+			name = Base;
 			sourceTree = "<group>";
 		};
-		4241835614DDC2AB3F6B098679C266BC /* Resources */ = {
+		42E73278BCCAADB51475147C658E08A3 /* pop */ = {
 			isa = PBXGroup;
 			children = (
-				7CCDE40C66A7132E879998FA714EE8DB /* GoogleMaps.bundle */,
+				287ACBCD3DD7E48262945F66D0870487 /* FloatConversion.h */,
+				D38F2D82506A1EE4A49282576023B542 /* POP.h */,
+				18925F499558E81E6573644650DB1164 /* POPAction.h */,
+				DF69468890658509AEE886A1542B4E5F /* POPAnimatableProperty.h */,
+				E2F46758FDA8370450E95B7285C6EC4A /* POPAnimatableProperty.mm */,
+				FED15EC2235509ED29811EB9CC51C3E3 /* POPAnimatablePropertyTypes.h */,
+				BA2A134AEFEE62F679E74CF14F5DFA97 /* POPAnimation.h */,
+				18423C7F7D6FE203A11D4AA36C44214F /* POPAnimation.mm */,
+				318CD223521916B00CC3F1EB7A562C12 /* POPAnimationEvent.h */,
+				37C3974B67070E5ADFA8F3AB0DE22482 /* POPAnimationEvent.mm */,
+				930DBA98362DCBDFB80EC5616EA8BC66 /* POPAnimationEventInternal.h */,
+				A9F75E0FC97E7B93479F692AFCEDBF7E /* POPAnimationExtras.h */,
+				B350916F9D8FD46C387A0DB9334439D5 /* POPAnimationExtras.mm */,
+				CC82C4623DB21397A762459D44643E23 /* POPAnimationInternal.h */,
+				52B7914114AAED88E45C0D4789D107E5 /* POPAnimationPrivate.h */,
+				BB31C7C55234A41501219A25AE36DD7C /* POPAnimationRuntime.h */,
+				9812B75AFC304988D51664D454122E4C /* POPAnimationRuntime.mm */,
+				2DC92E805491D1CBEAE50D68BFBF5F8D /* POPAnimationTracer.h */,
+				8616C2301FD7D7C9B1345A6F366B935E /* POPAnimationTracer.mm */,
+				35410DEF6B0B6C54125534CBC80FE79C /* POPAnimationTracerInternal.h */,
+				8951BD98844104D28CD08FA888D8F5AC /* POPAnimator.h */,
+				08A7EBB71CDDF0D545BDA2EC037B4496 /* POPAnimator.mm */,
+				A9CBDFF6909EC89AC231E1E2A6267DF3 /* POPAnimatorPrivate.h */,
+				BF1CA53755530BF7394EDE4C32A1BAC9 /* POPBasicAnimation.h */,
+				29B00961BB90AED06D68F5A24D54F2AE /* POPBasicAnimation.mm */,
+				783D95A6EA559070E496AAE40DF306C3 /* POPBasicAnimationInternal.h */,
+				4403F62D2DDF0ADE0A29D842A3BDAD90 /* POPCGUtils.h */,
+				2E588F460705E3D084197592D81EFC81 /* POPCGUtils.mm */,
+				639A579B4D56EEAF36D04F47E7308A5D /* POPCustomAnimation.h */,
+				895AC929920F38CD05115F52B99A384D /* POPCustomAnimation.mm */,
+				F11CE3C53862EAF98A525DB7F1B4118E /* POPDecayAnimation.h */,
+				A426404C576459A5DE6AEE3D070CB778 /* POPDecayAnimation.mm */,
+				F20EA92152B6B24D4ADE6D04CBC180F1 /* POPDecayAnimationInternal.h */,
+				16342EBE8BAA262D501AEE390D08E810 /* POPDefines.h */,
+				D2986139C062AD583CF3EB95CD1A4953 /* POPGeometry.h */,
+				29A5265A6267504685E58F3535968A81 /* POPGeometry.mm */,
+				CFA5813F6B541346A4614BA4484749B4 /* POPLayerExtras.h */,
+				836DC132FBC73A7B959198268A997D14 /* POPLayerExtras.mm */,
+				A4C5C02E10595B2DD6FF0B7481699040 /* POPMath.h */,
+				8AE5F9F4954416B6C738D55FB6F68344 /* POPMath.mm */,
+				01755E61246824509AE2CC0FC1BC2BE4 /* POPPropertyAnimation.h */,
+				05CCA9CB465DCE7863A3D25EB8472191 /* POPPropertyAnimation.mm */,
+				B674B95919EAE4C8F01BDF08989AE8EC /* POPPropertyAnimationInternal.h */,
+				2C6B8FB4E2A9905A3D2C763ACD7E4AFD /* POPSpringAnimation.h */,
+				08BB270FE741F5D39396601F5EF4385A /* POPSpringAnimation.mm */,
+				DF1819C091DB64DC6C48648F951B7628 /* POPSpringAnimationInternal.h */,
+				EB17E78C3D7BB5C696563EE3273F5ACF /* POPSpringSolver.h */,
+				8396F9223AFAE2821E3B9F0D4CE6165A /* POPVector.h */,
+				156DEFC597A7F1BF5993862D0B29D827 /* POPVector.mm */,
+				7A1286D94529D00FF0BB9E1BDC9D17E0 /* TransformationMatrix.cpp */,
+				E8FFE3525B36589735D74530F9BFEB04 /* TransformationMatrix.h */,
+				E85994C339D088894F725D3D31DA83A1 /* UnitBezier.h */,
+				60BA8C91676CE9993F383041DF4E7B4A /* Support Files */,
 			);
-			name = Resources;
+			name = pop;
+			path = pop;
+			sourceTree = "<group>";
+		};
+		4CEAFEDDA432EEAD5A4D8F65A786C4E7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */,
+				D6FC6BA7CB64EE10B4D6FC3B144D2B66 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		524FDF2937C49DE658C3F2738DECC1B1 /* Pods-myiosappTests */ = {
@@ -373,76 +729,42 @@
 			path = "Target Support Files/Pods-myiosappTests";
 			sourceTree = "<group>";
 		};
-		6E8F11B51AC58323709FBCAD69C2913B /* Base */ = {
+		60BA8C91676CE9993F383041DF4E7B4A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7F7939C83ED5C5BA6BF329E32622F432 /* Frameworks */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		71E8E2915485B4EE7F23CAD0102BC80B /* MDatePickerView */ = {
-			isa = PBXGroup;
-			children = (
-				ADD7ED44F2D148479BDC094CD683236D /* CalendarController.swift */,
-				E1B2D7DEA27B24EAB73D1C6ABFFDC492 /* ColCell.swift */,
-				8F415658E0204343B6F601B30F08D2B2 /* ColDateCell.swift */,
-				22CD535A91B0DFA77E56E32CE105DEBC /* CustomDatePickerView.swift */,
-				DD1EC781608350B3E38352EC8193E470 /* MDatePickerView.h */,
-				1D44F2262572A3FD3AC4A43ACDADB88E /* MDatePickerView.swift */,
-				40AF715F38EAB8F62B4DE8CF6B21483A /* TextLabel.swift */,
-				7555DECDDA74A5E30774C0C7107CB228 /* Support Files */,
-			);
-			name = MDatePickerView;
-			path = MDatePickerView;
-			sourceTree = "<group>";
-		};
-		7555DECDDA74A5E30774C0C7107CB228 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FE0BBFDBC4221DDD6D5A110E7E53F64C /* MDatePickerView.modulemap */,
-				BA3654FF8B5E1FC110816E91AB0A10AD /* MDatePickerView-dummy.m */,
-				F2355B13B0A53B202CDFC170524D4311 /* MDatePickerView-Info.plist */,
-				594A510EAD2FCB8143D67386E9E5183C /* MDatePickerView-prefix.pch */,
-				495D1FB069D55A94AF50B6732A4D6F2B /* MDatePickerView-umbrella.h */,
-				830564AE1207736FC61654C3F91CC2A9 /* MDatePickerView.debug.xcconfig */,
-				397348F7C640CB778BAA7827358F0528 /* MDatePickerView.release.xcconfig */,
+				B84D99D8B5C64EE489CC9E416C166C98 /* pop.modulemap */,
+				32AF7904E543D67FDABBE9FCF7E7AA43 /* pop-dummy.m */,
+				F2F040E35C69B16D7AE9F6454501A038 /* pop-Info.plist */,
+				D2458F6CC455AC9F7E7BE314428AF217 /* pop-prefix.pch */,
+				CCFD3C12B3EE6359827D315840CBD704 /* pop-umbrella.h */,
+				63D8A119D1C471B917B1779E8BC2D410 /* pop.debug.xcconfig */,
+				E1DCA38AB40232921CB26B520C3C9F42 /* pop.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MDatePickerView";
+			path = "../Target Support Files/pop";
 			sourceTree = "<group>";
 		};
-		7F7939C83ED5C5BA6BF329E32622F432 /* Frameworks */ = {
+		65174DF56830DAE1F38F4ADC37CE1F63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				827E92B541763036E15800A565F87383 /* GoogleMapsBase.framework */,
+				34DE98CFDB115AD61004F87FBAB30461 /* GooglePlaces.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		818197AB28EFF82C63F82A3041FE013C /* DateTimePicker */ = {
+		816BCEA8BC0E0E0B23CC6D97E69AAD35 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				506E6FD6E7A21F309909BA7260F04BB6 /* Bundle+Resource.swift */,
-				234E40F1DC639C658D8102A2A2303C70 /* DateTimePicker.swift */,
-				F86599D347FE1FC32B756C3EF83374B7 /* DateTimePicker+CollectionView.swift */,
-				8ECFDC0C7859C01CF5684A3168D5EA83 /* DateTimePicker+UITableView.swift */,
-				C0FD9D1F6DFB57F42897D8A319FC24D4 /* FullDateCollectionViewCell.swift */,
-				E22568005AC00C40AE94161CB6FE1F97 /* StepCollectionViewFlowLayout.swift */,
-				C6FABF4365B4574A2A1D1D1B55D3E2DF /* Resources */,
-				354E1B034F4BFB95EE9B64CDF8B43424 /* Support Files */,
+				8D95AEF249EB2DA1529C6F368A79B362 /* fluid-slider.modulemap */,
+				8D14C26178011DA8F8E4BDDA93672831 /* fluid-slider-dummy.m */,
+				FA8BDB3BECBCF4870086E9CC0F6A29A7 /* fluid-slider-Info.plist */,
+				AB67EAFD51F96756B2E197606C6119DD /* fluid-slider-prefix.pch */,
+				FB84FBBEE4D90977AA82BC67A75CF128 /* fluid-slider-umbrella.h */,
+				8F9315E8670718A5904C44B6D2613C1D /* fluid-slider.debug.xcconfig */,
+				C5CE580FD1228674FE90FD03A6974FC6 /* fluid-slider.release.xcconfig */,
 			);
-			name = DateTimePicker;
-			path = DateTimePicker;
-			sourceTree = "<group>";
-		};
-		8ABFA3016ADDDC4AD61654BB674098B8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FBBADDFEA7A81C6C62197DBD94A1D719 /* GoogleMaps.framework */,
-				BB463965F8BFCCF39D6C2E616093F318 /* GoogleMapsCore.framework */,
-			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/fluid-slider";
 			sourceTree = "<group>";
 		};
 		99DE82231364AD09637CD2B35FB50AE7 /* Pods-myiosapp */ = {
@@ -463,17 +785,6 @@
 			path = "Target Support Files/Pods-myiosapp";
 			sourceTree = "<group>";
 		};
-		99F3C9CEDD8398620C99EB02A0F90F47 /* GoogleMaps */ = {
-			isa = PBXGroup;
-			children = (
-				6E8F11B51AC58323709FBCAD69C2913B /* Base */,
-				BF5EB7BFA48CA87081675C506EB55ACF /* Maps */,
-				FDC6BD90CB24614BAF29F799632ED0E3 /* Support Files */,
-			);
-			name = GoogleMaps;
-			path = GoogleMaps;
-			sourceTree = "<group>";
-		};
 		A0627E96562AAC3DDEFDCEE54CD78BC9 /* Pods-myiosapp-myiosappUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,78 +803,146 @@
 			path = "Target Support Files/Pods-myiosapp-myiosappUITests";
 			sourceTree = "<group>";
 		};
-		BB4CD83126D5058BFF54EC4E6536579D /* GooglePlaces */ = {
+		A66A6878C8013DD3B693C7B9532280C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4084B5CDDA62B78A6AD1D007082A7848 /* Frameworks */,
-				1973A8F54052C0C323B45C401D583BEE /* Resources */,
-				FC03352D4B8E71F3EB541DE3C7866A3B /* Support Files */,
+				B04C1EBC2EC90A2DFFEDDD0CF4473840 /* DateTimePicker.bundle */,
+				B26CB6AD16677CB8E5B8A5059EA05677 /* DateTimePicker.framework */,
+				BBEB7F45E1EBEC947D5EBEDDE752D049 /* fluid_slider.framework */,
+				84B843FF6CF907B9F0350B5BB4C86A0F /* MDatePickerView.framework */,
+				C40315251ECD2279C5597C2202A6DC25 /* Pods_myiosapp.framework */,
+				0A0F8343E0622641EE4D6610159CFEF3 /* Pods_myiosapp_myiosappUITests.framework */,
+				2AA62DE193049CD2A2378DB442EAD09B /* Pods_myiosappTests.framework */,
+				51305B2D9D8DA36D89CC277D729083D2 /* pop.framework */,
+				A76921F7329D552AD6FA723972B6337A /* ViewAnimator.framework */,
 			);
-			name = GooglePlaces;
-			path = GooglePlaces;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		BF5EB7BFA48CA87081675C506EB55ACF /* Maps */ = {
+		AAA5EA66234F878895E85504C264E569 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8ABFA3016ADDDC4AD61654BB674098B8 /* Frameworks */,
-				4241835614DDC2AB3F6B098679C266BC /* Resources */,
+				5C63CCBBD614D09EF1924CAC0C6F1566 /* GoogleMaps.debug.xcconfig */,
+				8523FE3EC60DF209CB50AE2CDD9B949D /* GoogleMaps.release.xcconfig */,
 			);
-			name = Maps;
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
 			sourceTree = "<group>";
 		};
-		C6FABF4365B4574A2A1D1D1B55D3E2DF /* Resources */ = {
+		AF29C670A4331964C8FF8C1FB6BBF3E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C606977201DAA31DECAF930F0221B5AA /* DateTimePicker.xib */,
-				C25EFD0EE532B96879B68A4F87094E3F /* FullDateCollectionViewCell.xib */,
+				E072F95D5A3393037CBAA16961144345 /* GoogleMapsBase.framework */,
 			);
-			name = Resources;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCFD20A30F576AD03E914EAD986FBCD9 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				412A4E6DC479DA6464E99F3D66226328 /* Base */,
+				393F82D0CA8E3A755B6749BDB23777BF /* Maps */,
+				AAA5EA66234F878895E85504C264E569 /* Support Files */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		CA014397E3E67DD1949F66A3789744D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D34A2E688144C5826DD7F72A6C785CC9 /* GoogleMaps.framework */,
+				EE84E9017F35EFA4321716B70ACF622A /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				3FF453C1E2BA9988CABC77C41A857C79 /* Pods */,
-				014726A509CC7D0CAA35981F16F74FFF /* Products */,
+				0EB6BC715429D7DA67C21CE97DE6F50E /* Frameworks */,
+				D68206860F6F9711F3AE9281E2FA550E /* Pods */,
+				A66A6878C8013DD3B693C7B9532280C2 /* Products */,
 				283ED691EA70F6B218920439E8E0EF01 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+		D3E0B5516DA52484D2363B7F0E826BE0 /* ViewAnimator */ = {
 			isa = PBXGroup;
 			children = (
-				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
-				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+				49213B04767A9E8E142672E843DBC8BC /* Animation.swift */,
+				D627D6E802F7F056FFF9D5B79C7BD1EB /* AnimationType.swift */,
+				EA12A9211F775A0B0DD287D49E470475 /* UICollectionView + ViewAnimator.swift */,
+				30A631BEE34207F4710D86B6C8C077DA /* UITableView + ViewAnimator.swift */,
+				22C83F7A0E76E03B08121ADAA61381F0 /* ViewAnimator.swift */,
+				52D3577A874BC25D799457F230A951A2 /* ViewAnimatorConfig.swift */,
+				ECA01FF27AFB1AD0BCAB5B193606D947 /* Support Files */,
 			);
-			name = iOS;
+			name = ViewAnimator;
+			path = ViewAnimator;
 			sourceTree = "<group>";
 		};
-		FC03352D4B8E71F3EB541DE3C7866A3B /* Support Files */ = {
+		D68206860F6F9711F3AE9281E2FA550E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C848A2EBF6A405DD8DEDDF520E0B6986 /* GooglePlaces.debug.xcconfig */,
-				A1FBC8F6675D980A1A6161EA7C0A3034 /* GooglePlaces.release.xcconfig */,
+				0E1A41C8DAF0C171DAA7BFC8666794D3 /* DateTimePicker */,
+				E36F783766766934654ACB13D40018DE /* fluid-slider */,
+				BCFD20A30F576AD03E914EAD986FBCD9 /* GoogleMaps */,
+				0054B3F75522936F935622FFFEC22617 /* GooglePlaces */,
+				16611C0954F34641D34DD3FC965EE41A /* MDatePickerView */,
+				42E73278BCCAADB51475147C658E08A3 /* pop */,
+				D3E0B5516DA52484D2363B7F0E826BE0 /* ViewAnimator */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/GooglePlaces";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		FDC6BD90CB24614BAF29F799632ED0E3 /* Support Files */ = {
+		E36F783766766934654ACB13D40018DE /* fluid-slider */ = {
 			isa = PBXGroup;
 			children = (
-				CB0446851F3319B3A19E65FAA1A25C18 /* GoogleMaps.debug.xcconfig */,
-				6F6139191C764BD1D4CDB8B18CD2A2B9 /* GoogleMaps.release.xcconfig */,
+				77AA292DBE0FCC259E9C8F284CA91E2A /* Filters.swift */,
+				150C44563628B75CE2C00A6CB6982776 /* Slider.swift */,
+				466A0AB03596F7E181DF9FC738638604 /* ValueView.swift */,
+				816BCEA8BC0E0E0B23CC6D97E69AAD35 /* Support Files */,
+			);
+			name = "fluid-slider";
+			path = "fluid-slider";
+			sourceTree = "<group>";
+		};
+		ECA01FF27AFB1AD0BCAB5B193606D947 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				35D8EC291AAFB6975DD1BE17DA9022BF /* ViewAnimator.modulemap */,
+				3A1DE5F96F2D0A4D914F79C8204E2CAB /* ViewAnimator-dummy.m */,
+				08EE2D30C58260D1DF5C85A22BF62619 /* ViewAnimator-Info.plist */,
+				3468E562530AD6E70DB04708927B9826 /* ViewAnimator-prefix.pch */,
+				434377ACEBF2E4E25E6F592268E05D70 /* ViewAnimator-umbrella.h */,
+				F1A0AE33683F7F32EA4EC58893B08925 /* ViewAnimator.debug.xcconfig */,
+				A6AEC26E1D05ED6F80DCC02371130659 /* ViewAnimator.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/GoogleMaps";
+			path = "../Target Support Files/ViewAnimator";
+			sourceTree = "<group>";
+		};
+		F4B2E6A642723B6FC31879F764B88049 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				180DA42748C2E239ED1FE122BD25004A /* GooglePlaces.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1675E9263FC01002A7FB92C10F404E47 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B69D3C36156890A157D2F9F0495309 /* fluid-slider-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		19C95FD7017BD3C1AD042721DEADDE4B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -580,19 +959,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EE21A28579DF222AD1178975FA778EF /* Headers */ = {
+		3B4A25639A15611EA5B68C6B333789DB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A12D588300E650EAC1DA6C31E60D3E9A /* Pods-myiosapp-umbrella.h in Headers */,
+				10A2A95718AFE6AF478DC6451E27FFA0 /* Pods-myiosapp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4ED3AA46672765D4F87F7D5A48E57A93 /* Headers */ = {
+		7F1E03A5255989296E483F48FDCB11D3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA63CDA93DF2AE03083C4A3A242635D /* Pods-myiosapp-myiosappUITests-umbrella.h in Headers */,
+				A99642DE94D50AF162EE08897D253A5C /* FloatConversion.h in Headers */,
+				037478A488E6E3797C18F7078168AA01 /* pop-umbrella.h in Headers */,
+				2FEAB0499BBFD91C1434FB7F0C358A8E /* POP.h in Headers */,
+				67309109166AB7855A41C462C96BEB7D /* POPAction.h in Headers */,
+				426E5077044B2FB9811262D17D3B7255 /* POPAnimatableProperty.h in Headers */,
+				FDFC5C8CE5972411C71EF124F7EC1B33 /* POPAnimatablePropertyTypes.h in Headers */,
+				71BAD60B0391B4122E5D97E17D4A0DAC /* POPAnimation.h in Headers */,
+				B1B11B41A3FA4B7642C035874CAA9A41 /* POPAnimationEvent.h in Headers */,
+				32F4CD5AE6E32F07CAC772ED4EACCE26 /* POPAnimationEventInternal.h in Headers */,
+				BA985CED52C70B9844B3B648E64123CD /* POPAnimationExtras.h in Headers */,
+				D9201498B896E34281419483FFAB1F54 /* POPAnimationInternal.h in Headers */,
+				61A73E6A5C756FFAAE2A7AB914565256 /* POPAnimationPrivate.h in Headers */,
+				C2D693B1DE33906A0CFBA4A5161AAD82 /* POPAnimationRuntime.h in Headers */,
+				2F5BC312C0F8DFA7521246A1B097197E /* POPAnimationTracer.h in Headers */,
+				A7137176DF7EFF8C8D21838EF12AA032 /* POPAnimationTracerInternal.h in Headers */,
+				4D85F70812775ACFC569B1E0C05959AE /* POPAnimator.h in Headers */,
+				0CAEF932F9993841278DB0939A488F39 /* POPAnimatorPrivate.h in Headers */,
+				9C087AF9BDDD44D324245C091C6E8FE4 /* POPBasicAnimation.h in Headers */,
+				1CED6D13C3BC270D3464B0E6512AA2DB /* POPBasicAnimationInternal.h in Headers */,
+				A3928328771AEFF00D13A708F5622E7D /* POPCGUtils.h in Headers */,
+				9F2F198A12F6910AB3041E1E2C9B6022 /* POPCustomAnimation.h in Headers */,
+				06604C03A58B63F8CBF474CF854B6D41 /* POPDecayAnimation.h in Headers */,
+				2BC84B982035B82B083A3D1BB5F1C0BE /* POPDecayAnimationInternal.h in Headers */,
+				B17106E7FC3FCF4B0A9771F88D085FEF /* POPDefines.h in Headers */,
+				E910A22A819444F1998A6E54F00CCF08 /* POPGeometry.h in Headers */,
+				4982AE6FAF36005CC32F7BB544DC7D43 /* POPLayerExtras.h in Headers */,
+				82A27E3326C5AE361CF0331D9FE6DC4A /* POPMath.h in Headers */,
+				ACDAEE483B3891358F0C0A55E1AACCB1 /* POPPropertyAnimation.h in Headers */,
+				BAE56100646B100E9BAF596122C13ABC /* POPPropertyAnimationInternal.h in Headers */,
+				151E8FBCDC0E5508A086F6FF0BE3A7A2 /* POPSpringAnimation.h in Headers */,
+				BAF74ED4BC68DFA60CD11169C4E34AE2 /* POPSpringAnimationInternal.h in Headers */,
+				3AE69E74E818584C53F0F5B3CBDA0D7A /* POPSpringSolver.h in Headers */,
+				8213468D89321894812E74AB071391B8 /* POPVector.h in Headers */,
+				86302E565309FC08ADDCF4F2D2581BBE /* TransformationMatrix.h in Headers */,
+				92E827731F7020DEA05B559709732538 /* UnitBezier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32CE74D33B63657BF3877C7A83F2A03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081AD2D7A4E79B029748CBBDD242D524 /* ViewAnimator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,25 +1026,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B51A1E69792B39E90C0BE074C66C4EBF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5304FBEEAFD659DE79644263D22C3550 /* Pods-myiosapp-myiosappUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2A4954A4FAA4F3EEC3167E1F7D061B82 /* Pods-myiosapp */ = {
+		0483D7F620C992E5C4BD62A7266EABB4 /* pop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3C679B3C874B39D5A83C40CD5C0F3BD4 /* Build configuration list for PBXNativeTarget "Pods-myiosapp" */;
+			buildConfigurationList = 7BB19C2896F314C98545373986B846DC /* Build configuration list for PBXNativeTarget "pop" */;
 			buildPhases = (
-				2EE21A28579DF222AD1178975FA778EF /* Headers */,
-				D5B91D4CAEDD354F4780A0196B97E9EC /* Sources */,
-				7ECDB948C72E6ECB0DF3BD9D5D3BF52E /* Frameworks */,
-				5CD9D3E796EEAAF3596B638DC4F6519F /* Resources */,
+				7F1E03A5255989296E483F48FDCB11D3 /* Headers */,
+				A20656CB25334F8B08F1D76D2CC74201 /* Sources */,
+				2A3BACB237E3492BC8DF022B4948A2D9 /* Frameworks */,
+				6CE207933783FAF2B482A05293FD3038 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9FBC98D65B55AC5A731A08C3DD6A8936 /* PBXTargetDependency */,
-				5D50D476881E8738289C2548CD6E5719 /* PBXTargetDependency */,
-				3FA74CB160AEC01CBA8525438D918EA7 /* PBXTargetDependency */,
-				1381C09024CDCAEEB6FE4A36A5AD2CEA /* PBXTargetDependency */,
+			);
+			name = pop;
+			productName = pop;
+			productReference = 51305B2D9D8DA36D89CC277D729083D2 /* pop.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2A4954A4FAA4F3EEC3167E1F7D061B82 /* Pods-myiosapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FBF6F59FD92FEC5CE5B294C43C7848C /* Build configuration list for PBXNativeTarget "Pods-myiosapp" */;
+			buildPhases = (
+				3B4A25639A15611EA5B68C6B333789DB /* Headers */,
+				84218ADDBD242D716710CED286AF24AE /* Sources */,
+				D48196F5350CEAADF0F0F77AE852895A /* Frameworks */,
+				8D5BF2632E2521CB1623925F7D05BB0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F890449FD91F6105309DEEDF7529325F /* PBXTargetDependency */,
+				9E550A65E357247EF99DC610D1891470 /* PBXTargetDependency */,
+				4183C67FE1791A113E0E5892225724B1 /* PBXTargetDependency */,
+				0B5A3E13AFF43A6169AD32F4E178E6E3 /* PBXTargetDependency */,
+				5468B52A73AE735FF06124B9FDABA10C /* PBXTargetDependency */,
+				2DAEEF4888A05E0E98E9EA594507B354 /* PBXTargetDependency */,
+				E594AFAEE49B4A631159EFB7A9CE98E5 /* PBXTargetDependency */,
 			);
 			name = "Pods-myiosapp";
 			productName = "Pods-myiosapp";
@@ -642,7 +1092,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				0A2700BB1E55D650C3452CCD26526C9D /* PBXTargetDependency */,
+				6F09D0A32966E62BE23FCAA74904B75C /* PBXTargetDependency */,
 			);
 			name = DateTimePicker;
 			productName = DateTimePicker;
@@ -651,24 +1101,45 @@
 		};
 		738CD12BA152BE684F557FBD9D5D00E3 /* Pods-myiosapp-myiosappUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56D8D53A5643EF712B800CF25116D0D5 /* Build configuration list for PBXNativeTarget "Pods-myiosapp-myiosappUITests" */;
+			buildConfigurationList = 3B02425A952441980DE5BD916BE7ED20 /* Build configuration list for PBXNativeTarget "Pods-myiosapp-myiosappUITests" */;
 			buildPhases = (
-				4ED3AA46672765D4F87F7D5A48E57A93 /* Headers */,
-				51963CFCCFFEB90FD36E300DDB6A6933 /* Sources */,
-				F8C3A18D6A5F35B2DA3B64EC3783B521 /* Frameworks */,
-				6CEBBD997FCB712C30F824C7AA3614FA /* Resources */,
+				B51A1E69792B39E90C0BE074C66C4EBF /* Headers */,
+				163424D1E165901247C96D42FE971965 /* Sources */,
+				301B616A1D62AA6DA1EFD7BC6C303504 /* Frameworks */,
+				14AD9EDA831AEA4BE340D20FC7CD8F0D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				49B4D4665E706652569A249C10B60B76 /* PBXTargetDependency */,
-				103CCCA9A3FEDDFAC1F485727CD9201D /* PBXTargetDependency */,
-				1EF52ECD1492E93ACC8CAB06D22EA06C /* PBXTargetDependency */,
-				30DE56898917449BA926CCD98ADA9E4C /* PBXTargetDependency */,
+				E5E83C418746D18FA28714032C50EFFE /* PBXTargetDependency */,
+				89EC95B0BBBE3FD8D386A1148D333730 /* PBXTargetDependency */,
+				7BEE19711D0A5A43F6A1054A0DFBB989 /* PBXTargetDependency */,
+				E011BD8898DA48373989C106AF09C5F9 /* PBXTargetDependency */,
+				A3D43539C60817ED0751207F513B6123 /* PBXTargetDependency */,
+				B898E795F2FACAB8735943D1450B0F74 /* PBXTargetDependency */,
+				B680E45CABAE0EDE71DD2963EBF86236 /* PBXTargetDependency */,
 			);
 			name = "Pods-myiosapp-myiosappUITests";
 			productName = "Pods-myiosapp-myiosappUITests";
 			productReference = 0A0F8343E0622641EE4D6610159CFEF3 /* Pods_myiosapp_myiosappUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF2E1D529B7CACC3CFBA54A93344A897 /* Build configuration list for PBXNativeTarget "ViewAnimator" */;
+			buildPhases = (
+				A32CE74D33B63657BF3877C7A83F2A03 /* Headers */,
+				A376F6DFEC81B7C0BB8122174C629798 /* Sources */,
+				6118079B4FF1B5035B422EF7C984C661 /* Frameworks */,
+				99FE6CDA15A6BA42AE56304CE727C549 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViewAnimator;
+			productName = ViewAnimator;
+			productReference = A76921F7329D552AD6FA723972B6337A /* ViewAnimator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AD81F9FA983EFA50F048A1C8058B0FF9 /* Pods-myiosappTests */ = {
@@ -683,7 +1154,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DAE530F43577A2DC626AD4881DD14F70 /* PBXTargetDependency */,
+				5C7CBF58D76C496FAAB75F953F79885F /* PBXTargetDependency */,
 			);
 			name = "Pods-myiosappTests";
 			productName = "Pods-myiosappTests";
@@ -692,11 +1163,11 @@
 		};
 		E0775EC5F6DBAA5D2C37BCFB14908273 /* DateTimePicker-DateTimePicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BDC3BCBD271A7790ED2B8121CF29856 /* Build configuration list for PBXNativeTarget "DateTimePicker-DateTimePicker" */;
+			buildConfigurationList = A7A0BD350A4B2D3C3A9CE13790C2DF83 /* Build configuration list for PBXNativeTarget "DateTimePicker-DateTimePicker" */;
 			buildPhases = (
-				1355EE38605CD314B92885FF3CC1FD0F /* Sources */,
-				D58A30220334CDA2883A52A42B96F64E /* Frameworks */,
-				950C62D3F05E49A1AFFEB2AE6C232EAA /* Resources */,
+				F644E3F4D1C2966748804EC1D0B6C541 /* Sources */,
+				E526A30B3FE076C924FF2B0338DD7860 /* Frameworks */,
+				95BC190F5E9ED525CDF856D1112BD691 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -725,6 +1196,25 @@
 			productReference = 84B843FF6CF907B9F0350B5BB4C86A0F /* MDatePickerView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		EDE5D5EAAD327B650F11E4D21FAA723D /* fluid-slider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CE52EE30731A1CFE714C7BB0D087AFD /* Build configuration list for PBXNativeTarget "fluid-slider" */;
+			buildPhases = (
+				1675E9263FC01002A7FB92C10F404E47 /* Headers */,
+				191292EF640A0CF1891175E2C6366B69 /* Sources */,
+				ECCBF2FC5FA2666D9D3DE0EB2A1AA22F /* Frameworks */,
+				6C426235AC9FAAB769E300D78376E29F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35854F8DCC5E4CE2567AF1BCBF019C26 /* PBXTargetDependency */,
+			);
+			name = "fluid-slider";
+			productName = "fluid-slider";
+			productReference = BBEB7F45E1EBEC947D5EBEDDE752D049 /* fluid_slider.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -743,23 +1233,33 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 014726A509CC7D0CAA35981F16F74FFF /* Products */;
+			productRefGroup = A66A6878C8013DD3B693C7B9532280C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				31E89965CFA54DE4BCC99C05112D7483 /* DateTimePicker */,
 				E0775EC5F6DBAA5D2C37BCFB14908273 /* DateTimePicker-DateTimePicker */,
+				EDE5D5EAAD327B650F11E4D21FAA723D /* fluid-slider */,
 				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
 				0C1885900810601510E0C632060FAF26 /* GooglePlaces */,
 				ECF030B04A631ADB65190BABE8925EC5 /* MDatePickerView */,
 				2A4954A4FAA4F3EEC3167E1F7D061B82 /* Pods-myiosapp */,
 				738CD12BA152BE684F557FBD9D5D00E3 /* Pods-myiosapp-myiosappUITests */,
 				AD81F9FA983EFA50F048A1C8058B0FF9 /* Pods-myiosappTests */,
+				0483D7F620C992E5C4BD62A7266EABB4 /* pop */,
+				91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		14AD9EDA831AEA4BE340D20FC7CD8F0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A9E3C1817D99DB08544184CC81E0F60 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -768,26 +1268,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5CD9D3E796EEAAF3596B638DC4F6519F /* Resources */ = {
+		6C426235AC9FAAB769E300D78376E29F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CEBBD997FCB712C30F824C7AA3614FA /* Resources */ = {
+		6CE207933783FAF2B482A05293FD3038 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		950C62D3F05E49A1AFFEB2AE6C232EAA /* Resources */ = {
+		8D5BF2632E2521CB1623925F7D05BB0E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				000BCCDDE27A42800C43711FA062FE7F /* DateTimePicker.xib in Resources */,
-				E98CB7FA4F9A67C1EC24E6C562B9217F /* FullDateCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95BC190F5E9ED525CDF856D1112BD691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0693F9E585DAD36A2ACF2A8E9FFBFAD /* DateTimePicker.xib in Resources */,
+				EAF4B7C92829BA11A32CD01AC2CBA1CD /* FullDateCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FE6CDA15A6BA42AE56304CE727C549 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,10 +1322,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1355EE38605CD314B92885FF3CC1FD0F /* Sources */ = {
+		163424D1E165901247C96D42FE971965 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4976057965D643E01F01A5805440FAB1 /* Pods-myiosapp-myiosappUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191292EF640A0CF1891175E2C6366B69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537106EEB343082C764176388C4AB8DA /* Filters.swift in Sources */,
+				B67F16376FF3249BCAE0DC49AD821673 /* fluid-slider-dummy.m in Sources */,
+				8E8BAA74DA034C94C90733288B5836E5 /* Slider.swift in Sources */,
+				EF87FA7DD8D25779E9E91DCBC382D434 /* ValueView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,11 +1363,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51963CFCCFFEB90FD36E300DDB6A6933 /* Sources */ = {
+		84218ADDBD242D716710CED286AF24AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7E4D8CC41357A506980E7E789DE2139 /* Pods-myiosapp-myiosappUITests-dummy.m in Sources */,
+				42470D84757CB7854FDB51359C022F3B /* Pods-myiosapp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20656CB25334F8B08F1D76D2CC74201 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC25F26EBA9F6EBBEB08C07515FDCB6 /* pop-dummy.m in Sources */,
+				97EF178463D3327E8772ECC323AC629B /* POPAnimatableProperty.mm in Sources */,
+				D8AC323AF26EF7ADAF77D84C4CBD33EC /* POPAnimation.mm in Sources */,
+				E4DC6083485231564387958956533A31 /* POPAnimationEvent.mm in Sources */,
+				D681DB40926E2B6606559690FB7A8143 /* POPAnimationExtras.mm in Sources */,
+				0EC22D9CD06C0FAED17878DD8BAA42C7 /* POPAnimationRuntime.mm in Sources */,
+				46EE5E89A7E7E8900A7D52ACED5BA8AE /* POPAnimationTracer.mm in Sources */,
+				B40534815E22FBB2CBF7E4EBB10DC02F /* POPAnimator.mm in Sources */,
+				772552C3C94BF8300230B512CC26CA44 /* POPBasicAnimation.mm in Sources */,
+				3E73FE19564CC831F0CE5D37E1FE890A /* POPCGUtils.mm in Sources */,
+				EAE49325AE3D2587B322C8C6CA40746A /* POPCustomAnimation.mm in Sources */,
+				E594F832F193C64FBE144B7579A6CA6F /* POPDecayAnimation.mm in Sources */,
+				96B3D304678AA97C3E48D782B828296D /* POPGeometry.mm in Sources */,
+				A8CE4799E2D6969B0D38837DD07F1D16 /* POPLayerExtras.mm in Sources */,
+				648A4691225EE60D849203C0F404913B /* POPMath.mm in Sources */,
+				7C54A74AC05982FE3450C651CDB258A1 /* POPPropertyAnimation.mm in Sources */,
+				E8B7356AB70DFBDF4B0E636E772C6A30 /* POPSpringAnimation.mm in Sources */,
+				E01C0634B5B14DF30629367712A62C0A /* POPVector.mm in Sources */,
+				65030FA7930AFE8D119A58AF8C70D7B4 /* TransformationMatrix.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A376F6DFEC81B7C0BB8122174C629798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D0B7903FBA88703938682451BD70993 /* Animation.swift in Sources */,
+				99E3008173F04A293F02EAF2F9F58883 /* AnimationType.swift in Sources */,
+				4A668A831CC56A8703854F7F21C093CB /* UICollectionView + ViewAnimator.swift in Sources */,
+				A1F89DD6B4B27A794C54D3415822DBE2 /* UITableView + ViewAnimator.swift in Sources */,
+				D814CDB6E25BF890490D9E0B46CE7593 /* ViewAnimator-dummy.m in Sources */,
+				16277F2E3455133F45D6BA9B3E89C891 /* ViewAnimator.swift in Sources */,
+				3FD16B601F57FC15298B2C38DD872C2D /* ViewAnimatorConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -859,89 +1425,147 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5B91D4CAEDD354F4780A0196B97E9EC /* Sources */ = {
+		F644E3F4D1C2966748804EC1D0B6C541 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5136442ADA09DCB9B949A6BFB5F4E7F2 /* Pods-myiosapp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0A2700BB1E55D650C3452CCD26526C9D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "DateTimePicker-DateTimePicker";
-			target = E0775EC5F6DBAA5D2C37BCFB14908273 /* DateTimePicker-DateTimePicker */;
-			targetProxy = D51F5E171728B0B0606D7F39DD501A6E /* PBXContainerItemProxy */;
-		};
-		103CCCA9A3FEDDFAC1F485727CD9201D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GoogleMaps;
-			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
-			targetProxy = F8FDCF4E6B6CA2CE4870501B8E792E25 /* PBXContainerItemProxy */;
-		};
-		1381C09024CDCAEEB6FE4A36A5AD2CEA /* PBXTargetDependency */ = {
+		0B5A3E13AFF43A6169AD32F4E178E6E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MDatePickerView;
 			target = ECF030B04A631ADB65190BABE8925EC5 /* MDatePickerView */;
-			targetProxy = C63322E21E206F29A27F788C1667BE3C /* PBXContainerItemProxy */;
+			targetProxy = 39CCBC1B004BEA45EC5E4B1D37018C5D /* PBXContainerItemProxy */;
 		};
-		1EF52ECD1492E93ACC8CAB06D22EA06C /* PBXTargetDependency */ = {
+		2DAEEF4888A05E0E98E9EA594507B354 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "fluid-slider";
+			target = EDE5D5EAAD327B650F11E4D21FAA723D /* fluid-slider */;
+			targetProxy = 1A73C2423F182850EEEF9F2BB1400CEE /* PBXContainerItemProxy */;
+		};
+		35854F8DCC5E4CE2567AF1BCBF019C26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pop;
+			target = 0483D7F620C992E5C4BD62A7266EABB4 /* pop */;
+			targetProxy = 7C319604ECF9D95076BEDAECBEFBB689 /* PBXContainerItemProxy */;
+		};
+		4183C67FE1791A113E0E5892225724B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GooglePlaces;
 			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
-			targetProxy = 5F869F89F3EB4DDB1E4B7D875F2A1883 /* PBXContainerItemProxy */;
+			targetProxy = 6E6D676C6F6CF47E526B0D285986940C /* PBXContainerItemProxy */;
 		};
-		30DE56898917449BA926CCD98ADA9E4C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MDatePickerView;
-			target = ECF030B04A631ADB65190BABE8925EC5 /* MDatePickerView */;
-			targetProxy = C0C218CEB66B0E558A00A0F4541A4AA8 /* PBXContainerItemProxy */;
-		};
-		3FA74CB160AEC01CBA8525438D918EA7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GooglePlaces;
-			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
-			targetProxy = 4EF98A736FF5D957E98954E180F935D2 /* PBXContainerItemProxy */;
-		};
-		49B4D4665E706652569A249C10B60B76 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DateTimePicker;
-			target = 31E89965CFA54DE4BCC99C05112D7483 /* DateTimePicker */;
-			targetProxy = B87D1264B16C8AA4F91336A5442C787F /* PBXContainerItemProxy */;
-		};
-		5D50D476881E8738289C2548CD6E5719 /* PBXTargetDependency */ = {
+		49C9E91A5D0D5D95C62A2F9413BEE3FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleMaps;
 			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
-			targetProxy = 3DCD9951B1BA4D6D72721E40FCB3BBB2 /* PBXContainerItemProxy */;
+			targetProxy = DE8A41F98AF862ED0F56B8F816E61006 /* PBXContainerItemProxy */;
 		};
-		9FBC98D65B55AC5A731A08C3DD6A8936 /* PBXTargetDependency */ = {
+		5468B52A73AE735FF06124B9FDABA10C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DateTimePicker;
-			target = 31E89965CFA54DE4BCC99C05112D7483 /* DateTimePicker */;
-			targetProxy = 7889D5132E6607FB80BD88BCEEAA214B /* PBXContainerItemProxy */;
+			name = ViewAnimator;
+			target = 91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */;
+			targetProxy = 5D153D5E55987829FE45D0160E47ADB0 /* PBXContainerItemProxy */;
 		};
-		DAE530F43577A2DC626AD4881DD14F70 /* PBXTargetDependency */ = {
+		5C7CBF58D76C496FAAB75F953F79885F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-myiosapp";
 			target = 2A4954A4FAA4F3EEC3167E1F7D061B82 /* Pods-myiosapp */;
-			targetProxy = 7F23C4386C73BF32E479C153A2C33B12 /* PBXContainerItemProxy */;
+			targetProxy = C6DDA99539AABD4C9DE3056FBDA8F448 /* PBXContainerItemProxy */;
 		};
-		E5B82B1B3399F051D08AD3140D0E175C /* PBXTargetDependency */ = {
+		6F09D0A32966E62BE23FCAA74904B75C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DateTimePicker-DateTimePicker";
+			target = E0775EC5F6DBAA5D2C37BCFB14908273 /* DateTimePicker-DateTimePicker */;
+			targetProxy = C1248EC849FBD8ADC01A507C5F535EA4 /* PBXContainerItemProxy */;
+		};
+		7BEE19711D0A5A43F6A1054A0DFBB989 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlaces;
+			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
+			targetProxy = 6FE8EBF4B6B662E798AA761D6FBA9D8E /* PBXContainerItemProxy */;
+		};
+		89EC95B0BBBE3FD8D386A1148D333730 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleMaps;
 			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
-			targetProxy = 271E5F8CA9BC1D7722993C0F09AADB57 /* PBXContainerItemProxy */;
+			targetProxy = 5EB8506CB788EC1B01C4969573E8B76F /* PBXContainerItemProxy */;
+		};
+		9E550A65E357247EF99DC610D1891470 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 1175FD5A1123706B1413C543D6225B76 /* PBXContainerItemProxy */;
+		};
+		A3D43539C60817ED0751207F513B6123 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ViewAnimator;
+			target = 91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */;
+			targetProxy = 44F28FD68282E7E63EFC784A6792665D /* PBXContainerItemProxy */;
+		};
+		B680E45CABAE0EDE71DD2963EBF86236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pop;
+			target = 0483D7F620C992E5C4BD62A7266EABB4 /* pop */;
+			targetProxy = 8891E64E9BB42A1DD636169DF741098C /* PBXContainerItemProxy */;
+		};
+		B898E795F2FACAB8735943D1450B0F74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "fluid-slider";
+			target = EDE5D5EAAD327B650F11E4D21FAA723D /* fluid-slider */;
+			targetProxy = B1DE666384F9D0185035A3899BB03131 /* PBXContainerItemProxy */;
+		};
+		E011BD8898DA48373989C106AF09C5F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MDatePickerView;
+			target = ECF030B04A631ADB65190BABE8925EC5 /* MDatePickerView */;
+			targetProxy = 129A5610FA52B5CA8BE2B5795FB9543C /* PBXContainerItemProxy */;
+		};
+		E594AFAEE49B4A631159EFB7A9CE98E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pop;
+			target = 0483D7F620C992E5C4BD62A7266EABB4 /* pop */;
+			targetProxy = C757D29145BD3725A0DF5D22DC291D70 /* PBXContainerItemProxy */;
+		};
+		E5E83C418746D18FA28714032C50EFFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DateTimePicker;
+			target = 31E89965CFA54DE4BCC99C05112D7483 /* DateTimePicker */;
+			targetProxy = 6BDC6506F2D9364FC3DDB429FAF8C5E0 /* PBXContainerItemProxy */;
+		};
+		F890449FD91F6105309DEEDF7529325F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DateTimePicker;
+			target = 31E89965CFA54DE4BCC99C05112D7483 /* DateTimePicker */;
+			targetProxy = 9287EEEA8B618C9FC629AFBFEC485692 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		19B3940A035278B6196183561656820D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C897FD476DB3F67ECAF5E7DA151A92EC /* DateTimePicker.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DateTimePicker";
+				IBSC_MODULE = DateTimePicker;
+				INFOPLIST_FILE = "Target Support Files/DateTimePicker/ResourceBundle-DateTimePicker-DateTimePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = DateTimePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		2FA810D2D6DE0A00500C09131F1A7198 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 397348F7C640CB778BAA7827358F0528 /* MDatePickerView.release.xcconfig */;
+			baseConfigurationReference = 6D756BE7A43EF1FD550719EA66F8B26D /* MDatePickerView.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -977,7 +1601,7 @@
 		};
 		38F04DEF91E452B443D396AD5A1237FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 830564AE1207736FC61654C3F91CC2A9 /* MDatePickerView.debug.xcconfig */;
+			baseConfigurationReference = 445105FD8F42359F51930D69476BC412 /* MDatePickerView.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1010,47 +1634,9 @@
 			};
 			name = Debug;
 		};
-		3A954539813169E61D75C197F06AB56D /* Debug */ = {
+		42341903BBBB47CDDA20D88F3DA53959 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA51617B59FCC42B84BD632F2855A6FA /* Pods-myiosapp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-myiosapp/Pods-myiosapp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-myiosapp/Pods-myiosapp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		488282AC2CDE8AA32902116CFF53FBFD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC1E129420313B245EC832CD0A62D3C /* Pods-myiosapp-myiosappUITests.debug.xcconfig */;
+			baseConfigurationReference = 39B0EC06BDBFA53C74CBF1D7EC1B25F3 /* Pods-myiosapp-myiosappUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1081,14 +1667,32 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
+		};
+		53CF6C4070BD3566041DAEE5D486B7C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6668396800CCABE72B35F324D638BD3 /* DateTimePicker.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DateTimePicker";
+				IBSC_MODULE = DateTimePicker;
+				INFOPLIST_FILE = "Target Support Files/DateTimePicker/ResourceBundle-DateTimePicker-DateTimePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = DateTimePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
 		};
 		56528BECA2AD1D9CE5C83162966FFFE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12D6D7A0B914E447BC5A19BEF8B21F7E /* DateTimePicker.debug.xcconfig */;
+			baseConfigurationReference = C897FD476DB3F67ECAF5E7DA151A92EC /* DateTimePicker.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1121,7 +1725,7 @@
 			};
 			name = Debug;
 		};
-		800DCAD38A1E0D4377748C220A518DDB /* Release */ = {
+		7999F33F3E6C4EB6B15BB206C8F46E40 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EE69FDE8CFB1C213D849515E2115D53A /* Pods-myiosapp.release.xcconfig */;
 			buildSettings = {
@@ -1226,7 +1830,7 @@
 		};
 		8CE5BA3EF4F6FABF028CE30772ECDA11 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F6139191C764BD1D4CDB8B18CD2A2B9 /* GoogleMaps.release.xcconfig */;
+			baseConfigurationReference = 8523FE3EC60DF209CB50AE2CDD9B949D /* GoogleMaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1279,6 +1883,44 @@
 			};
 			name = Debug;
 		};
+		9329EC9CFC53AB56DD64BD4B59AE9297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA51617B59FCC42B84BD632F2855A6FA /* Pods-myiosapp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-myiosapp/Pods-myiosapp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-myiosapp/Pods-myiosapp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		934DE3B686E8679D527C82BD0AE9E2E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E3A8794F65C129FFD428B72CEECBE205 /* Pods-myiosappTests.release.xcconfig */;
@@ -1318,9 +1960,118 @@
 			};
 			name = Release;
 		};
+		9441B55C1E4F7D0504C0ABA40F1DB305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5CE580FD1228674FE90FD03A6974FC6 /* fluid-slider.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/fluid-slider/fluid-slider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/fluid-slider/fluid-slider-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/fluid-slider/fluid-slider.modulemap";
+				PRODUCT_MODULE_NAME = fluid_slider;
+				PRODUCT_NAME = fluid_slider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9845157367388DD960F487573DA3327E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1DCA38AB40232921CB26B520C3C9F42 /* pop.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/pop/pop-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/pop/pop-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/pop/pop.modulemap";
+				PRODUCT_MODULE_NAME = pop;
+				PRODUCT_NAME = pop;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D119816B9ACC0F267E2259BDF36D6A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F9315E8670718A5904C44B6D2613C1D /* fluid-slider.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/fluid-slider/fluid-slider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/fluid-slider/fluid-slider-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/fluid-slider/fluid-slider.modulemap";
+				PRODUCT_MODULE_NAME = fluid_slider;
+				PRODUCT_NAME = fluid_slider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		AC9D6D39945AD10B65245EDCBE7DB704 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1A83007E49F5D539881C770012CED1D /* DateTimePicker.release.xcconfig */;
+			baseConfigurationReference = B6668396800CCABE72B35F324D638BD3 /* DateTimePicker.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1414,9 +2165,112 @@
 			};
 			name = Release;
 		};
-		C7C1077285703BE19E7CDCD431968A08 /* Release */ = {
+		BE6791824CFF41E78A5C2275D0E0E46C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39B0EC06BDBFA53C74CBF1D7EC1B25F3 /* Pods-myiosapp-myiosappUITests.release.xcconfig */;
+			baseConfigurationReference = F1A0AE33683F7F32EA4EC58893B08925 /* ViewAnimator.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ViewAnimator/ViewAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ViewAnimator/ViewAnimator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ViewAnimator/ViewAnimator.modulemap";
+				PRODUCT_MODULE_NAME = ViewAnimator;
+				PRODUCT_NAME = ViewAnimator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D71A42BD1F5825EC1CD0BA8567C92E5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6AEC26E1D05ED6F80DCC02371130659 /* ViewAnimator.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ViewAnimator/ViewAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ViewAnimator/ViewAnimator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ViewAnimator/ViewAnimator.modulemap";
+				PRODUCT_MODULE_NAME = ViewAnimator;
+				PRODUCT_NAME = ViewAnimator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E1E452060D51DF935547186CE54B26CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C63CCBBD614D09EF1924CAC0C6F1566 /* GoogleMaps.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F612EF94A7DB77BEC9A01721B62A809E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03975A695D7049069ED4F17A13FCCAAC /* GooglePlaces.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F738F86A2351BA61F78419094C6A35F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC1E129420313B245EC832CD0A62D3C /* Pods-myiosapp-myiosappUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1447,81 +2301,49 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		D4781B83E66432B9A4C86E860E6FC6CE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1A83007E49F5D539881C770012CED1D /* DateTimePicker.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DateTimePicker";
-				IBSC_MODULE = DateTimePicker;
-				INFOPLIST_FILE = "Target Support Files/DateTimePicker/ResourceBundle-DateTimePicker-DateTimePicker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = DateTimePicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		D8653F8B7D021BE97D40B9A2EAE1F8B5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12D6D7A0B914E447BC5A19BEF8B21F7E /* DateTimePicker.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DateTimePicker";
-				IBSC_MODULE = DateTimePicker;
-				INFOPLIST_FILE = "Target Support Files/DateTimePicker/ResourceBundle-DateTimePicker-DateTimePicker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = DateTimePicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
 			name = Debug;
 		};
-		E1E452060D51DF935547186CE54B26CC /* Debug */ = {
+		FD237B2F3A84D39385AADB277A0EC475 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB0446851F3319B3A19E65FAA1A25C18 /* GoogleMaps.debug.xcconfig */;
+			baseConfigurationReference = 63D8A119D1C471B917B1779E8BC2D410 /* pop.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/pop/pop-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/pop/pop-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
+				MODULEMAP_FILE = "Target Support Files/pop/pop.modulemap";
+				PRODUCT_MODULE_NAME = pop;
+				PRODUCT_NAME = pop;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		F612EF94A7DB77BEC9A01721B62A809E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C848A2EBF6A405DD8DEDDF520E0B6986 /* GooglePlaces.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
 		FE15983873284AD94B26A75BCDAE5E5C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1FBC8F6675D980A1A6161EA7C0A3034 /* GooglePlaces.release.xcconfig */;
+			baseConfigurationReference = 4A08864F0185DCAE4C7C7451F42B588D /* GooglePlaces.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1548,20 +2370,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BDC3BCBD271A7790ED2B8121CF29856 /* Build configuration list for PBXNativeTarget "DateTimePicker-DateTimePicker" */ = {
+		2FBF6F59FD92FEC5CE5B294C43C7848C /* Build configuration list for PBXNativeTarget "Pods-myiosapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8653F8B7D021BE97D40B9A2EAE1F8B5 /* Debug */,
-				D4781B83E66432B9A4C86E860E6FC6CE /* Release */,
+				9329EC9CFC53AB56DD64BD4B59AE9297 /* Debug */,
+				7999F33F3E6C4EB6B15BB206C8F46E40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3C679B3C874B39D5A83C40CD5C0F3BD4 /* Build configuration list for PBXNativeTarget "Pods-myiosapp" */ = {
+		3B02425A952441980DE5BD916BE7ED20 /* Build configuration list for PBXNativeTarget "Pods-myiosapp-myiosappUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A954539813169E61D75C197F06AB56D /* Debug */,
-				800DCAD38A1E0D4377748C220A518DDB /* Release */,
+				F738F86A2351BA61F78419094C6A35F2 /* Debug */,
+				42341903BBBB47CDDA20D88F3DA53959 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1584,20 +2406,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56D8D53A5643EF712B800CF25116D0D5 /* Build configuration list for PBXNativeTarget "Pods-myiosapp-myiosappUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				488282AC2CDE8AA32902116CFF53FBFD /* Debug */,
-				C7C1077285703BE19E7CDCD431968A08 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6E56A52DBF087D19D30B8B70CDFB15FB /* Build configuration list for PBXNativeTarget "MDatePickerView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38F04DEF91E452B443D396AD5A1237FA /* Debug */,
 				2FA810D2D6DE0A00500C09131F1A7198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BB19C2896F314C98545373986B846DC /* Build configuration list for PBXNativeTarget "pop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD237B2F3A84D39385AADB277A0EC475 /* Debug */,
+				9845157367388DD960F487573DA3327E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CE52EE30731A1CFE714C7BB0D087AFD /* Build configuration list for PBXNativeTarget "fluid-slider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D119816B9ACC0F267E2259BDF36D6A9 /* Debug */,
+				9441B55C1E4F7D0504C0ABA40F1DB305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7A0BD350A4B2D3C3A9CE13790C2DF83 /* Build configuration list for PBXNativeTarget "DateTimePicker-DateTimePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B3940A035278B6196183561656820D /* Debug */,
+				53CF6C4070BD3566041DAEE5D486B7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF2E1D529B7CACC3CFBA54A93344A897 /* Build configuration list for PBXNativeTarget "ViewAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6791824CFF41E78A5C2275D0E0E46C /* Debug */,
+				D71A42BD1F5825EC1CD0BA8567C92E5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

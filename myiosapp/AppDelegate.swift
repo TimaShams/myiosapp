@@ -83,6 +83,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         transc.setValue(student.lat, forKey: "lat")
         transc.setValue(student.long, forKey: "long")
         transc.setValue(student.image, forKey: "image")
+        transc.setValue(student.address, forKey: "address")
 
         do {
             try context.save()
@@ -116,9 +117,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let lat = trans.value(forKey: "lat") as! Double
                 let age = trans.value(forKey: "age") as! Int
                 let image = trans.value(forKey: "image") as! String
+                let address = trans.value(forKey: "address") as! String
 
                 
-                var student: MyStudent = MyStudent(id: id, fname: fname, lname: lname, gender: gender, course: course, age: age, lat: lat, long: long , image: image)
+                var student: MyStudent = MyStudent(id: id, fname: fname, lname: lname, gender: gender, course: course, age: age, lat: lat, long: long , image: image , address : address )
                 
                 let examItems : NSMutableSet = trans.mutableSetValue(forKey: "examItems")
                 
@@ -209,8 +211,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let lat    = student.value(forKey: "lat")    as! Double
             let age    = student.value(forKey: "age")    as! Int
             let image  = student.value(forKey: "image")  as! String
+            let address  = student.value(forKey: "address")  as! String
 
-            studentTemp = MyStudent(id: id, fname: fname, lname: lname, gender: gender, course: course, age: age, lat: lat, long: long , image: image)
+            studentTemp = MyStudent(id: id, fname: fname, lname: lname, gender: gender, course: course, age: age, lat: lat, long: long , image: image , address: address)
             
             let examItems : NSMutableSet = student.mutableSetValue(forKey: "examItems")
             
