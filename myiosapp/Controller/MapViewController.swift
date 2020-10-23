@@ -1,86 +1,143 @@
 import UIKit
-import GooglePlaces
+import MapKit
 
-class MapViewController: UIViewController, GMSAutocompleteViewControllerDelegate {
-    func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
-        print(1)
-        print(place.coordinate.latitude)
-        print(place.coordinate.longitude)
-
-    }
-    
-    func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
-        print(error)
-
-    }
-    
-    func wasCancelled(_ viewController: GMSAutocompleteViewController) {
-        print(3)
-
-    }
-    
-    
-    
-  override func viewDidLoad() {
-    makeButton()
-  }
-
-  // Present the Autocomplete view controller when the button is pressed.
-  @objc func autocompleteClicked(_ sender: UIButton) {
-    let autocompleteController = GMSAutocompleteViewController()
-    autocompleteController.delegate = self
-
-    // Specify the place data types to return.
-    let fields: GMSPlaceField = GMSPlaceField(rawValue: UInt(GMSPlaceField.name.rawValue) |
-      UInt(GMSPlaceField.placeID.rawValue))!
-    autocompleteController.placeFields = fields
-
-    // Specify a filter.
-    let filter = GMSAutocompleteFilter()
-    filter.type = .address
-    autocompleteController.autocompleteFilter = filter
-
-    // Display the autocomplete view controller.
-    present(autocompleteController, animated: true, completion: nil)
-  }
-
-  // Add a button to the view.
-  func makeButton() {
-    let btnLaunchAc = UIButton(frame: CGRect(x: 5, y: 150, width: 300, height: 35))
-    btnLaunchAc.backgroundColor = .blue
-    btnLaunchAc.setTitle("Launch autocomplete", for: .normal)
-    btnLaunchAc.addTarget(self, action: #selector(autocompleteClicked), for: .touchUpInside)
-    self.view.addSubview(btnLaunchAc)
-  }
-
+protocol HandleMapSearch {
+    func dropPinZoomIn(placemark:MKPlacemark)
 }
 
-extension ViewController: GMSAutocompleteViewControllerDelegate {
+protocol BacktoAdd {
+  func returnLocation(lat_ : Double  , long_ : Double)
+}
 
-  // Handle the user's selection.
-  func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
-    print("Place name: \(place.name)")
-    print("Place ID: \(place.placeID)")
-    print("Place attributions: \(place.attributions)")
-    dismiss(animated: true, completion: nil)
-  }
 
-  func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
-    // TODO: handle the error.
-    print("Error: ", error.localizedDescription)
-  }
-
-  // User canceled the operation.
-  func wasCancelled(_ viewController: GMSAutocompleteViewController) {
-    dismiss(animated: true, completion: nil)
-  }
+class MapViewController : UIViewController {
     
-  // Turn the network activity indicator on and off again.
-  func didRequestAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
-    UIApplication.shared.isNetworkActivityIndicatorVisible = true
-  }
+    var mainViewController:AddRecordController?
+    
+    var delegate: BacktoAdd?
+    var selectedPin:MKPlacemark? = nil
+    let locationManager = CLLocationManager()
+    var resultSearchController:UISearchController? = nil
+//    @IBOutlet var mapView: UIMapView!
+//    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var mapView: MKMapView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
+        
+        let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
+        locationSearchTable.handleMapSearchDelegate = self
 
-  func didUpdateAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
-    UIApplication.shared.isNetworkActivityIndicatorVisible = false
-  }
+        resultSearchController = UISearchController(searchResultsController: locationSearchTable)
+        resultSearchController?.searchResultsUpdater = locationSearchTable
+        
+        let searchBar = resultSearchController!.searchBar
+        searchBar.sizeToFit()
+        searchBar.placeholder = "Search for places"
+        navigationItem.titleView = resultSearchController?.searchBar
+
+        resultSearchController?.hidesNavigationBarDuringPresentation = false
+        resultSearchController?.dimsBackgroundDuringPresentation = true
+        definesPresentationContext = true
+        
+        locationSearchTable.mapView = mapView
+    }
+    
+    @objc func getDirections(){
+        if let selectedPin = selectedPin {
+            let mapItem = MKMapItem(placemark: selectedPin)
+            let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
+            mapItem.openInMaps(launchOptions: launchOptions)
+        }
+    }
+}
+
+extension MapViewController : CLLocationManagerDelegate {
+     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            locationManager.requestLocation()
+        }
+    }
+    
+     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+            let region = MKCoordinateRegion(center: location.coordinate, span: span)
+            mapView.setRegion(region, animated: true)
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("error:: (error)")
+    }
+}
+
+extension MapViewController: HandleMapSearch {
+    func dropPinZoomIn(placemark:MKPlacemark){
+        // cache the pin
+        selectedPin = placemark
+        // clear existing pins
+        mapView.removeAnnotations(mapView.annotations)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = placemark.coordinate
+        annotation.title = placemark.name
+        if let city = placemark.locality,
+            let state = placemark.administrativeArea {
+            annotation.subtitle = "\(city) \(state)"
+        }
+        mapView.addAnnotation(annotation)
+        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let region = MKCoordinateRegion(center: placemark.coordinate, span: span)
+        mapView.setRegion(region, animated: true)
+    
+        print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+        print(placemark.coordinate.latitude)
+        self.delegate?.returnLocation(lat_: placemark.coordinate.latitude , long_: placemark.coordinate.longitude )
+        
+        mainViewController?.onUserAction(data: "The quick brown fox jumps over the lazy dog")
+
+        NotificationCenter.default.post(name: AddRecordController.notificationName, object: nil, userInfo:["lat": placemark.coordinate.latitude, "long": placemark.coordinate.longitude])
+        
+        NotificationCenter.default.post(name: DetailsViewController.notificationName, object: nil, userInfo:["lat": placemark.coordinate.latitude, "long": placemark.coordinate.longitude])
+
+        
+        self.dismiss(animated: true, completion: nil)
+
+    }
+    
+    
+    
+}
+
+extension LocationSearchTable {
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        let selectedItem = matchingItems[indexPath.row].placemark
+        handleMapSearchDelegate?.dropPinZoomIn(placemark: selectedItem)
+        dismiss(animated: true, completion: nil)
+    }
+}
+
+extension MapViewController : MKMapViewDelegate {
+    func mapView(_: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?{
+        if annotation is MKUserLocation {
+            //return nil so map view draws "blue dot" for standard user location
+            return nil
+        }
+        let reuseId = "pin"
+        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
+        pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+        pinView?.pinTintColor = UIColor.orange
+        pinView?.canShowCallout = true
+        let smallSquare = CGSize(width: 30, height: 30)
+        let button = UIButton(frame: CGRect(origin: CGPoint(x: 0,y :0), size: smallSquare))
+        button.setBackgroundImage(UIImage(named: "car"), for: .normal)
+        button.addTarget(self, action: #selector(MapViewController.getDirections), for: .touchUpInside)
+        pinView?.leftCalloutAccessoryView = button
+        return pinView
+    }
 }

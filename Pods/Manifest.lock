@@ -1,4 +1,5 @@
 PODS:
+  - DateTimePicker (2.5.0)
   - GoogleMaps (3.10.0):
     - GoogleMaps/Maps (= 3.10.0)
   - GoogleMaps/Base (3.10.0)
@@ -6,20 +7,27 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (3.10.0):
     - GoogleMaps/Base (= 3.10.0)
+  - MDatePickerView (1.2.3)
 
 DEPENDENCIES:
+  - DateTimePicker
   - GoogleMaps (= 3.10.0)
   - GooglePlaces (= 3.10.0)
+  - MDatePickerView
 
 SPEC REPOS:
   trunk:
+    - DateTimePicker
     - GoogleMaps
     - GooglePlaces
+    - MDatePickerView
 
 SPEC CHECKSUMS:
+  DateTimePicker: 9a370913607f360b67ecfc7dcf331911c9b407a6
   GoogleMaps: 8c080862ff2748ece9929471b30feb56a6c5079d
   GooglePlaces: 9a6f5f3a0c88da2aa1bf7426a65d3e004f5e69a1
+  MDatePickerView: e26233885de2f13659c6101b3ed265eacf92c078
 
-PODFILE CHECKSUM: 0c1cabd5cb7f7e3ca7020a2e255403b78685cb62
+PODFILE CHECKSUM: d5df3ee9b61ea0ca37d552eefb36d0582e40171a
 
 COCOAPODS: 1.9.3

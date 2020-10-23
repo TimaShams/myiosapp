@@ -17,6 +17,14 @@ struct MyStudent {
     var age: Int
     var lat  :Double
     var long : Double
+    var exams: [MyExam]?
+    var image: String
 }
 
 
+struct MyExam : Hashable {
+    var id : Int
+    var unit: String
+    var date: Date
+    var location: String
+}

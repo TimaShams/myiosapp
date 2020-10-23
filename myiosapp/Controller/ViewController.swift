@@ -16,9 +16,6 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBAction func addStudent(_ sender: Any) {
-        //present(AddRecordController(), animated: true, completion: nil)
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         students.count
@@ -30,6 +27,7 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        //print(students[indexPath.row])
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let newVC = storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
         newVC.studentVar = students[indexPath.row]
@@ -45,6 +43,7 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
 
         cell.course.text = self.students[indexPath.row].course
         cell.location.text = String(self.students[indexPath.row].lat)
+        cell.avatarImage.image = UIImage(named: students[indexPath.row].image)
 
         return cell
     }
@@ -72,64 +71,27 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
         tableView.dataSource = self
         
         
+       
+        
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        print("Will appear code")
+        //print("Will appear code")
         getMyInfo()
         self.tableView.reloadData()
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        //appDelegate.addExam()
     }
     
+    let appDelegate = UIApplication.shared.delegate
     
     func getMyInfo(){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        self.students = appDelegate.getstudentInfo()
+        self.students = appDelegate.getAllStudents()
+        print(appDelegate.isUniqueId(id: 2))
     }
-    
-//
-//    func getPersonInfo () {
-//
-//        // j[vfm
-//        students = []
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.dateFormat = "dd-MM-yyyy"
-//
-//        //create a fetch request, telling it about the entity
-//        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Person")
-//
-//        do {
-//            //go get the results
-//            let searchResults = try getContext().fetch(fetchRequest)
-//
-//            //I like to check the size of the returned results!
-//            print ("num of results = \(searchResults.count)")
-//
-//            //You need to convert to NSManagedObject to use 'for' loops
-//            for trans in searchResults as [NSManagedObject] {
-//
-//                let id = trans.value(forKey: "identification") as! Int
-//                let surname = trans.value(forKey: "surname") as! String
-//                let givenName = trans.value(forKey: "givenName") as! String
-//                let strDate = dateFormatter.string(from: trans.value(forKey: "dateOfBirth") as! Date)
-//                let student: MyStudent = MyStudent(id: id, fname: surname, lname: givenName, gender: "Male", dob: strDate, course: "MICT", lat: 0.0, long: 0.0)
-//                students.append(student)
-//                //info = info + id + ", " + givenName + " " + surname + ", " + strDate + "\n"
-//            }
-//        } catch {
-//            print("Error with request: \(error)")
-//        }
-//        tableView.reloadData()
-//
-//    }
-//
-    
-    func getContext () -> NSManagedObjectContext {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        return appDelegate.persistentContainer.viewContext
-    }
-    
 
 
 }

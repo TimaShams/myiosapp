@@ -13,7 +13,7 @@
 			buildPhases = (
 			);
 			dependencies = (
-				CCDE3DF5458240F3259D88C46803DEC8 /* PBXTargetDependency */,
+				E5B82B1B3399F051D08AD3140D0E175C /* PBXTargetDependency */,
 			);
 			name = GooglePlaces;
 		};
@@ -29,54 +29,112 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		119E280C2D985B7C3901D2FDAF25871B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		2C52D3937454539DEFDABBDA69DFEAA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		35A0E324BDD2B80517591A67A91A8B43 /* Pods-myiosappTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E075F068CF3E0F62586FA6985CEAA0 /* Pods-myiosappTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66803F3D9A5FEBA6DEC080D18483A70A /* Pods-myiosapp-myiosappUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E6038172B7DC60094DB08C045EC250 /* Pods-myiosapp-myiosappUITests-dummy.m */; };
-		68C28822AC7E7519E7CBD09CB3253523 /* Pods-myiosapp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DAA32B4BD96A167FC9A37B37992700FA /* Pods-myiosapp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8306861861D971594FA56C5B4EC6EBDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		93B72A81D6BD44A5FE9EC807562EF380 /* Pods-myiosappTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 472058EDE4E5AC417196FAE121FFC072 /* Pods-myiosappTests-dummy.m */; };
-		9F73B09AAC8DF52B5DB6143320137603 /* Pods-myiosapp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC70BB393D5BAB971132074BD595D18F /* Pods-myiosapp-dummy.m */; };
-		BE7BF8E941B53A19DDD4218706EC0E51 /* Pods-myiosapp-myiosappUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C7B83FEC4FF5F0D7FA01FB3A70F59DA /* Pods-myiosapp-myiosappUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00094E93266873E86DE2435119375A7D /* MDatePickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3654FF8B5E1FC110816E91AB0A10AD /* MDatePickerView-dummy.m */; };
+		000BCCDDE27A42800C43711FA062FE7F /* DateTimePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = C606977201DAA31DECAF930F0221B5AA /* DateTimePicker.xib */; };
+		00CF9F2EA1047BBA5A8DA984A2A0AE35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		1614348BFE1B6F09E37A13885BDD46EF /* DateTimePicker+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECFDC0C7859C01CF5684A3168D5EA83 /* DateTimePicker+UITableView.swift */; };
+		165934623715D9E5C7FF1748B1D7C18C /* Bundle+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506E6FD6E7A21F309909BA7260F04BB6 /* Bundle+Resource.swift */; };
+		1C306DEB5FA0D4EB305CD7BB068979D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		21E5AF21BEC8C0F09B1654E6DD3D91AB /* DateTimePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C82E6CD9B59836EE5A790487BA7FD21F /* DateTimePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22279843759931AB1B3207F4E9464594 /* FullDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FD9D1F6DFB57F42897D8A319FC24D4 /* FullDateCollectionViewCell.swift */; };
+		2A1D48DB941C9E09C13B484622D96122 /* MDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44F2262572A3FD3AC4A43ACDADB88E /* MDatePickerView.swift */; };
+		310C9C13929C231E3389918DF1749777 /* ColDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F415658E0204343B6F601B30F08D2B2 /* ColDateCell.swift */; };
+		35A0E324BDD2B80517591A67A91A8B43 /* Pods-myiosappTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 743B33AA5296FA3550E31999BD1FF76D /* Pods-myiosappTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38556430DE05DB379B6BEB51FFC3AB7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		3ABBFC464400F6BA9BC5436517DDAB73 /* DateTimePicker+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86599D347FE1FC32B756C3EF83374B7 /* DateTimePicker+CollectionView.swift */; };
+		3BA63CDA93DF2AE03083C4A3A242635D /* Pods-myiosapp-myiosappUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68D272F058CB4648D6A5BCB5972DB60C /* Pods-myiosapp-myiosappUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5136442ADA09DCB9B949A6BFB5F4E7F2 /* Pods-myiosapp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A54EBB7DEB90AEE38AFF4EAAE069FDE5 /* Pods-myiosapp-dummy.m */; };
+		555FB7685768C1DFA5621E415C2783A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		74CBDE6C227D7FBA43DEBD76A32BF7F9 /* DateTimePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE24CAAB508E4C5228DCA8692019D94 /* DateTimePicker-dummy.m */; };
+		75280882EFE49C21DCED564E79B9A9A9 /* DateTimePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B04C1EBC2EC90A2DFFEDDD0CF4473840 /* DateTimePicker.bundle */; };
+		8306861861D971594FA56C5B4EC6EBDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		87E0F8B9B06BC18A48633C5FFC99B270 /* MDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = DD1EC781608350B3E38352EC8193E470 /* MDatePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93B72A81D6BD44A5FE9EC807562EF380 /* Pods-myiosappTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B45D7C17C1222991473943518DB21D61 /* Pods-myiosappTests-dummy.m */; };
+		A12D588300E650EAC1DA6C31E60D3E9A /* Pods-myiosapp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8AC0C2AF0E876A137EDC1C598BE6427 /* Pods-myiosapp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A699148E1B7662D53864D22778E6A0D4 /* MDatePickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 495D1FB069D55A94AF50B6732A4D6F2B /* MDatePickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF625052D99A843D4312F581DCE17815 /* TextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF715F38EAB8F62B4DE8CF6B21483A /* TextLabel.swift */; };
+		B2C565D88D7E1D7205015F64CDD0F03F /* StepCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22568005AC00C40AE94161CB6FE1F97 /* StepCollectionViewFlowLayout.swift */; };
+		B6C64F8A2D8D2A7262CEBCF6ACCE124A /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD7ED44F2D148479BDC094CD683236D /* CalendarController.swift */; };
+		C27B89BC876933074C8A4D4998DAC4B7 /* ColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2D7DEA27B24EAB73D1C6ABFFDC492 /* ColCell.swift */; };
+		E7A56871A06A700D6BF7140281493FAB /* DateTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E40F1DC639C658D8102A2A2303C70 /* DateTimePicker.swift */; };
+		E98CB7FA4F9A67C1EC24E6C562B9217F /* FullDateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C25EFD0EE532B96879B68A4F87094E3F /* FullDateCollectionViewCell.xib */; };
+		EF113308A90A57DB288CB2579D2FF1A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		F7E4D8CC41357A506980E7E789DE2139 /* Pods-myiosapp-myiosappUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0568F49FBD0984DB59CC5F0FF0E3D558 /* Pods-myiosapp-myiosappUITests-dummy.m */; };
+		F8EFAA181BDDCA4B3C34D7891A46F8BB /* CustomDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CD535A91B0DFA77E56E32CE105DEBC /* CustomDatePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		108F9196136F85067DA2F6284C12312A /* PBXContainerItemProxy */ = {
+		271E5F8CA9BC1D7722993C0F09AADB57 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
 			remoteInfo = GoogleMaps;
 		};
-		4884F35308F0091337FE2F0FD0E654DD /* PBXContainerItemProxy */ = {
+		3DCD9951B1BA4D6D72721E40FCB3BBB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		4EF98A736FF5D957E98954E180F935D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
 			remoteInfo = GooglePlaces;
 		};
-		6E1512E0533F0C00DFEE9020892615E9 /* PBXContainerItemProxy */ = {
+		5F869F89F3EB4DDB1E4B7D875F2A1883 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
-			remoteInfo = GoogleMaps;
+			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
+			remoteInfo = GooglePlaces;
 		};
-		87A4FA1EA6CA01053C575C9D79C6974F /* PBXContainerItemProxy */ = {
+		7889D5132E6607FB80BD88BCEEAA214B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31E89965CFA54DE4BCC99C05112D7483;
+			remoteInfo = DateTimePicker;
+		};
+		7F23C4386C73BF32E479C153A2C33B12 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2A4954A4FAA4F3EEC3167E1F7D061B82;
 			remoteInfo = "Pods-myiosapp";
 		};
-		B467F89794B82B4397C154DB3BD13304 /* PBXContainerItemProxy */ = {
+		B87D1264B16C8AA4F91336A5442C787F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
-			remoteInfo = GooglePlaces;
+			remoteGlobalIDString = 31E89965CFA54DE4BCC99C05112D7483;
+			remoteInfo = DateTimePicker;
 		};
-		DBD8B66053F689EA9553F27790863354 /* PBXContainerItemProxy */ = {
+		C0C218CEB66B0E558A00A0F4541A4AA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF030B04A631ADB65190BABE8925EC5;
+			remoteInfo = MDatePickerView;
+		};
+		C63322E21E206F29A27F788C1667BE3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF030B04A631ADB65190BABE8925EC5;
+			remoteInfo = MDatePickerView;
+		};
+		D51F5E171728B0B0606D7F39DD501A6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0775EC5F6DBAA5D2C37BCFB14908273;
+			remoteInfo = "DateTimePicker-DateTimePicker";
+		};
+		F8FDCF4E6B6CA2CE4870501B8E792E25 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -86,55 +144,91 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02CB6781C9B70C32E799EC9C8E828D3D /* Pods-myiosapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosapp.debug.xcconfig"; sourceTree = "<group>"; };
+		018B2C5DB7D6690A4F2A09410D73F184 /* Pods-myiosapp-myiosappUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosapp-myiosappUITests-Info.plist"; sourceTree = "<group>"; };
+		0568F49FBD0984DB59CC5F0FF0E3D558 /* Pods-myiosapp-myiosappUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-myiosapp-myiosappUITests-dummy.m"; sourceTree = "<group>"; };
 		0A0F8343E0622641EE4D6610159CFEF3 /* Pods_myiosapp_myiosappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_myiosapp_myiosappUITests.framework; path = "Pods-myiosapp-myiosappUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C7B83FEC4FF5F0D7FA01FB3A70F59DA /* Pods-myiosapp-myiosappUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-myiosapp-myiosappUITests-umbrella.h"; sourceTree = "<group>"; };
-		2281769D8A67492CB8E3C0B5670606BC /* Pods-myiosapp-myiosappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosapp-myiosappUITests.release.xcconfig"; sourceTree = "<group>"; };
-		23F651581A8A5A322B46718DD384709B /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		2A351643B5110DBE42F5397873DBA146 /* Pods-myiosapp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-myiosapp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		119CE9DBC2F06B9E874560517F6F3A38 /* Pods-myiosappTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-myiosappTests.modulemap"; sourceTree = "<group>"; };
+		12D6D7A0B914E447BC5A19BEF8B21F7E /* DateTimePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTimePicker.debug.xcconfig; sourceTree = "<group>"; };
+		1D44F2262572A3FD3AC4A43ACDADB88E /* MDatePickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MDatePickerView.swift; path = MDatePickerView/MDatePickerView.swift; sourceTree = "<group>"; };
+		1F290DF3FF45BF5729138E36759CE418 /* Pods-myiosappTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosappTests-Info.plist"; sourceTree = "<group>"; };
+		22CD535A91B0DFA77E56E32CE105DEBC /* CustomDatePickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDatePickerView.swift; path = MDatePickerView/CustomDatePickerView.swift; sourceTree = "<group>"; };
+		234E40F1DC639C658D8102A2A2303C70 /* DateTimePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTimePicker.swift; path = Source/DateTimePicker.swift; sourceTree = "<group>"; };
+		2518AB918B2E0C87D18F047A69F71884 /* Pods-myiosapp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosapp-acknowledgements.plist"; sourceTree = "<group>"; };
 		2AA62DE193049CD2A2378DB442EAD09B /* Pods_myiosappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_myiosappTests.framework; path = "Pods-myiosappTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BB03EDBC5F9E754A789D86574578C4B /* Pods-myiosappTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosappTests-Info.plist"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		360C619B4D20132B4890F57260641507 /* Pods-myiosappTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosappTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		472058EDE4E5AC417196FAE121FFC072 /* Pods-myiosappTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-myiosappTests-dummy.m"; sourceTree = "<group>"; };
-		4E256CB72E069B4C851E32F3924687B3 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
-		50E6038172B7DC60094DB08C045EC250 /* Pods-myiosapp-myiosappUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-myiosapp-myiosappUITests-dummy.m"; sourceTree = "<group>"; };
-		51030B8B045E6CE10948ADA0A04A009A /* Pods-myiosappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosappTests.debug.xcconfig"; sourceTree = "<group>"; };
-		57511491B4E0B584131B822F9EB0F9FD /* Pods-myiosapp-myiosappUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-myiosapp-myiosappUITests-resources.sh"; sourceTree = "<group>"; };
-		6384CDE0BFD9261EBA9B17A5B6BECD01 /* Pods-myiosapp-myiosappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosapp-myiosappUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		6537A4F87391D86091126D93CBAA5E46 /* Pods-myiosappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosappTests.release.xcconfig"; sourceTree = "<group>"; };
-		66AB28E84A974D73EF342AEABEFEB52B /* Pods-myiosapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosapp.release.xcconfig"; sourceTree = "<group>"; };
-		66E075F068CF3E0F62586FA6985CEAA0 /* Pods-myiosappTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-myiosappTests-umbrella.h"; sourceTree = "<group>"; };
-		6CC35A4037FF19BAC9D36EF9F3EFAE65 /* Pods-myiosapp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosapp-Info.plist"; sourceTree = "<group>"; };
-		73DF374777FDD5AE7F45BF8626BE9F62 /* Pods-myiosappTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-myiosappTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8704E7734F2D03B8EF86CFC319C943BC /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
-		8EBF4D65DD3B0EDCC39AF1C317B7FF1D /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		9C729F3714998C7C3F3D788777A06264 /* GooglePlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.debug.xcconfig; sourceTree = "<group>"; };
+		2B6ED317A276CF18BFC77EBEDED2CC8C /* DateTimePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DateTimePicker.modulemap; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		330B9CD75AEBD651CED37AE8F639B90E /* Pods-myiosapp-myiosappUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosapp-myiosappUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		38266E982935A717CCA2CFEA126941A9 /* Pods-myiosappTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosappTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		397348F7C640CB778BAA7827358F0528 /* MDatePickerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MDatePickerView.release.xcconfig; sourceTree = "<group>"; };
+		39B0EC06BDBFA53C74CBF1D7EC1B25F3 /* Pods-myiosapp-myiosappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosapp-myiosappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3AB7633D9A72E16F25FAF90190F735C0 /* Pods-myiosapp-myiosappUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-myiosapp-myiosappUITests-frameworks.sh"; sourceTree = "<group>"; };
+		40AF715F38EAB8F62B4DE8CF6B21483A /* TextLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextLabel.swift; path = MDatePickerView/Utils/TextLabel.swift; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		495D1FB069D55A94AF50B6732A4D6F2B /* MDatePickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MDatePickerView-umbrella.h"; sourceTree = "<group>"; };
+		506E6FD6E7A21F309909BA7260F04BB6 /* Bundle+Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Resource.swift"; path = "Source/Bundle+Resource.swift"; sourceTree = "<group>"; };
+		594A510EAD2FCB8143D67386E9E5183C /* MDatePickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MDatePickerView-prefix.pch"; sourceTree = "<group>"; };
+		5C056CF543B84F753C429C1A1E04A51E /* DateTimePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTimePicker-prefix.pch"; sourceTree = "<group>"; };
+		68D272F058CB4648D6A5BCB5972DB60C /* Pods-myiosapp-myiosappUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-myiosapp-myiosappUITests-umbrella.h"; sourceTree = "<group>"; };
+		6F6139191C764BD1D4CDB8B18CD2A2B9 /* GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.release.xcconfig; sourceTree = "<group>"; };
+		743B33AA5296FA3550E31999BD1FF76D /* Pods-myiosappTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-myiosappTests-umbrella.h"; sourceTree = "<group>"; };
+		7CCDE40C66A7132E879998FA714EE8DB /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		7CE24CAAB508E4C5228DCA8692019D94 /* DateTimePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTimePicker-dummy.m"; sourceTree = "<group>"; };
+		827E92B541763036E15800A565F87383 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		830564AE1207736FC61654C3F91CC2A9 /* MDatePickerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MDatePickerView.debug.xcconfig; sourceTree = "<group>"; };
+		84B843FF6CF907B9F0350B5BB4C86A0F /* MDatePickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MDatePickerView.framework; path = MDatePickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BC162C5876417ADE4A44494C2DFB1F /* Pods-myiosapp-myiosappUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-myiosapp-myiosappUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		87EFCF063034E0850A237436CDBB5130 /* Pods-myiosapp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-myiosapp-frameworks.sh"; sourceTree = "<group>"; };
+		8BC1E129420313B245EC832CD0A62D3C /* Pods-myiosapp-myiosappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosapp-myiosappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8ECFDC0C7859C01CF5684A3168D5EA83 /* DateTimePicker+UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateTimePicker+UITableView.swift"; path = "Source/DateTimePicker+UITableView.swift"; sourceTree = "<group>"; };
+		8F0AEF4F646A5A6F7CB7843D8CB2D0BE /* Pods-myiosapp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-myiosapp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8F415658E0204343B6F601B30F08D2B2 /* ColDateCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColDateCell.swift; path = MDatePickerView/ColDateCell.swift; sourceTree = "<group>"; };
+		9B25A40073C4478922C0A2F87102A5AD /* Pods-myiosapp-myiosappUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-myiosapp-myiosappUITests-resources.sh"; sourceTree = "<group>"; };
+		9B77A7CEE985E68C58489789DDFB5E49 /* Pods-myiosapp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-myiosapp.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E830DD9530F13E283DEC78352A2F03D /* GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.release.xcconfig; sourceTree = "<group>"; };
-		A253BD96D4092E3289FF3EFADD90D0C2 /* Pods-myiosappTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-myiosappTests.modulemap"; sourceTree = "<group>"; };
-		A4658982FD89F2A77A672D9AFC716B28 /* GooglePlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.release.xcconfig; sourceTree = "<group>"; };
-		A6D6BD265769B4C0FE5B9DD65E7BF1E9 /* Pods-myiosapp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-myiosapp.modulemap"; sourceTree = "<group>"; };
-		AB81942E53FA1A44FEE0693EBCDB4A02 /* Pods-myiosapp-myiosappUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-myiosapp-myiosappUITests.modulemap"; sourceTree = "<group>"; };
-		BC70BB393D5BAB971132074BD595D18F /* Pods-myiosapp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-myiosapp-dummy.m"; sourceTree = "<group>"; };
+		A1FBC8F6675D980A1A6161EA7C0A3034 /* GooglePlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.release.xcconfig; sourceTree = "<group>"; };
+		A216CE184E808B5C983069B9F9BDEB78 /* Pods-myiosapp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosapp-Info.plist"; sourceTree = "<group>"; };
+		A54EBB7DEB90AEE38AFF4EAAE069FDE5 /* Pods-myiosapp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-myiosapp-dummy.m"; sourceTree = "<group>"; };
+		A8AC0C2AF0E876A137EDC1C598BE6427 /* Pods-myiosapp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-myiosapp-umbrella.h"; sourceTree = "<group>"; };
+		ADD7ED44F2D148479BDC094CD683236D /* CalendarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarController.swift; path = MDatePickerView/Utils/CalendarController.swift; sourceTree = "<group>"; };
+		B04C1EBC2EC90A2DFFEDDD0CF4473840 /* DateTimePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DateTimePicker.bundle; path = "DateTimePicker-DateTimePicker.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26CB6AD16677CB8E5B8A5059EA05677 /* DateTimePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DateTimePicker.framework; path = DateTimePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45D7C17C1222991473943518DB21D61 /* Pods-myiosappTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-myiosappTests-dummy.m"; sourceTree = "<group>"; };
+		B868075FFD5F005CD19CBF222EA943FD /* DateTimePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DateTimePicker-Info.plist"; sourceTree = "<group>"; };
+		BA3654FF8B5E1FC110816E91AB0A10AD /* MDatePickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MDatePickerView-dummy.m"; sourceTree = "<group>"; };
+		BA53CB13D4CF14A20A625C87AB1A2D5E /* Pods-myiosappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB463965F8BFCCF39D6C2E616093F318 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		C0FD9D1F6DFB57F42897D8A319FC24D4 /* FullDateCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullDateCollectionViewCell.swift; path = Source/FullDateCollectionViewCell.swift; sourceTree = "<group>"; };
+		C25EFD0EE532B96879B68A4F87094E3F /* FullDateCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FullDateCollectionViewCell.xib; path = Source/FullDateCollectionViewCell.xib; sourceTree = "<group>"; };
 		C40315251ECD2279C5597C2202A6DC25 /* Pods_myiosapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_myiosapp.framework; path = "Pods-myiosapp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C80DF5EE0730B07FA8A8FD02F030E030 /* Pods-myiosapp-myiosappUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-myiosapp-myiosappUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D12CCA5A488CEC97BD04AABA30ED1F37 /* Pods-myiosapp-myiosappUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosapp-myiosappUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D75BCA9C63CB177C62B53662ADB84E2E /* Pods-myiosapp-myiosappUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosapp-myiosappUITests-Info.plist"; sourceTree = "<group>"; };
-		DAA32B4BD96A167FC9A37B37992700FA /* Pods-myiosapp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-myiosapp-umbrella.h"; sourceTree = "<group>"; };
-		E1B942485CC387F41A3FF9ED4CDBB2E2 /* Pods-myiosapp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-myiosapp-acknowledgements.plist"; sourceTree = "<group>"; };
-		E74A4A5FDDD4F90A8A55EB206C7681BC /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		EA9BCF510D35D42077E93FD47E4CABBF /* Pods-myiosapp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-myiosapp-resources.sh"; sourceTree = "<group>"; };
-		F8C3BB261D41EB0A05EAE541E50E3DAB /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		FA12A18F12A10F6BE94B10C390987756 /* GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.debug.xcconfig; sourceTree = "<group>"; };
+		C606977201DAA31DECAF930F0221B5AA /* DateTimePicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DateTimePicker.xib; path = Source/DateTimePicker.xib; sourceTree = "<group>"; };
+		C82E6CD9B59836EE5A790487BA7FD21F /* DateTimePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTimePicker-umbrella.h"; sourceTree = "<group>"; };
+		C848A2EBF6A405DD8DEDDF520E0B6986 /* GooglePlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.debug.xcconfig; sourceTree = "<group>"; };
+		CB0446851F3319B3A19E65FAA1A25C18 /* GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.debug.xcconfig; sourceTree = "<group>"; };
+		CF5BB571157902163AECBE5D8DD73AE1 /* ResourceBundle-DateTimePicker-DateTimePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-DateTimePicker-DateTimePicker-Info.plist"; sourceTree = "<group>"; };
+		D2AB83AC92CAF12305F4685BFBDF6E4E /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		D708B9DB9EBC27D45B2DC3637A8CAAE3 /* Pods-myiosappTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-myiosappTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DD1EC781608350B3E38352EC8193E470 /* MDatePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDatePickerView.h; path = MDatePickerView/MDatePickerView.h; sourceTree = "<group>"; };
+		E1B2D7DEA27B24EAB73D1C6ABFFDC492 /* ColCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColCell.swift; path = MDatePickerView/Utils/ColCell.swift; sourceTree = "<group>"; };
+		E1EDBCB98529BFF3B762C4B4F7A52B6D /* Pods-myiosapp-myiosappUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-myiosapp-myiosappUITests.modulemap"; sourceTree = "<group>"; };
+		E22568005AC00C40AE94161CB6FE1F97 /* StepCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepCollectionViewFlowLayout.swift; path = Source/StepCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		E3A8794F65C129FFD428B72CEECBE205 /* Pods-myiosappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosappTests.release.xcconfig"; sourceTree = "<group>"; };
+		E910E12B73DA9388A999291B5231E0E9 /* Pods-myiosapp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-myiosapp-resources.sh"; sourceTree = "<group>"; };
+		EA7472AB551C52DE065713A47E38EB5F /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		EE69FDE8CFB1C213D849515E2115D53A /* Pods-myiosapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosapp.release.xcconfig"; sourceTree = "<group>"; };
+		F1A83007E49F5D539881C770012CED1D /* DateTimePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTimePicker.release.xcconfig; sourceTree = "<group>"; };
+		F2355B13B0A53B202CDFC170524D4311 /* MDatePickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MDatePickerView-Info.plist"; sourceTree = "<group>"; };
+		F86599D347FE1FC32B756C3EF83374B7 /* DateTimePicker+CollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateTimePicker+CollectionView.swift"; path = "Source/DateTimePicker+CollectionView.swift"; sourceTree = "<group>"; };
+		FA51617B59FCC42B84BD632F2855A6FA /* Pods-myiosapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-myiosapp.debug.xcconfig"; sourceTree = "<group>"; };
+		FBBADDFEA7A81C6C62197DBD94A1D719 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		FE0BBFDBC4221DDD6D5A110E7E53F64C /* MDatePickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MDatePickerView.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1B0F76C3093CEEF47BA9235064962E69 /* Frameworks */ = {
+		263DC6C0F2934EBD9B7B06E0D0F746B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				119E280C2D985B7C3901D2FDAF25871B /* Foundation.framework in Frameworks */,
+				EF113308A90A57DB288CB2579D2FF1A6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,198 +240,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4686CCA536EDABE86D0380AF349EA54 /* Frameworks */ = {
+		5F82B0625765D6A52E4AC4A1161B9BEE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C52D3937454539DEFDABBDA69DFEAA5 /* Foundation.framework in Frameworks */,
+				00CF9F2EA1047BBA5A8DA984A2A0AE35 /* Foundation.framework in Frameworks */,
+				38556430DE05DB379B6BEB51FFC3AB7C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ECDB948C72E6ECB0DF3BD9D5D3BF52E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C306DEB5FA0D4EB305CD7BB068979D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D58A30220334CDA2883A52A42B96F64E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C3A18D6A5F35B2DA3B64EC3783B521 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				555FB7685768C1DFA5621E415C2783A4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01178CDE9E7F5E928EDC642D6B628FE0 /* Frameworks */ = {
+		014726A509CC7D0CAA35981F16F74FFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8EBF4D65DD3B0EDCC39AF1C317B7FF1D /* GoogleMapsBase.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		0883B537F1FDF67277437486C4066E63 /* GoogleMaps */ = {
-			isa = PBXGroup;
-			children = (
-				E86A34344FF943F078B6064D778D230A /* Base */,
-				A38D68C78C032F2CEEEEED36818D37F0 /* Maps */,
-				6C8EBDD6FEE473D639E9FF7A802869C0 /* Support Files */,
-			);
-			name = GoogleMaps;
-			path = GoogleMaps;
-			sourceTree = "<group>";
-		};
-		3582EF5F85D78C1DB07F01BC0BFA167E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9C729F3714998C7C3F3D788777A06264 /* GooglePlaces.debug.xcconfig */,
-				A4658982FD89F2A77A672D9AFC716B28 /* GooglePlaces.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GooglePlaces";
-			sourceTree = "<group>";
-		};
-		3FE4CC4B7B0241873FFF96886667937D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8704E7734F2D03B8EF86CFC319C943BC /* GooglePlaces.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		446F55954A1B4F44697D4CD53ABC566B /* GooglePlaces */ = {
-			isa = PBXGroup;
-			children = (
-				3FE4CC4B7B0241873FFF96886667937D /* Frameworks */,
-				7DDA47E3D8C82ADCB64F7C6FC9641D65 /* Resources */,
-				3582EF5F85D78C1DB07F01BC0BFA167E /* Support Files */,
-			);
-			name = GooglePlaces;
-			path = GooglePlaces;
-			sourceTree = "<group>";
-		};
-		6C8EBDD6FEE473D639E9FF7A802869C0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FA12A18F12A10F6BE94B10C390987756 /* GoogleMaps.debug.xcconfig */,
-				9E830DD9530F13E283DEC78352A2F03D /* GoogleMaps.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GoogleMaps";
-			sourceTree = "<group>";
-		};
-		6EA976A5DDD03F084CDE6CDA4F8EE241 /* Pods-myiosappTests */ = {
-			isa = PBXGroup;
-			children = (
-				A253BD96D4092E3289FF3EFADD90D0C2 /* Pods-myiosappTests.modulemap */,
-				73DF374777FDD5AE7F45BF8626BE9F62 /* Pods-myiosappTests-acknowledgements.markdown */,
-				360C619B4D20132B4890F57260641507 /* Pods-myiosappTests-acknowledgements.plist */,
-				472058EDE4E5AC417196FAE121FFC072 /* Pods-myiosappTests-dummy.m */,
-				2BB03EDBC5F9E754A789D86574578C4B /* Pods-myiosappTests-Info.plist */,
-				66E075F068CF3E0F62586FA6985CEAA0 /* Pods-myiosappTests-umbrella.h */,
-				51030B8B045E6CE10948ADA0A04A009A /* Pods-myiosappTests.debug.xcconfig */,
-				6537A4F87391D86091126D93CBAA5E46 /* Pods-myiosappTests.release.xcconfig */,
-			);
-			name = "Pods-myiosappTests";
-			path = "Target Support Files/Pods-myiosappTests";
-			sourceTree = "<group>";
-		};
-		7DDA47E3D8C82ADCB64F7C6FC9641D65 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4E256CB72E069B4C851E32F3924687B3 /* GooglePlaces.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		87A10CDD937F9317B0D80A2CA621AED7 /* Pods-myiosapp-myiosappUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AB81942E53FA1A44FEE0693EBCDB4A02 /* Pods-myiosapp-myiosappUITests.modulemap */,
-				C80DF5EE0730B07FA8A8FD02F030E030 /* Pods-myiosapp-myiosappUITests-acknowledgements.markdown */,
-				D12CCA5A488CEC97BD04AABA30ED1F37 /* Pods-myiosapp-myiosappUITests-acknowledgements.plist */,
-				50E6038172B7DC60094DB08C045EC250 /* Pods-myiosapp-myiosappUITests-dummy.m */,
-				D75BCA9C63CB177C62B53662ADB84E2E /* Pods-myiosapp-myiosappUITests-Info.plist */,
-				57511491B4E0B584131B822F9EB0F9FD /* Pods-myiosapp-myiosappUITests-resources.sh */,
-				0C7B83FEC4FF5F0D7FA01FB3A70F59DA /* Pods-myiosapp-myiosappUITests-umbrella.h */,
-				6384CDE0BFD9261EBA9B17A5B6BECD01 /* Pods-myiosapp-myiosappUITests.debug.xcconfig */,
-				2281769D8A67492CB8E3C0B5670606BC /* Pods-myiosapp-myiosappUITests.release.xcconfig */,
-			);
-			name = "Pods-myiosapp-myiosappUITests";
-			path = "Target Support Files/Pods-myiosapp-myiosappUITests";
-			sourceTree = "<group>";
-		};
-		95463B7F2033DCE9666197D1660F616D /* Pods-myiosapp */ = {
-			isa = PBXGroup;
-			children = (
-				A6D6BD265769B4C0FE5B9DD65E7BF1E9 /* Pods-myiosapp.modulemap */,
-				2A351643B5110DBE42F5397873DBA146 /* Pods-myiosapp-acknowledgements.markdown */,
-				E1B942485CC387F41A3FF9ED4CDBB2E2 /* Pods-myiosapp-acknowledgements.plist */,
-				BC70BB393D5BAB971132074BD595D18F /* Pods-myiosapp-dummy.m */,
-				6CC35A4037FF19BAC9D36EF9F3EFAE65 /* Pods-myiosapp-Info.plist */,
-				EA9BCF510D35D42077E93FD47E4CABBF /* Pods-myiosapp-resources.sh */,
-				DAA32B4BD96A167FC9A37B37992700FA /* Pods-myiosapp-umbrella.h */,
-				02CB6781C9B70C32E799EC9C8E828D3D /* Pods-myiosapp.debug.xcconfig */,
-				66AB28E84A974D73EF342AEABEFEB52B /* Pods-myiosapp.release.xcconfig */,
-			);
-			name = "Pods-myiosapp";
-			path = "Target Support Files/Pods-myiosapp";
-			sourceTree = "<group>";
-		};
-		A38D68C78C032F2CEEEEED36818D37F0 /* Maps */ = {
-			isa = PBXGroup;
-			children = (
-				E435AD63DBCE250679648002DC9F8442 /* Frameworks */,
-				FAF4CAFF608973234241B6D824C4FC0F /* Resources */,
-			);
-			name = Maps;
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		CF1408CF629C7361332E53B88F7BD30C = {
-			isa = PBXGroup;
-			children = (
-				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				E858A99A3564099E88E4CF05F26A517D /* Pods */,
-				ED842938C4BF86CD378A593474B40051 /* Products */,
-				EF1C1146498E54416CB78E2ACF341020 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E435AD63DBCE250679648002DC9F8442 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F8C3BB261D41EB0A05EAE541E50E3DAB /* GoogleMaps.framework */,
-				23F651581A8A5A322B46718DD384709B /* GoogleMapsCore.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E858A99A3564099E88E4CF05F26A517D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0883B537F1FDF67277437486C4066E63 /* GoogleMaps */,
-				446F55954A1B4F44697D4CD53ABC566B /* GooglePlaces */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E86A34344FF943F078B6064D778D230A /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				01178CDE9E7F5E928EDC642D6B628FE0 /* Frameworks */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		ED842938C4BF86CD378A593474B40051 /* Products */ = {
-			isa = PBXGroup;
-			children = (
+				B04C1EBC2EC90A2DFFEDDD0CF4473840 /* DateTimePicker.bundle */,
+				B26CB6AD16677CB8E5B8A5059EA05677 /* DateTimePicker.framework */,
+				84B843FF6CF907B9F0350B5BB4C86A0F /* MDatePickerView.framework */,
 				C40315251ECD2279C5597C2202A6DC25 /* Pods_myiosapp.framework */,
 				0A0F8343E0622641EE4D6610159CFEF3 /* Pods_myiosapp_myiosappUITests.framework */,
 				2AA62DE193049CD2A2378DB442EAD09B /* Pods_myiosappTests.framework */,
@@ -345,27 +288,290 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EF1C1146498E54416CB78E2ACF341020 /* Targets Support Files */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				95463B7F2033DCE9666197D1660F616D /* Pods-myiosapp */,
-				87A10CDD937F9317B0D80A2CA621AED7 /* Pods-myiosapp-myiosappUITests */,
-				6EA976A5DDD03F084CDE6CDA4F8EE241 /* Pods-myiosappTests */,
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1973A8F54052C0C323B45C401D583BEE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA7472AB551C52DE065713A47E38EB5F /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		283ED691EA70F6B218920439E8E0EF01 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99DE82231364AD09637CD2B35FB50AE7 /* Pods-myiosapp */,
+				A0627E96562AAC3DDEFDCEE54CD78BC9 /* Pods-myiosapp-myiosappUITests */,
+				524FDF2937C49DE658C3F2738DECC1B1 /* Pods-myiosappTests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		FAF4CAFF608973234241B6D824C4FC0F /* Resources */ = {
+		354E1B034F4BFB95EE9B64CDF8B43424 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E74A4A5FDDD4F90A8A55EB206C7681BC /* GoogleMaps.bundle */,
+				2B6ED317A276CF18BFC77EBEDED2CC8C /* DateTimePicker.modulemap */,
+				7CE24CAAB508E4C5228DCA8692019D94 /* DateTimePicker-dummy.m */,
+				B868075FFD5F005CD19CBF222EA943FD /* DateTimePicker-Info.plist */,
+				5C056CF543B84F753C429C1A1E04A51E /* DateTimePicker-prefix.pch */,
+				C82E6CD9B59836EE5A790487BA7FD21F /* DateTimePicker-umbrella.h */,
+				12D6D7A0B914E447BC5A19BEF8B21F7E /* DateTimePicker.debug.xcconfig */,
+				F1A83007E49F5D539881C770012CED1D /* DateTimePicker.release.xcconfig */,
+				CF5BB571157902163AECBE5D8DD73AE1 /* ResourceBundle-DateTimePicker-DateTimePicker-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DateTimePicker";
+			sourceTree = "<group>";
+		};
+		3FF453C1E2BA9988CABC77C41A857C79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				818197AB28EFF82C63F82A3041FE013C /* DateTimePicker */,
+				99F3C9CEDD8398620C99EB02A0F90F47 /* GoogleMaps */,
+				BB4CD83126D5058BFF54EC4E6536579D /* GooglePlaces */,
+				71E8E2915485B4EE7F23CAD0102BC80B /* MDatePickerView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4084B5CDDA62B78A6AD1D007082A7848 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2AB83AC92CAF12305F4685BFBDF6E4E /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4241835614DDC2AB3F6B098679C266BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7CCDE40C66A7132E879998FA714EE8DB /* GoogleMaps.bundle */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		524FDF2937C49DE658C3F2738DECC1B1 /* Pods-myiosappTests */ = {
+			isa = PBXGroup;
+			children = (
+				119CE9DBC2F06B9E874560517F6F3A38 /* Pods-myiosappTests.modulemap */,
+				D708B9DB9EBC27D45B2DC3637A8CAAE3 /* Pods-myiosappTests-acknowledgements.markdown */,
+				38266E982935A717CCA2CFEA126941A9 /* Pods-myiosappTests-acknowledgements.plist */,
+				B45D7C17C1222991473943518DB21D61 /* Pods-myiosappTests-dummy.m */,
+				1F290DF3FF45BF5729138E36759CE418 /* Pods-myiosappTests-Info.plist */,
+				743B33AA5296FA3550E31999BD1FF76D /* Pods-myiosappTests-umbrella.h */,
+				BA53CB13D4CF14A20A625C87AB1A2D5E /* Pods-myiosappTests.debug.xcconfig */,
+				E3A8794F65C129FFD428B72CEECBE205 /* Pods-myiosappTests.release.xcconfig */,
+			);
+			name = "Pods-myiosappTests";
+			path = "Target Support Files/Pods-myiosappTests";
+			sourceTree = "<group>";
+		};
+		6E8F11B51AC58323709FBCAD69C2913B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7F7939C83ED5C5BA6BF329E32622F432 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		71E8E2915485B4EE7F23CAD0102BC80B /* MDatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				ADD7ED44F2D148479BDC094CD683236D /* CalendarController.swift */,
+				E1B2D7DEA27B24EAB73D1C6ABFFDC492 /* ColCell.swift */,
+				8F415658E0204343B6F601B30F08D2B2 /* ColDateCell.swift */,
+				22CD535A91B0DFA77E56E32CE105DEBC /* CustomDatePickerView.swift */,
+				DD1EC781608350B3E38352EC8193E470 /* MDatePickerView.h */,
+				1D44F2262572A3FD3AC4A43ACDADB88E /* MDatePickerView.swift */,
+				40AF715F38EAB8F62B4DE8CF6B21483A /* TextLabel.swift */,
+				7555DECDDA74A5E30774C0C7107CB228 /* Support Files */,
+			);
+			name = MDatePickerView;
+			path = MDatePickerView;
+			sourceTree = "<group>";
+		};
+		7555DECDDA74A5E30774C0C7107CB228 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE0BBFDBC4221DDD6D5A110E7E53F64C /* MDatePickerView.modulemap */,
+				BA3654FF8B5E1FC110816E91AB0A10AD /* MDatePickerView-dummy.m */,
+				F2355B13B0A53B202CDFC170524D4311 /* MDatePickerView-Info.plist */,
+				594A510EAD2FCB8143D67386E9E5183C /* MDatePickerView-prefix.pch */,
+				495D1FB069D55A94AF50B6732A4D6F2B /* MDatePickerView-umbrella.h */,
+				830564AE1207736FC61654C3F91CC2A9 /* MDatePickerView.debug.xcconfig */,
+				397348F7C640CB778BAA7827358F0528 /* MDatePickerView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MDatePickerView";
+			sourceTree = "<group>";
+		};
+		7F7939C83ED5C5BA6BF329E32622F432 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				827E92B541763036E15800A565F87383 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		818197AB28EFF82C63F82A3041FE013C /* DateTimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				506E6FD6E7A21F309909BA7260F04BB6 /* Bundle+Resource.swift */,
+				234E40F1DC639C658D8102A2A2303C70 /* DateTimePicker.swift */,
+				F86599D347FE1FC32B756C3EF83374B7 /* DateTimePicker+CollectionView.swift */,
+				8ECFDC0C7859C01CF5684A3168D5EA83 /* DateTimePicker+UITableView.swift */,
+				C0FD9D1F6DFB57F42897D8A319FC24D4 /* FullDateCollectionViewCell.swift */,
+				E22568005AC00C40AE94161CB6FE1F97 /* StepCollectionViewFlowLayout.swift */,
+				C6FABF4365B4574A2A1D1D1B55D3E2DF /* Resources */,
+				354E1B034F4BFB95EE9B64CDF8B43424 /* Support Files */,
+			);
+			name = DateTimePicker;
+			path = DateTimePicker;
+			sourceTree = "<group>";
+		};
+		8ABFA3016ADDDC4AD61654BB674098B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBBADDFEA7A81C6C62197DBD94A1D719 /* GoogleMaps.framework */,
+				BB463965F8BFCCF39D6C2E616093F318 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99DE82231364AD09637CD2B35FB50AE7 /* Pods-myiosapp */ = {
+			isa = PBXGroup;
+			children = (
+				9B77A7CEE985E68C58489789DDFB5E49 /* Pods-myiosapp.modulemap */,
+				8F0AEF4F646A5A6F7CB7843D8CB2D0BE /* Pods-myiosapp-acknowledgements.markdown */,
+				2518AB918B2E0C87D18F047A69F71884 /* Pods-myiosapp-acknowledgements.plist */,
+				A54EBB7DEB90AEE38AFF4EAAE069FDE5 /* Pods-myiosapp-dummy.m */,
+				87EFCF063034E0850A237436CDBB5130 /* Pods-myiosapp-frameworks.sh */,
+				A216CE184E808B5C983069B9F9BDEB78 /* Pods-myiosapp-Info.plist */,
+				E910E12B73DA9388A999291B5231E0E9 /* Pods-myiosapp-resources.sh */,
+				A8AC0C2AF0E876A137EDC1C598BE6427 /* Pods-myiosapp-umbrella.h */,
+				FA51617B59FCC42B84BD632F2855A6FA /* Pods-myiosapp.debug.xcconfig */,
+				EE69FDE8CFB1C213D849515E2115D53A /* Pods-myiosapp.release.xcconfig */,
+			);
+			name = "Pods-myiosapp";
+			path = "Target Support Files/Pods-myiosapp";
+			sourceTree = "<group>";
+		};
+		99F3C9CEDD8398620C99EB02A0F90F47 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				6E8F11B51AC58323709FBCAD69C2913B /* Base */,
+				BF5EB7BFA48CA87081675C506EB55ACF /* Maps */,
+				FDC6BD90CB24614BAF29F799632ED0E3 /* Support Files */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		A0627E96562AAC3DDEFDCEE54CD78BC9 /* Pods-myiosapp-myiosappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E1EDBCB98529BFF3B762C4B4F7A52B6D /* Pods-myiosapp-myiosappUITests.modulemap */,
+				84BC162C5876417ADE4A44494C2DFB1F /* Pods-myiosapp-myiosappUITests-acknowledgements.markdown */,
+				330B9CD75AEBD651CED37AE8F639B90E /* Pods-myiosapp-myiosappUITests-acknowledgements.plist */,
+				0568F49FBD0984DB59CC5F0FF0E3D558 /* Pods-myiosapp-myiosappUITests-dummy.m */,
+				3AB7633D9A72E16F25FAF90190F735C0 /* Pods-myiosapp-myiosappUITests-frameworks.sh */,
+				018B2C5DB7D6690A4F2A09410D73F184 /* Pods-myiosapp-myiosappUITests-Info.plist */,
+				9B25A40073C4478922C0A2F87102A5AD /* Pods-myiosapp-myiosappUITests-resources.sh */,
+				68D272F058CB4648D6A5BCB5972DB60C /* Pods-myiosapp-myiosappUITests-umbrella.h */,
+				8BC1E129420313B245EC832CD0A62D3C /* Pods-myiosapp-myiosappUITests.debug.xcconfig */,
+				39B0EC06BDBFA53C74CBF1D7EC1B25F3 /* Pods-myiosapp-myiosappUITests.release.xcconfig */,
+			);
+			name = "Pods-myiosapp-myiosappUITests";
+			path = "Target Support Files/Pods-myiosapp-myiosappUITests";
+			sourceTree = "<group>";
+		};
+		BB4CD83126D5058BFF54EC4E6536579D /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				4084B5CDDA62B78A6AD1D007082A7848 /* Frameworks */,
+				1973A8F54052C0C323B45C401D583BEE /* Resources */,
+				FC03352D4B8E71F3EB541DE3C7866A3B /* Support Files */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		BF5EB7BFA48CA87081675C506EB55ACF /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				8ABFA3016ADDDC4AD61654BB674098B8 /* Frameworks */,
+				4241835614DDC2AB3F6B098679C266BC /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		C6FABF4365B4574A2A1D1D1B55D3E2DF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C606977201DAA31DECAF930F0221B5AA /* DateTimePicker.xib */,
+				C25EFD0EE532B96879B68A4F87094E3F /* FullDateCollectionViewCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				3FF453C1E2BA9988CABC77C41A857C79 /* Pods */,
+				014726A509CC7D0CAA35981F16F74FFF /* Products */,
+				283ED691EA70F6B218920439E8E0EF01 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FC03352D4B8E71F3EB541DE3C7866A3B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C848A2EBF6A405DD8DEDDF520E0B6986 /* GooglePlaces.debug.xcconfig */,
+				A1FBC8F6675D980A1A6161EA7C0A3034 /* GooglePlaces.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GooglePlaces";
+			sourceTree = "<group>";
+		};
+		FDC6BD90CB24614BAF29F799632ED0E3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB0446851F3319B3A19E65FAA1A25C18 /* GoogleMaps.debug.xcconfig */,
+				6F6139191C764BD1D4CDB8B18CD2A2B9 /* GoogleMaps.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		19C95FD7017BD3C1AD042721DEADDE4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E5AF21BEC8C0F09B1654E6DD3D91AB /* DateTimePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1F50B569D4366181514FA385F4357B42 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,19 +580,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DEE31DFE374BE5F25676A4DBEBE6F22 /* Headers */ = {
+		2EE21A28579DF222AD1178975FA778EF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE7BF8E941B53A19DDD4218706EC0E51 /* Pods-myiosapp-myiosappUITests-umbrella.h in Headers */,
+				A12D588300E650EAC1DA6C31E60D3E9A /* Pods-myiosapp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3E9B5886C3A0A7DB0BDBF324848F799 /* Headers */ = {
+		4ED3AA46672765D4F87F7D5A48E57A93 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68C28822AC7E7519E7CBD09CB3253523 /* Pods-myiosapp-umbrella.h in Headers */,
+				3BA63CDA93DF2AE03083C4A3A242635D /* Pods-myiosapp-myiosappUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5044CB3FFFFE2BB336554BC848BCD14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A699148E1B7662D53864D22778E6A0D4 /* MDatePickerView-umbrella.h in Headers */,
+				87E0F8B9B06BC18A48633C5FFC99B270 /* MDatePickerView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,38 +610,61 @@
 /* Begin PBXNativeTarget section */
 		2A4954A4FAA4F3EEC3167E1F7D061B82 /* Pods-myiosapp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01039E3DEAD6A6F7BE230F376ACF46AF /* Build configuration list for PBXNativeTarget "Pods-myiosapp" */;
+			buildConfigurationList = 3C679B3C874B39D5A83C40CD5C0F3BD4 /* Build configuration list for PBXNativeTarget "Pods-myiosapp" */;
 			buildPhases = (
-				D3E9B5886C3A0A7DB0BDBF324848F799 /* Headers */,
-				A803937E089CD6E914E29877EA592812 /* Sources */,
-				D4686CCA536EDABE86D0380AF349EA54 /* Frameworks */,
-				A7EACEAA48051BC10BA201A41EDE411F /* Resources */,
+				2EE21A28579DF222AD1178975FA778EF /* Headers */,
+				D5B91D4CAEDD354F4780A0196B97E9EC /* Sources */,
+				7ECDB948C72E6ECB0DF3BD9D5D3BF52E /* Frameworks */,
+				5CD9D3E796EEAAF3596B638DC4F6519F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BB940F24D7F03EF5DA18795AA5C29908 /* PBXTargetDependency */,
-				DCCEB9E72E985939EFF524150944B68D /* PBXTargetDependency */,
+				9FBC98D65B55AC5A731A08C3DD6A8936 /* PBXTargetDependency */,
+				5D50D476881E8738289C2548CD6E5719 /* PBXTargetDependency */,
+				3FA74CB160AEC01CBA8525438D918EA7 /* PBXTargetDependency */,
+				1381C09024CDCAEEB6FE4A36A5AD2CEA /* PBXTargetDependency */,
 			);
 			name = "Pods-myiosapp";
 			productName = "Pods-myiosapp";
 			productReference = C40315251ECD2279C5597C2202A6DC25 /* Pods_myiosapp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		738CD12BA152BE684F557FBD9D5D00E3 /* Pods-myiosapp-myiosappUITests */ = {
+		31E89965CFA54DE4BCC99C05112D7483 /* DateTimePicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D6CA348DF885F9ADA14DA210244319F /* Build configuration list for PBXNativeTarget "Pods-myiosapp-myiosappUITests" */;
+			buildConfigurationList = 0F0D690B87F94AE80BD19EE0A3964C38 /* Build configuration list for PBXNativeTarget "DateTimePicker" */;
 			buildPhases = (
-				7DEE31DFE374BE5F25676A4DBEBE6F22 /* Headers */,
-				DBE18E49145E1F36FFC27630F77059A1 /* Sources */,
-				1B0F76C3093CEEF47BA9235064962E69 /* Frameworks */,
-				A545DDC1EF90EA27E390A6E9553BE8A8 /* Resources */,
+				19C95FD7017BD3C1AD042721DEADDE4B /* Headers */,
+				2235734B8FEAC123EBA0469F14827703 /* Sources */,
+				5F82B0625765D6A52E4AC4A1161B9BEE /* Frameworks */,
+				5A9E3C1817D99DB08544184CC81E0F60 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B63858B3900C0EBE0DD94C5C57DA34D1 /* PBXTargetDependency */,
-				462D10BA8FD0DF1F2EDB2AF329CCB707 /* PBXTargetDependency */,
+				0A2700BB1E55D650C3452CCD26526C9D /* PBXTargetDependency */,
+			);
+			name = DateTimePicker;
+			productName = DateTimePicker;
+			productReference = B26CB6AD16677CB8E5B8A5059EA05677 /* DateTimePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		738CD12BA152BE684F557FBD9D5D00E3 /* Pods-myiosapp-myiosappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D8D53A5643EF712B800CF25116D0D5 /* Build configuration list for PBXNativeTarget "Pods-myiosapp-myiosappUITests" */;
+			buildPhases = (
+				4ED3AA46672765D4F87F7D5A48E57A93 /* Headers */,
+				51963CFCCFFEB90FD36E300DDB6A6933 /* Sources */,
+				F8C3A18D6A5F35B2DA3B64EC3783B521 /* Frameworks */,
+				6CEBBD997FCB712C30F824C7AA3614FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49B4D4665E706652569A249C10B60B76 /* PBXTargetDependency */,
+				103CCCA9A3FEDDFAC1F485727CD9201D /* PBXTargetDependency */,
+				1EF52ECD1492E93ACC8CAB06D22EA06C /* PBXTargetDependency */,
+				30DE56898917449BA926CCD98ADA9E4C /* PBXTargetDependency */,
 			);
 			name = "Pods-myiosapp-myiosappUITests";
 			productName = "Pods-myiosapp-myiosappUITests";
@@ -445,11 +683,46 @@
 			buildRules = (
 			);
 			dependencies = (
-				A5C55DA69727BCA738E10191D6FC1ADB /* PBXTargetDependency */,
+				DAE530F43577A2DC626AD4881DD14F70 /* PBXTargetDependency */,
 			);
 			name = "Pods-myiosappTests";
 			productName = "Pods-myiosappTests";
 			productReference = 2AA62DE193049CD2A2378DB442EAD09B /* Pods_myiosappTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E0775EC5F6DBAA5D2C37BCFB14908273 /* DateTimePicker-DateTimePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BDC3BCBD271A7790ED2B8121CF29856 /* Build configuration list for PBXNativeTarget "DateTimePicker-DateTimePicker" */;
+			buildPhases = (
+				1355EE38605CD314B92885FF3CC1FD0F /* Sources */,
+				D58A30220334CDA2883A52A42B96F64E /* Frameworks */,
+				950C62D3F05E49A1AFFEB2AE6C232EAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DateTimePicker-DateTimePicker";
+			productName = "DateTimePicker-DateTimePicker";
+			productReference = B04C1EBC2EC90A2DFFEDDD0CF4473840 /* DateTimePicker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		ECF030B04A631ADB65190BABE8925EC5 /* MDatePickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E56A52DBF087D19D30B8B70CDFB15FB /* Build configuration list for PBXNativeTarget "MDatePickerView" */;
+			buildPhases = (
+				A5044CB3FFFFE2BB336554BC848BCD14 /* Headers */,
+				B33C0A783A48CE8608CE08D3B4F8382F /* Sources */,
+				263DC6C0F2934EBD9B7B06E0D0F746B1 /* Frameworks */,
+				B1C52E1DAB280BC69B7FF6DC1FBCC8FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MDatePickerView;
+			productName = MDatePickerView;
+			productReference = 84B843FF6CF907B9F0350B5BB4C86A0F /* MDatePickerView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -470,12 +743,15 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = ED842938C4BF86CD378A593474B40051 /* Products */;
+			productRefGroup = 014726A509CC7D0CAA35981F16F74FFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				31E89965CFA54DE4BCC99C05112D7483 /* DateTimePicker */,
+				E0775EC5F6DBAA5D2C37BCFB14908273 /* DateTimePicker-DateTimePicker */,
 				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
 				0C1885900810601510E0C632060FAF26 /* GooglePlaces */,
+				ECF030B04A631ADB65190BABE8925EC5 /* MDatePickerView */,
 				2A4954A4FAA4F3EEC3167E1F7D061B82 /* Pods-myiosapp */,
 				738CD12BA152BE684F557FBD9D5D00E3 /* Pods-myiosapp-myiosappUITests */,
 				AD81F9FA983EFA50F048A1C8058B0FF9 /* Pods-myiosappTests */,
@@ -484,10 +760,34 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A545DDC1EF90EA27E390A6E9553BE8A8 /* Resources */ = {
+		5A9E3C1817D99DB08544184CC81E0F60 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75280882EFE49C21DCED564E79B9A9A9 /* DateTimePicker.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CD9D3E796EEAAF3596B638DC4F6519F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CEBBD997FCB712C30F824C7AA3614FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		950C62D3F05E49A1AFFEB2AE6C232EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000BCCDDE27A42800C43711FA062FE7F /* DateTimePicker.xib in Resources */,
+				E98CB7FA4F9A67C1EC24E6C562B9217F /* FullDateCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +798,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A7EACEAA48051BC10BA201A41EDE411F /* Resources */ = {
+		B1C52E1DAB280BC69B7FF6DC1FBCC8FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -508,6 +808,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1355EE38605CD314B92885FF3CC1FD0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2235734B8FEAC123EBA0469F14827703 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				165934623715D9E5C7FF1748B1D7C18C /* Bundle+Resource.swift in Sources */,
+				3ABBFC464400F6BA9BC5436517DDAB73 /* DateTimePicker+CollectionView.swift in Sources */,
+				1614348BFE1B6F09E37A13885BDD46EF /* DateTimePicker+UITableView.swift in Sources */,
+				74CBDE6C227D7FBA43DEBD76A32BF7F9 /* DateTimePicker-dummy.m in Sources */,
+				E7A56871A06A700D6BF7140281493FAB /* DateTimePicker.swift in Sources */,
+				22279843759931AB1B3207F4E9464594 /* FullDateCollectionViewCell.swift in Sources */,
+				B2C565D88D7E1D7205015F64CDD0F03F /* StepCollectionViewFlowLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2784B40F43095A946A08A117CC669C68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -516,67 +837,182 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A803937E089CD6E914E29877EA592812 /* Sources */ = {
+		51963CFCCFFEB90FD36E300DDB6A6933 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F73B09AAC8DF52B5DB6143320137603 /* Pods-myiosapp-dummy.m in Sources */,
+				F7E4D8CC41357A506980E7E789DE2139 /* Pods-myiosapp-myiosappUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBE18E49145E1F36FFC27630F77059A1 /* Sources */ = {
+		B33C0A783A48CE8608CE08D3B4F8382F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66803F3D9A5FEBA6DEC080D18483A70A /* Pods-myiosapp-myiosappUITests-dummy.m in Sources */,
+				B6C64F8A2D8D2A7262CEBCF6ACCE124A /* CalendarController.swift in Sources */,
+				C27B89BC876933074C8A4D4998DAC4B7 /* ColCell.swift in Sources */,
+				310C9C13929C231E3389918DF1749777 /* ColDateCell.swift in Sources */,
+				F8EFAA181BDDCA4B3C34D7891A46F8BB /* CustomDatePickerView.swift in Sources */,
+				00094E93266873E86DE2435119375A7D /* MDatePickerView-dummy.m in Sources */,
+				2A1D48DB941C9E09C13B484622D96122 /* MDatePickerView.swift in Sources */,
+				AF625052D99A843D4312F581DCE17815 /* TextLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B91D4CAEDD354F4780A0196B97E9EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5136442ADA09DCB9B949A6BFB5F4E7F2 /* Pods-myiosapp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		462D10BA8FD0DF1F2EDB2AF329CCB707 /* PBXTargetDependency */ = {
+		0A2700BB1E55D650C3452CCD26526C9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DateTimePicker-DateTimePicker";
+			target = E0775EC5F6DBAA5D2C37BCFB14908273 /* DateTimePicker-DateTimePicker */;
+			targetProxy = D51F5E171728B0B0606D7F39DD501A6E /* PBXContainerItemProxy */;
+		};
+		103CCCA9A3FEDDFAC1F485727CD9201D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = F8FDCF4E6B6CA2CE4870501B8E792E25 /* PBXContainerItemProxy */;
+		};
+		1381C09024CDCAEEB6FE4A36A5AD2CEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MDatePickerView;
+			target = ECF030B04A631ADB65190BABE8925EC5 /* MDatePickerView */;
+			targetProxy = C63322E21E206F29A27F788C1667BE3C /* PBXContainerItemProxy */;
+		};
+		1EF52ECD1492E93ACC8CAB06D22EA06C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GooglePlaces;
 			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
-			targetProxy = 4884F35308F0091337FE2F0FD0E654DD /* PBXContainerItemProxy */;
+			targetProxy = 5F869F89F3EB4DDB1E4B7D875F2A1883 /* PBXContainerItemProxy */;
 		};
-		A5C55DA69727BCA738E10191D6FC1ADB /* PBXTargetDependency */ = {
+		30DE56898917449BA926CCD98ADA9E4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MDatePickerView;
+			target = ECF030B04A631ADB65190BABE8925EC5 /* MDatePickerView */;
+			targetProxy = C0C218CEB66B0E558A00A0F4541A4AA8 /* PBXContainerItemProxy */;
+		};
+		3FA74CB160AEC01CBA8525438D918EA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlaces;
+			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
+			targetProxy = 4EF98A736FF5D957E98954E180F935D2 /* PBXContainerItemProxy */;
+		};
+		49B4D4665E706652569A249C10B60B76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DateTimePicker;
+			target = 31E89965CFA54DE4BCC99C05112D7483 /* DateTimePicker */;
+			targetProxy = B87D1264B16C8AA4F91336A5442C787F /* PBXContainerItemProxy */;
+		};
+		5D50D476881E8738289C2548CD6E5719 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 3DCD9951B1BA4D6D72721E40FCB3BBB2 /* PBXContainerItemProxy */;
+		};
+		9FBC98D65B55AC5A731A08C3DD6A8936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DateTimePicker;
+			target = 31E89965CFA54DE4BCC99C05112D7483 /* DateTimePicker */;
+			targetProxy = 7889D5132E6607FB80BD88BCEEAA214B /* PBXContainerItemProxy */;
+		};
+		DAE530F43577A2DC626AD4881DD14F70 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-myiosapp";
 			target = 2A4954A4FAA4F3EEC3167E1F7D061B82 /* Pods-myiosapp */;
-			targetProxy = 87A4FA1EA6CA01053C575C9D79C6974F /* PBXContainerItemProxy */;
+			targetProxy = 7F23C4386C73BF32E479C153A2C33B12 /* PBXContainerItemProxy */;
 		};
-		B63858B3900C0EBE0DD94C5C57DA34D1 /* PBXTargetDependency */ = {
+		E5B82B1B3399F051D08AD3140D0E175C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleMaps;
 			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
-			targetProxy = 6E1512E0533F0C00DFEE9020892615E9 /* PBXContainerItemProxy */;
-		};
-		BB940F24D7F03EF5DA18795AA5C29908 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GoogleMaps;
-			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
-			targetProxy = DBD8B66053F689EA9553F27790863354 /* PBXContainerItemProxy */;
-		};
-		CCDE3DF5458240F3259D88C46803DEC8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GoogleMaps;
-			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
-			targetProxy = 108F9196136F85067DA2F6284C12312A /* PBXContainerItemProxy */;
-		};
-		DCCEB9E72E985939EFF524150944B68D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GooglePlaces;
-			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
-			targetProxy = B467F89794B82B4397C154DB3BD13304 /* PBXContainerItemProxy */;
+			targetProxy = 271E5F8CA9BC1D7722993C0F09AADB57 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		37D9A0A0091A89F84EDD7C14A2AAEDA7 /* Release */ = {
+		2FA810D2D6DE0A00500C09131F1A7198 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2281769D8A67492CB8E3C0B5670606BC /* Pods-myiosapp-myiosappUITests.release.xcconfig */;
+			baseConfigurationReference = 397348F7C640CB778BAA7827358F0528 /* MDatePickerView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MDatePickerView/MDatePickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MDatePickerView/MDatePickerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MDatePickerView/MDatePickerView.modulemap";
+				PRODUCT_MODULE_NAME = MDatePickerView;
+				PRODUCT_NAME = MDatePickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		38F04DEF91E452B443D396AD5A1237FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 830564AE1207736FC61654C3F91CC2A9 /* MDatePickerView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MDatePickerView/MDatePickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MDatePickerView/MDatePickerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MDatePickerView/MDatePickerView.modulemap";
+				PRODUCT_MODULE_NAME = MDatePickerView;
+				PRODUCT_NAME = MDatePickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A954539813169E61D75C197F06AB56D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA51617B59FCC42B84BD632F2855A6FA /* Pods-myiosapp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -589,7 +1025,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-myiosapp-myiosappUITests/Pods-myiosapp-myiosappUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-myiosapp/Pods-myiosapp-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -598,7 +1034,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-myiosapp-myiosappUITests/Pods-myiosapp-myiosappUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-myiosapp/Pods-myiosapp.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -607,15 +1043,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		4001590E6E3AA956A0845F6623030BB5 /* Debug */ = {
+		488282AC2CDE8AA32902116CFF53FBFD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6384CDE0BFD9261EBA9B17A5B6BECD01 /* Pods-myiosapp-myiosappUITests.debug.xcconfig */;
+			baseConfigurationReference = 8BC1E129420313B245EC832CD0A62D3C /* Pods-myiosapp-myiosappUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -651,9 +1086,44 @@
 			};
 			name = Debug;
 		};
-		621D4E36D13FAF6401572B0105BCE23E /* Release */ = {
+		56528BECA2AD1D9CE5C83162966FFFE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66AB28E84A974D73EF342AEABEFEB52B /* Pods-myiosapp.release.xcconfig */;
+			baseConfigurationReference = 12D6D7A0B914E447BC5A19BEF8B21F7E /* DateTimePicker.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DateTimePicker/DateTimePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DateTimePicker/DateTimePicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DateTimePicker/DateTimePicker.modulemap";
+				PRODUCT_MODULE_NAME = DateTimePicker;
+				PRODUCT_NAME = DateTimePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		800DCAD38A1E0D4377748C220A518DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE69FDE8CFB1C213D849515E2115D53A /* Pods-myiosapp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -756,7 +1226,7 @@
 		};
 		8CE5BA3EF4F6FABF028CE30772ECDA11 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E830DD9530F13E283DEC78352A2F03D /* GoogleMaps.release.xcconfig */;
+			baseConfigurationReference = 6F6139191C764BD1D4CDB8B18CD2A2B9 /* GoogleMaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -773,7 +1243,7 @@
 		};
 		904088FF6250B514AF510FAD51BB2FD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51030B8B045E6CE10948ADA0A04A009A /* Pods-myiosappTests.debug.xcconfig */;
+			baseConfigurationReference = BA53CB13D4CF14A20A625C87AB1A2D5E /* Pods-myiosappTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -811,7 +1281,7 @@
 		};
 		934DE3B686E8679D527C82BD0AE9E2E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6537A4F87391D86091126D93CBAA5E46 /* Pods-myiosappTests.release.xcconfig */;
+			baseConfigurationReference = E3A8794F65C129FFD428B72CEECBE205 /* Pods-myiosappTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -848,11 +1318,10 @@
 			};
 			name = Release;
 		};
-		9F3D823F9FF93C3D45D3378A96F823F9 /* Debug */ = {
+		AC9D6D39945AD10B65245EDCBE7DB704 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02CB6781C9B70C32E799EC9C8E828D3D /* Pods-myiosapp.debug.xcconfig */;
+			baseConfigurationReference = F1A83007E49F5D539881C770012CED1D /* DateTimePicker.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -863,28 +1332,27 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-myiosapp/Pods-myiosapp-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DateTimePicker/DateTimePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DateTimePicker/DateTimePicker-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-myiosapp/Pods-myiosapp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/DateTimePicker/DateTimePicker.modulemap";
+				PRODUCT_MODULE_NAME = DateTimePicker;
+				PRODUCT_NAME = DateTimePicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		AF1F8D2941B0228930706FA0F2C9BB78 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -946,9 +1414,82 @@
 			};
 			name = Release;
 		};
+		C7C1077285703BE19E7CDCD431968A08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B0EC06BDBFA53C74CBF1D7EC1B25F3 /* Pods-myiosapp-myiosappUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-myiosapp-myiosappUITests/Pods-myiosapp-myiosappUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-myiosapp-myiosappUITests/Pods-myiosapp-myiosappUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D4781B83E66432B9A4C86E860E6FC6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1A83007E49F5D539881C770012CED1D /* DateTimePicker.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DateTimePicker";
+				IBSC_MODULE = DateTimePicker;
+				INFOPLIST_FILE = "Target Support Files/DateTimePicker/ResourceBundle-DateTimePicker-DateTimePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = DateTimePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		D8653F8B7D021BE97D40B9A2EAE1F8B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12D6D7A0B914E447BC5A19BEF8B21F7E /* DateTimePicker.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DateTimePicker";
+				IBSC_MODULE = DateTimePicker;
+				INFOPLIST_FILE = "Target Support Files/DateTimePicker/ResourceBundle-DateTimePicker-DateTimePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = DateTimePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		E1E452060D51DF935547186CE54B26CC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA12A18F12A10F6BE94B10C390987756 /* GoogleMaps.debug.xcconfig */;
+			baseConfigurationReference = CB0446851F3319B3A19E65FAA1A25C18 /* GoogleMaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -964,7 +1505,7 @@
 		};
 		F612EF94A7DB77BEC9A01721B62A809E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C729F3714998C7C3F3D788777A06264 /* GooglePlaces.debug.xcconfig */;
+			baseConfigurationReference = C848A2EBF6A405DD8DEDDF520E0B6986 /* GooglePlaces.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -980,7 +1521,7 @@
 		};
 		FE15983873284AD94B26A75BCDAE5E5C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4658982FD89F2A77A672D9AFC716B28 /* GooglePlaces.release.xcconfig */;
+			baseConfigurationReference = A1FBC8F6675D980A1A6161EA7C0A3034 /* GooglePlaces.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -998,20 +1539,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01039E3DEAD6A6F7BE230F376ACF46AF /* Build configuration list for PBXNativeTarget "Pods-myiosapp" */ = {
+		0F0D690B87F94AE80BD19EE0A3964C38 /* Build configuration list for PBXNativeTarget "DateTimePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F3D823F9FF93C3D45D3378A96F823F9 /* Debug */,
-				621D4E36D13FAF6401572B0105BCE23E /* Release */,
+				56528BECA2AD1D9CE5C83162966FFFE2 /* Debug */,
+				AC9D6D39945AD10B65245EDCBE7DB704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D6CA348DF885F9ADA14DA210244319F /* Build configuration list for PBXNativeTarget "Pods-myiosapp-myiosappUITests" */ = {
+		3BDC3BCBD271A7790ED2B8121CF29856 /* Build configuration list for PBXNativeTarget "DateTimePicker-DateTimePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4001590E6E3AA956A0845F6623030BB5 /* Debug */,
-				37D9A0A0091A89F84EDD7C14A2AAEDA7 /* Release */,
+				D8653F8B7D021BE97D40B9A2EAE1F8B5 /* Debug */,
+				D4781B83E66432B9A4C86E860E6FC6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C679B3C874B39D5A83C40CD5C0F3BD4 /* Build configuration list for PBXNativeTarget "Pods-myiosapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A954539813169E61D75C197F06AB56D /* Debug */,
+				800DCAD38A1E0D4377748C220A518DDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1030,6 +1580,24 @@
 			buildConfigurations = (
 				8A3650F6C8AC2EFFA814EA61C37468B1 /* Debug */,
 				AF1F8D2941B0228930706FA0F2C9BB78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56D8D53A5643EF712B800CF25116D0D5 /* Build configuration list for PBXNativeTarget "Pods-myiosapp-myiosappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				488282AC2CDE8AA32902116CFF53FBFD /* Debug */,
+				C7C1077285703BE19E7CDCD431968A08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E56A52DBF087D19D30B8B70CDFB15FB /* Build configuration list for PBXNativeTarget "MDatePickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38F04DEF91E452B443D396AD5A1237FA /* Debug */,
+				2FA810D2D6DE0A00500C09131F1A7198 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

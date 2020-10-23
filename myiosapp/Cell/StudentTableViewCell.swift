@@ -15,10 +15,9 @@ class StudentTableViewCell: UITableViewCell {
     }
     @IBOutlet weak var id: UILabel!
     @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var genderAge: UILabel!
     @IBOutlet weak var course: UILabel!
     @IBOutlet weak var location: UILabel!
-    
+    @IBOutlet weak var avatarImage: UIImageView!
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state

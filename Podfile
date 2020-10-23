@@ -6,7 +6,8 @@ target 'myiosapp' do
   use_frameworks!
   pod 'GoogleMaps', '3.10.0'
   pod 'GooglePlaces', '3.10.0'
-
+  pod 'MDatePickerView'
+  pod 'DateTimePicker'
 
 
   # Pods for myiosapp

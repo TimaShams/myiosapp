@@ -14,15 +14,12 @@ import GooglePlaces
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         GMSPlacesClient.provideAPIKey("AIzaSyB6KU-RrTTmlr5Ix0Lj0XK_POgPsf0jhsM")
-
-        // Override point for customization after application launch.
         return true
     }
+    
+    
 
     // MARK: UISceneSession Lifecycle
 
@@ -33,34 +30,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {
-        /*
-         The persistent container for the application. This implementation
-         creates and returns a container, having loaded the store for the
-         application to it. This property is optional since there are legitimate
-         error conditions that could cause the creation of the store to fail.
-        */
+
         let container = NSPersistentContainer(name: "myiosapp")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                 
-                /*
-                 Typical reasons for an error here include:
-                 * The parent directory does not exist, cannot be created, or disallows writing.
-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                 * The device is out of space.
-                 * The store could not be migrated to the current model version.
-                 Check the error message to determine what the actual problem was.
-                 */
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
@@ -90,16 +68,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 
     
-    // Save
-    func storeStudentInfo (student:MyStudent) {
+    // save Student
+    func insertStudent (student:MyStudent) {
         let context = getContext()
-        
-        //retrieve the entity that we just created
         let entity =  NSEntityDescription.entity(forEntityName: "Student", in: context)
-        
         let transc = NSManagedObject(entity: entity!, insertInto: context)
         
-        //set the entity values
         transc.setValue(student.id, forKey: "id")
         transc.setValue(student.fname, forKey: "fname")
         transc.setValue(student.lname, forKey: "lname")
@@ -108,7 +82,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         transc.setValue(student.age, forKey: "age")
         transc.setValue(student.lat, forKey: "lat")
         transc.setValue(student.long, forKey: "long")
-        //save the object
+        transc.setValue(student.image, forKey: "image")
+
         do {
             try context.save()
             print("saved!")
@@ -120,37 +95,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    func getstudentInfo () -> [MyStudent] {
+    func getAllStudents () -> [MyStudent] {
 
         var students: [MyStudent] = []
-
-        //create a fetch request, telling it about the entity
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Student")
 
         do {
-            //go get the results
             let searchResults = try getContext().fetch(fetchRequest)
-
-            //I like to check the size of the returned results!
             print ("num of results = \(searchResults.count)")
 
             //You need to convert to NSManagedObject to use 'for' loops
             for trans in searchResults as [NSManagedObject] {
-
+                
                 let id = trans.value(forKey: "id") as! Int
                 let fname = trans.value(forKey: "fname") as! String
                 let lname = trans.value(forKey: "lname") as! String
                 let gender = trans.value(forKey: "gender") as! String
                 let course = trans.value(forKey: "course") as! String
-                let age = trans.value(forKey: "age") as! Int
                 let long = trans.value(forKey: "long") as! Double
                 let lat = trans.value(forKey: "lat") as! Double
+                let age = trans.value(forKey: "age") as! Int
+                let image = trans.value(forKey: "image") as! String
 
-        
-                let student: MyStudent = MyStudent(id: id, fname: fname, lname: lname, gender: gender, course: course, age: age, lat: 0.0, long: 0.0)
                 
+                var student: MyStudent = MyStudent(id: id, fname: fname, lname: lname, gender: gender, course: course, age: age, lat: lat, long: long , image: image)
+                
+                let examItems : NSMutableSet = trans.mutableSetValue(forKey: "examItems")
+                
+                var exams : [MyExam] = []
+                for exam in examItems {
+                    let id_ = (exam as! Exam).id
+                    let loc_ = (exam as! Exam).location
+                    let unit_ = (exam as! Exam).unit
+                    let date_ = (exam as! Exam).date!
+                    let ee : MyExam = MyExam(id: Int(id_), unit: unit_!, date: date_, location: loc_!)
+                    exams.append(ee)
+                }
+                //print(exams)
+                student.exams = exams
                 students.append(student)
-                //info = info + id + ", " + givenName + " " + surname + ", " + strDate + "\n"
+
             }
         } catch {
             print("Error with request: \(error)")
@@ -160,41 +144,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
     
-//    func getPersonInfo () -> String {
-//        var info = ""
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.dateFormat = "dd-MM-yyyy"
-//
-//        //create a fetch request, telling it about the entity
-//        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Person")
-//
-//        do {
-//            //go get the results
-//            let searchResults = try getContext().fetch(fetchRequest)
-//
-//            //I like to check the size of the returned results!
-//            print ("num of results = \(searchResults.count)")
-//
-//            //You need to convert to NSManagedObject to use 'for' loops
-//            for trans in searchResults as [NSManagedObject] {
-//                let id = String(trans.value(forKey: "identification") as! Int)
-//                let surname = trans.value(forKey: "surname") as! String
-//                let givenName = trans.value(forKey: "givenName") as! String
-//                let strDate = dateFormatter.string(from: trans.value(forKey: "dateOfBirth") as! Date)
-//                info = info + id + ", " + givenName + " " + surname + ", " + strDate + "\n"
-//            }
-//        } catch {
-//            print("Error with request: \(error)")
-//        }
-//        return info;
-//    }
-    
     func removeAllStudents () {
         let context = getContext()
-        // delete everything in the table Person
+
         let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Student")
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
-        
         do {
             try context.execute(deleteRequest)
             try context.save()
@@ -210,11 +164,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let managedContext = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Student")
         fetchRequest.predicate = NSPredicate(format: "id = %i", id)
-        
         do
          {
              let test = try managedContext.fetch(fetchRequest)
-             
              let objectToDelete = test[0] as! NSManagedObject
              managedContext.delete(objectToDelete)
              do{
@@ -235,25 +187,132 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    
-    func checkStudentExist(id: Int) -> Bool {
+    func getSingleStudent(id:Int) -> MyStudent {
+        
+        var studentTemp: MyStudent? = nil
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Student")
-        fetchRequest.includesSubentities = false
-        fetchRequest.predicate = NSPredicate(format: "id = %d", id)
+        fetchRequest.predicate = NSPredicate(format: "id = %i", id)
+        do
+        
+        
+         {
+             let test = try getContext().fetch(fetchRequest)
+             let student = test[0] as! NSManagedObject
+        
+            //print("print a single student value")
+            let id     = student.value(forKey: "id")     as! Int
+            let fname  = student.value(forKey: "fname")  as! String
+            let lname  = student.value(forKey: "lname")  as! String
+            let gender = student.value(forKey: "gender") as! String
+            let course = student.value(forKey: "course") as! String
+            let long   = student.value(forKey: "long")   as! Double
+            let lat    = student.value(forKey: "lat")    as! Double
+            let age    = student.value(forKey: "age")    as! Int
+            let image  = student.value(forKey: "image")  as! String
 
-        var entitiesCount = 0
+            studentTemp = MyStudent(id: id, fname: fname, lname: lname, gender: gender, course: course, age: age, lat: lat, long: long , image: image)
+            
+            let examItems : NSMutableSet = student.mutableSetValue(forKey: "examItems")
+            
+            var exams : [MyExam] = []
+            for exam in examItems {
+                let id_    = (exam as! Exam).id
+                let loc_   = (exam as! Exam).location
+                let unit_  = (exam as! Exam).unit
+                let date_  = (exam as! Exam).date
+                let ee : MyExam = MyExam(id: Int(id_), unit: unit_!, date: date_!, location: loc_!)
+                exams.append(ee)
+            }
+            
+            //print(exams)
+            studentTemp!.exams = exams
 
-        do {
-            entitiesCount = try getContext ().count(for: fetchRequest)
-        }
-        catch {
-            print("error executing fetch request: \(error)")
-        }
-
-        return entitiesCount > 0
+            return studentTemp!
+         }
+         catch
+         {
+             print(error)
+         }
+        
+        return studentTemp!
+        
     }
     
     
+    
+    func isUniqueId(id:Int) -> Bool {
+        
+        var studentTemp: MyStudent? = nil
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Student")
+        fetchRequest.predicate = NSPredicate(format: "id = %i", id)
+        do
+         {
+             let test = try getContext().fetch(fetchRequest)
+            if(test.count == 0)
+            {return true}
+            else
+            {return false}
+            
+         }
+         catch
+         {
+             print(error)
+         }
+        
+        return false
+    }
+    
+    func addExam(exam : MyExam , student:MyStudent){
+        
+        let context = getContext()
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Student")
+        fetchRequest.includesSubentities = false
+        
+        fetchRequest.predicate = NSPredicate(format: "id = %d", student.id)
+        
+    do {
+        let searchResults = try getContext().fetch(fetchRequest)
+        for trans in searchResults as [NSManagedObject] {
+            let myRelatedItems : NSMutableSet = trans.mutableSetValue(forKey: "examItems")
+            let entity =  NSEntityDescription.entity(forEntityName: "Exam", in: context)
+            let examTemp : Exam = NSManagedObject(entity: entity!, insertInto: context) as! Exam
+            
+            examTemp.setValue(exam.id, forKey: "id")
+            examTemp.setValue(exam.date, forKey: "date")
+            examTemp.setValue(exam.location, forKey: "location")
+            examTemp.setValue(exam.location, forKey: "unit")
+            examTemp.setValue(trans, forKey: "examee")
+            myRelatedItems.add(examTemp)
+            
+            }
+        } catch {
+            print("Error with request: \(error)")
+        }
+            
+            
+        saveContext ()
+        
+    }
+    
+    
+    func deleteExam(examId : Int ){
+                
+        let examFetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Exam")
+        examFetchRequest.predicate = NSPredicate(format: "id = %d", examId)
 
+        do
+         {
+             let e = try getContext().fetch(examFetchRequest)
+             let examToDelete = e[0]
+             getContext().delete(examToDelete)
+             saveContext ()
+         }
+         catch
+         {
+             print(error)
+         }
+        
+    }
+    
 }
 

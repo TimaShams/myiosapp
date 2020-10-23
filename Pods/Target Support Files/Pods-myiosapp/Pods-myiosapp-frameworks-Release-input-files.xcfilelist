@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-myiosapp/Pods-myiosapp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DateTimePicker/DateTimePicker.framework
+${BUILT_PRODUCTS_DIR}/MDatePickerView/MDatePickerView.framework
