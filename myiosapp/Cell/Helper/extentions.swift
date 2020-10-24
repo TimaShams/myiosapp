@@ -34,8 +34,46 @@ extension UIColor {
 }
 
 
+extension Date {
 
+    func setTime(hour : Int , min : Int) -> Date?
+    {
+        let calendar = Calendar.current
+
+        var components = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: self)
+
+        components.hour = hour
+        components.minute = min
+        components.second = 0
+
+        return calendar.date(from: components)
+    }
+
+}
     
+
+extension Date {
+    func string(format: String) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = format
+        return formatter.string(from: self)
+    }
+}
+
+
+extension UIView {
+    func gradientOfView(withColours: UIColor...) {
+        
+        var cgColours = [CGColor]()
+        for colour in withColours {
+            cgColours.append(colour.cgColor)
+        }
+        let grad = CAGradientLayer()
+        grad.frame = self.bounds
+        grad.colors = cgColours
+        self.layer.insertSublayer(grad, at: 0)
+    }
+}
 
 
 //

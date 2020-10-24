@@ -9,9 +9,10 @@ import UIKit
 
 class ExamTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var content: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        content.design()
     }
 
     @IBOutlet weak var remaining: UILabel!
@@ -24,6 +25,6 @@ class ExamTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 
 }

@@ -38,6 +38,7 @@
 		C3E73858253E00600043CC73 /* ExamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E73857253E00600043CC73 /* ExamTableViewCell.swift */; };
 		C3E73883253F68DD0043CC73 /* AddExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E73882253F68DD0043CC73 /* AddExamViewController.swift */; };
 		C3E7389B253F71350043CC73 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E7389A253F71350043CC73 /* DateViewController.swift */; };
+		C3E818DE2544D01600D2C040 /* ExamCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E818DD2544D01600D2C040 /* ExamCVC.swift */; };
 		CADB50F8DA83878D365223E5 /* Pods_myiosapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F20C2453ABC7CF2DBB549F /* Pods_myiosapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +115,7 @@
 		C3E73857253E00600043CC73 /* ExamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamTableViewCell.swift; sourceTree = "<group>"; };
 		C3E73882253F68DD0043CC73 /* AddExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExamViewController.swift; sourceTree = "<group>"; };
 		C3E7389A253F71350043CC73 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		C3E818DD2544D01600D2C040 /* ExamCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamCVC.swift; sourceTree = "<group>"; };
 		D6BB6A03E45ACE62E2577B1B /* Pods-myiosapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myiosapp.debug.xcconfig"; path = "Target Support Files/Pods-myiosapp/Pods-myiosapp.debug.xcconfig"; sourceTree = "<group>"; };
 		E75521A2BB9758FAD4153A99 /* Pods-myiosapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myiosapp.release.xcconfig"; path = "Target Support Files/Pods-myiosapp/Pods-myiosapp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -281,6 +283,7 @@
 				C36B96D325405ECD009BD154 /* MapViewController.swift */,
 				C3E6D24525347A6C0078A178 /* ShowRecordController.swift */,
 				C3E73853253DFE840043CC73 /* ExamViewController.swift */,
+				C3E818DD2544D01600D2C040 /* ExamCVC.swift */,
 				C3E6D25A2534C1DC0078A178 /* DetailsViewController.swift */,
 				C3E73882253F68DD0043CC73 /* AddExamViewController.swift */,
 				C3E7389A253F71350043CC73 /* DateViewController.swift */,
@@ -592,6 +595,7 @@
 				C3E6D24725347A6C0078A178 /* ShowRecordController.swift in Sources */,
 				C3E6D24825347A6C0078A178 /* AddRecordController.swift in Sources */,
 				C3E6D253253482E20078A178 /* StudentTVC.swift in Sources */,
+				C3E818DE2544D01600D2C040 /* ExamCVC.swift in Sources */,
 				C36B96D825405F81009BD154 /* LocationSearchTable.swift in Sources */,
 				C36B970025424086009BD154 /* GalleryCell.swift in Sources */,
 				C36B96F1254231EE009BD154 /* GalleryViewController.swift in Sources */,

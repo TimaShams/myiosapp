@@ -32,7 +32,7 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
     var image = ""
     private var locationManager = CLLocationManager()
     private var currentLocation: CLLocation?
-    
+    var anot : MKPointAnnotation = MKPointAnnotation()
     
     
     var studentVar: MyStudent? = nil
@@ -76,7 +76,7 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
             annotation.coordinate = userLocation
             annotation.title = student.address
             map.addAnnotation(annotation)
-        
+        anot = annotation
         avatarImage.image = UIImage(named: student.image)
         image = student.image
         lat = student.lat
@@ -112,8 +112,8 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
     
     func showErrorAlert(msg : String ){
         
-        let alert = UIAlertController(title: "Alert", message: msg , preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
+        let alert = UIAlertController(title: nil, message: msg , preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
         
     }
@@ -125,7 +125,7 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
 
         if(id.text == "")
         {
-            showErrorAlert(msg: "Id is empty")
+            showErrorAlert(msg: "ID is empty")
         }else if(fname.text == ""){
             showErrorAlert(msg: "First name is empty")
         }else if(lname.text == ""){
@@ -133,9 +133,9 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
         }else if(course.text == ""){
             showErrorAlert(msg: "Course is empty")
         }else if(address == ""){
-            showErrorAlert(msg: "address is empty")
+            showErrorAlert(msg: "Address is empty")
         }else if(!appDelegate.isUniqueId(id:Int(id.text!)!)  && (Int(id.text!)! != studentVar?.id)){
-            showErrorAlert(msg: "Id is not uniq")
+            showErrorAlert(msg: "ID is not unique")
         }
         else
         {
@@ -147,6 +147,8 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
             changeDisplay(editView: !false , normalView: !true)
             self.view.layoutIfNeeded()
             showErrorAlert(msg: "Updated")
+            self.navigationItem.title = (studentVar?.fname)!+" "+(studentVar?.lname)!
+
         }
 
     }
@@ -159,7 +161,7 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
 
         NotificationCenter.default.addObserver(self, selector: #selector(onNotification(notification:)), name: DetailsViewController.notificationName, object: nil)
 
-        
+        self.navigationItem.title = (studentVar?.fname)!+" "+(studentVar?.lname)!
 
     }
     
@@ -171,7 +173,6 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
         long = dict!["long"] as! Double
         address = dict!["address"] as! String
         
-        
         let userLocation = CLLocationCoordinate2D(latitude: lat , longitude: long)
         map.setCenter(userLocation, animated: true)
         let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: 1000, longitudinalMeters: 1000)
@@ -182,6 +183,8 @@ class DetailsViewController: UIViewController,UIStepperControllerDelegate  {
             annotation.title = dict!["address"] as! String
             annotation.subtitle = "LATER"
             map.addAnnotation(annotation)
+        
+
         
     }
     

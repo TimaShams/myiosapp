@@ -8,7 +8,7 @@ class DateViewController: UIViewController  {
     lazy var MDate : MDatePickerView = {
         let mdate = MDatePickerView()
         mdate.delegate = self
-        mdate.Color = UIColor(red: 0/255, green: 178/255, blue: 113/255, alpha: 1)
+        mdate.Color = UIColor.myorange
         mdate.cornerRadius = 14
         mdate.translatesAutoresizingMaskIntoConstraints = false
         mdate.from = 1920
@@ -38,6 +38,7 @@ class DateViewController: UIViewController  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Today.isHidden = true
         view.backgroundColor = .white
         
         view.addSubview(MDate)

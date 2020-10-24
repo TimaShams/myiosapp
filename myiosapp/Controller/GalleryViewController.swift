@@ -57,6 +57,7 @@ extension GalleryViewController: UICollectionViewDataSource,UICollectionViewDele
         self.delegate?.imageSelected(emoji:avatar[indexPath.row])
         print(avatar[indexPath.row])
         dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     
     

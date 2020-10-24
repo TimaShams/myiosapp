@@ -11,6 +11,16 @@ import MapKit
 import CoreLocation
 class AddRecordController: UIViewController {
     
+    
+    @IBOutlet weak var blur: UIVisualEffectView!
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
+      {
+        let allowedCharacters = CharacterSet.decimalDigits
+        let characterSet = CharacterSet(charactersIn: string)
+        return allowedCharacters.isSuperset(of: characterSet)
+      }
+    
+    
     static let notificationName = Notification.Name("myNotificationName")
     var instanceOfVCA:StudentVC!
     var courses = ["Course 1" , "Course2"]
@@ -36,6 +46,16 @@ class AddRecordController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        picker.dataSource = self
+        picker.delegate = self
+
+        course.delegate = self
+        course.inputView = picker
+        blur.isHidden = true
+        picker.isHidden = true
+        picker.tintColor = UIColor.mybrown
+        id.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(onNotification(notification:)), name: AddRecordController.notificationName, object: nil)
         
     }
@@ -69,7 +89,7 @@ class AddRecordController: UIViewController {
 
         if(id.text == "")
         {
-            showErrorAlert(msg: "Id is empty")
+            showErrorAlert(msg: "ID is empty")
         }else if(fname.text == ""){
             showErrorAlert(msg: "First name is empty")
         }else if(lname.text == ""){
@@ -77,11 +97,11 @@ class AddRecordController: UIViewController {
         }else if(course.text == ""){
             showErrorAlert(msg: "Course is empty")
         }else if(address == ""){
-            showErrorAlert(msg: "address is empty")
+            showErrorAlert(msg: "Address is empty")
         }else if(!appDelegate.isUniqueId(id:Int(id.text!)!)){
-            showErrorAlert(msg: "Id is not uniq")
+            showErrorAlert(msg: "ID is not unique")
         }else if (lat == 0){
-            showErrorAlert(msg: "Select location")
+            showErrorAlert(msg: "Please, select location")
         }
         else
         {
@@ -89,7 +109,7 @@ class AddRecordController: UIViewController {
             
             let student_ : MyStudent = MyStudent(id: Int(id.text!)!, fname: fname.text!, lname: lname.text!, gender: gender, course: course.text!, age: Int(ageSelector.count), lat: lat, long: long , image: imageName , address: address)
             appDelegate.insertStudent(student: student_)
-            dismiss(animated: true, completion: nil)
+            self.navigationController?.popViewController(animated: true)
         }
         
         
@@ -99,8 +119,8 @@ class AddRecordController: UIViewController {
     
     func showErrorAlert(msg : String ){
         
-        let alert = UIAlertController(title: "Alert", message: msg , preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
+        let alert = UIAlertController(title: "", message: msg , preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
         
     }
@@ -113,6 +133,9 @@ class AddRecordController: UIViewController {
         }
     }
     
+    let coursList = ["MICT" , "BI" , "Mechanical Engineer"]
+    
+    @IBOutlet weak var picker: UIPickerView!
 }
 
 extension AddRecordController: ImageSelected {
@@ -123,4 +146,37 @@ extension AddRecordController: ImageSelected {
 
     }
     
+}
+
+
+extension AddRecordController: UITextFieldDelegate {
+
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        picker.isHidden = false
+        blur.isHidden = false
+        return false
+    }
+}
+
+// MARK: - UIPickerViewDelegate
+
+extension AddRecordController: UIPickerViewDelegate, UIPickerViewDataSource {
+
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return coursList.count
+    }
+
+    func pickerView( _ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return coursList[row]
+    }
+
+    func pickerView( _ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        course.text = coursList[row]
+        picker.isHidden = true
+        blur.isHidden = true
+    }
 }
