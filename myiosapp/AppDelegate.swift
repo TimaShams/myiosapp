@@ -8,16 +8,14 @@
 
 import UIKit
 import CoreData
-import GoogleMaps
-import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        GMSPlacesClient.provideAPIKey("AIzaSyB6KU-RrTTmlr5Ix0Lj0XK_POgPsf0jhsM")
         return true
     }
+    
     
     
 
@@ -84,6 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         transc.setValue(student.long, forKey: "long")
         transc.setValue(student.image, forKey: "image")
         transc.setValue(student.address, forKey: "address")
+        transc.setValue(student.phone, forKey: "phone")
 
         do {
             try context.save()
@@ -118,9 +117,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let age = trans.value(forKey: "age") as! Int
                 let image = trans.value(forKey: "image") as! String
                 let address = trans.value(forKey: "address") as! String
+                let phone = trans.value(forKey: "phone") as! Int
 
                 
-                var student: MyStudent = MyStudent(id: id, fname: fname, lname: lname, gender: gender, course: course, age: age, lat: lat, long: long , image: image , address : address )
+                var student: MyStudent = MyStudent(id: id, fname: fname, lname: lname, gender: gender, course: course, age: age, lat: lat, long: long , image: image , address : address, phone:phone )
                 
                 let examItems : NSMutableSet = trans.mutableSetValue(forKey: "examItems")
                 
@@ -212,8 +212,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let age    = student.value(forKey: "age")    as! Int
             let image  = student.value(forKey: "image")  as! String
             let address  = student.value(forKey: "address")  as! String
+            let phone  = student.value(forKey: "phone")  as! Int
 
-            studentTemp = MyStudent(id: id, fname: fname, lname: lname, gender: gender, course: course, age: age, lat: lat, long: long , image: image , address: address)
+            studentTemp = MyStudent(id: id, fname: fname, lname: lname, gender: gender, course: course, age: age, lat: lat, long: long , image: image , address: address, phone:phone )
             
             let examItems : NSMutableSet = student.mutableSetValue(forKey: "examItems")
             

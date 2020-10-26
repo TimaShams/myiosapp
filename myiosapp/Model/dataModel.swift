@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+// Data model for the student object
 struct MyStudent {
     var id: Int
     var fname: String
@@ -20,9 +20,10 @@ struct MyStudent {
     var exams: [MyExam]?
     var image: String
     var address : String
+    var phone : Int
 }
 
-
+// Data model for my exams 
 struct MyExam : Hashable {
     var id : Int
     var unit: String

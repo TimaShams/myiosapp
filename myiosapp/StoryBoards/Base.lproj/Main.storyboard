@@ -9,66 +9,86 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Details View Controller-->
+        <!--Student DetailVC-->
         <scene sceneID="OCF-F1-miL">
             <objects>
-                <viewController restorationIdentifier="DetailsViewController" storyboardIdentifier="DetailsViewController" id="S3Z-yx-fZr" customClass="DetailsViewController" customModule="myiosapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="DetailsViewController" storyboardIdentifier="DetailsViewController" id="S3Z-yx-fZr" customClass="StudentDetailVC" customModule="myiosapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M9g-X9-LHV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Iv-tW-AAy">
+                                <rect key="frame" x="14" y="137" width="384" height="426"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IF3-Uh-2XY">
+                                        <rect key="frame" x="140" y="67" width="154" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                        <state key="normal" title="Select an image">
+                                            <color key="titleColor" red="0.0" green="0.47424825790000003" blue="0.52846103509999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="RST-aq-KQ3" kind="presentation" identifier="getImage" id="pbW-6f-tpu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lVh-VZ-hoN">
+                                <rect key="frame" x="14" y="607" width="384" height="265"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eMA-kp-1tZ">
+                                        <rect key="frame" x="20" y="37" width="344" height="216"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </mapView>
+                                </subviews>
+                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="f10" translatesAutoresizingMaskIntoConstraints="NO" id="hnf-rH-sXw">
-                                <rect key="frame" x="87" y="110" width="240" height="88"/>
+                                <rect key="frame" x="15" y="147" width="117" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p0n-9a-yi1">
-                                <rect key="frame" x="135" y="246" width="269" height="34"/>
+                                <rect key="frame" x="152" y="246" width="240" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFD-49-czx">
-                                <rect key="frame" x="10" y="248" width="120" height="30"/>
+                                <rect key="frame" x="22" y="248" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99144905805587769" green="0.81261426210403442" blue="0.71669596433639526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.28667771816253662" green="0.22506341338157654" blue="0.32107418775558472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UK1-t1-h06">
-                                <rect key="frame" x="135" y="291" width="269" height="34"/>
+                                <rect key="frame" x="152" y="291" width="240" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Eo-kK-zZS">
-                                <rect key="frame" x="10" y="293" width="120" height="30"/>
+                                <rect key="frame" x="22" y="293" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99144905805587769" green="0.81261426210403442" blue="0.71669596433639526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.28667771816253662" green="0.22506341338157654" blue="0.32107418775558472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u3i-1K-p0Y">
-                                <rect key="frame" x="135" y="336" width="269" height="34"/>
+                                <rect key="frame" x="152" y="336" width="240" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Last Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1a-CR-6iv">
-                                <rect key="frame" x="10" y="338" width="120" height="30"/>
+                                <rect key="frame" x="22" y="338" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99144905805587769" green="0.81261426210403442" blue="0.71669596433639526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.28667771816253662" green="0.22506341338157654" blue="0.32107418775558472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQA-ak-Klg">
-                                <rect key="frame" x="0.0" y="732" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="k4N-fh-58a">
-                                <rect key="frame" x="135" y="427.5" width="269" height="32"/>
+                                <rect key="frame" x="152" y="427.5" width="240" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Male"/>
@@ -76,15 +96,14 @@
                                 </segments>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTz-7P-Ur2">
-                                <rect key="frame" x="10" y="473" width="120" height="30"/>
+                                <rect key="frame" x="22" y="473" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99144905805587769" green="0.81261426210403442" blue="0.71669596433639526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.28667771816253662" green="0.22506341338157654" blue="0.32107418775558472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rP9-lk-Q08" customClass="UIStepperController" customModule="myiosapp" customModuleProvider="target">
-                                <rect key="frame" x="135" y="473" width="269" height="30"/>
+                                <rect key="frame" x="152" y="473" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                             </view>
@@ -96,19 +115,23 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHX-jC-O3L">
-                                <rect key="frame" x="349" y="100" width="41" height="29"/>
+                                <rect key="frame" x="343" y="100" width="41" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <state key="normal" title="Edit"/>
+                                <state key="normal" title="Edit">
+                                    <color key="titleColor" red="0.0" green="0.49328223430000001" blue="0.54967084389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="edit:" destination="S3Z-yx-fZr" eventType="touchUpInside" id="IeS-L4-QiW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0x7-GQ-ygw">
-                                <rect key="frame" x="6" y="100" width="62" height="29"/>
+                                <rect key="frame" x="14" y="100" width="62" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <state key="normal" title="Cancel"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.0" green="0.49328223430000001" blue="0.54967084389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="14"/>
@@ -122,110 +145,120 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikF-Fw-HZK">
-                                <rect key="frame" x="150" y="252.5" width="254" height="21"/>
+                                <rect key="frame" x="167" y="252.5" width="240" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBk-tW-JWz">
-                                <rect key="frame" x="150" y="297.5" width="254" height="21"/>
+                                <rect key="frame" x="167" y="297.5" width="240" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXe-ki-dyf">
-                                <rect key="frame" x="150" y="342.5" width="254" height="21"/>
+                                <rect key="frame" x="167" y="342.5" width="240" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eP4-xp-Zti">
-                                <rect key="frame" x="135" y="381" width="269" height="34"/>
+                                <rect key="frame" x="152" y="381" width="240" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8d-91-XII">
-                                <rect key="frame" x="10" y="383" width="120" height="30"/>
+                                <rect key="frame" x="22" y="383" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99144905805587769" green="0.81261426210403442" blue="0.71669596433639526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <color key="textColor" red="0.28667771816253662" green="0.22506341338157654" blue="0.32107418775558472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jnw-Gc-C3V">
+                                <rect key="frame" x="167" y="387.5" width="240" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jnw-Gc-C3V">
-                                <rect key="frame" x="150" y="387.5" width="254" height="21"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ILp-mO-fg5">
+                                <rect key="frame" x="152" y="514" width="240" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2B9-9P-egR">
+                                <rect key="frame" x="22" y="516" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <color key="textColor" red="0.28667771816253662" green="0.22506341338157654" blue="0.32107418775558472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTw-k1-Cx2">
+                                <rect key="frame" x="167" y="520" width="240" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULr-5C-2u0">
-                                <rect key="frame" x="150" y="432.5" width="254" height="21"/>
+                                <rect key="frame" x="167" y="432.5" width="240" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0WU-vn-hEZ">
-                                <rect key="frame" x="150" y="477.5" width="52" height="17"/>
+                                <rect key="frame" x="167" y="477.5" width="52" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsG-kT-TEJ">
-                                <rect key="frame" x="360" y="100" width="41" height="29"/>
+                                <rect key="frame" x="354" y="100" width="41" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <state key="normal" title="Save"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.0" green="0.49328223430000001" blue="0.54967084389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="save:" destination="S3Z-yx-fZr" eventType="touchUpInside" id="rik-n1-QJi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IF3-Uh-2XY">
-                                <rect key="frame" x="131" y="206" width="154" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <state key="normal" title="Select an image"/>
-                                <connections>
-                                    <segue destination="RST-aq-KQ3" kind="presentation" identifier="getImage" id="pbW-6f-tpu"/>
-                                </connections>
-                            </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eMA-kp-1tZ">
-                                <rect key="frame" x="10" y="584" width="394" height="226"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvK-O4-9bS">
-                                <rect key="frame" x="122" y="551" width="174" height="29"/>
+                                <rect key="frame" x="122" y="617" width="174" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <state key="normal" title="Select an address"/>
+                                <state key="normal" title="Select an address">
+                                    <color key="titleColor" red="0.0" green="0.49328223430000001" blue="0.54967084389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="opO-PF-5eP" kind="presentation" id="fbu-pI-ZY5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCZ-1c-mbT">
-                                <rect key="frame" x="10" y="511" width="394" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Gender " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUp-P1-mfh">
+                                <rect key="frame" x="22" y="428" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.74851089715957642" green="0.91152679920196533" blue="0.91137033700942993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <state key="normal" title="ExamList"/>
+                                <color key="textColor" red="0.28667771816253662" green="0.22506341338157654" blue="0.32107418775558472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCZ-1c-mbT">
+                                <rect key="frame" x="14" y="571" width="384" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <state key="normal" title="ExamList">
+                                    <color key="titleColor" red="0.0" green="0.49328223430000001" blue="0.54967084389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="showExams:" destination="S3Z-yx-fZr" eventType="touchUpInside" id="195-2g-ThL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Gender " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUp-P1-mfh">
-                                <rect key="frame" x="10" y="428" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99144905805587769" green="0.81261426210403442" blue="0.71669596433639526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VuE-7u-job"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -234,13 +267,14 @@
                         <outlet property="ageSelector" destination="rP9-lk-Q08" id="mAc-re-1ec"/>
                         <outlet property="age_label" destination="0WU-vn-hEZ" id="vvh-t4-ARH"/>
                         <outlet property="avatarImage" destination="hnf-rH-sXw" id="8pG-1B-lC5"/>
+                        <outlet property="bg1" destination="9Iv-tW-AAy" id="yuw-wp-WCg"/>
+                        <outlet property="bg2" destination="lVh-VZ-hoN" id="0vX-NN-iRH"/>
                         <outlet property="cancelButton" destination="0x7-GQ-ygw" id="Cx5-R0-Di5"/>
                         <outlet property="changeMap" destination="xvK-O4-9bS" id="ZEg-nb-ITt"/>
                         <outlet property="course" destination="eP4-xp-Zti" id="QDc-Qi-tjH"/>
-                        <outlet property="courseSelector" destination="TQA-ak-Klg" id="oYu-26-Ivz"/>
                         <outlet property="course_label" destination="Jnw-Gc-C3V" id="SjF-aa-enW"/>
                         <outlet property="editButton" destination="qHX-jC-O3L" id="cl7-VF-WkJ"/>
-                        <outlet property="examButton" destination="jCZ-1c-mbT" id="15v-4c-xrg"/>
+                        <outlet property="examButton" destination="jCZ-1c-mbT" id="9WN-ed-lbm"/>
                         <outlet property="fname" destination="UK1-t1-h06" id="eHe-p9-htY"/>
                         <outlet property="fname_label" destination="bBk-tW-JWz" id="rJw-Qs-csw"/>
                         <outlet property="genderSelector" destination="k4N-fh-58a" id="BmM-Up-SOw"/>
@@ -251,6 +285,8 @@
                         <outlet property="lname" destination="u3i-1K-p0Y" id="Pfy-vI-Liv"/>
                         <outlet property="lname_label" destination="gXe-ki-dyf" id="X5F-tm-lGA"/>
                         <outlet property="map" destination="eMA-kp-1tZ" id="kd7-tH-OeL"/>
+                        <outlet property="phone" destination="ILp-mO-fg5" id="Yt3-RX-MWp"/>
+                        <outlet property="phone_label" destination="pTw-k1-Cx2" id="aWI-Cc-6nh"/>
                         <outlet property="saveButton" destination="xsG-kT-TEJ" id="nJq-ey-fof"/>
                     </connections>
                 </viewController>
@@ -258,10 +294,10 @@
             </objects>
             <point key="canvasLocation" x="-1346.376811594203" y="301.33928571428572"/>
         </scene>
-        <!--Exam View Controller-->
+        <!--ExamVC-->
         <scene sceneID="g7z-ww-Kg8">
             <objects>
-                <viewController storyboardIdentifier="ExamViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3Yz-qe-hoK" customClass="ExamViewController" customModule="myiosapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExamViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3Yz-qe-hoK" customClass="ExamVC" customModule="myiosapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tox-fs-zgC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -273,7 +309,9 @@
                                     <constraint firstAttribute="width" constant="50" id="fvU-Au-iRj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <state key="normal" title="Add"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.0" green="0.49328223430000001" blue="0.54967084389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="q2s-Oy-HAv" kind="presentation" identifier="addExam" modalPresentationStyle="overFullScreen" id="j78-ss-Cp5"/>
                                 </connections>
@@ -285,7 +323,9 @@
                                     <constraint firstAttribute="width" constant="70" id="bqI-e2-sif"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <state key="normal" title="Delete"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" red="0.0" green="0.49328223430000001" blue="0.54967084389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="deleteRows:" destination="3Yz-qe-hoK" eventType="touchUpInside" id="83a-7K-6Ap"/>
                                 </connections>
@@ -329,49 +369,49 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="aY4-po-eZG"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="Csz-H2-IJk">
-                                                            <rect key="frame" x="10" y="60" width="25" height="25"/>
+                                                            <rect key="frame" x="10" y="60" width="20" height="25"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="25" id="O8U-qA-QFc"/>
+                                                                <constraint firstAttribute="width" constant="20" id="O8U-qA-QFc"/>
                                                                 <constraint firstAttribute="height" constant="25" id="mL8-jY-lRy"/>
                                                             </constraints>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="xNn-3w-XLW">
-                                                            <rect key="frame" x="10" y="95" width="25" height="25"/>
+                                                            <rect key="frame" x="10" y="95" width="20" height="25"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="25" id="QYD-i8-cs4"/>
+                                                                <constraint firstAttribute="width" constant="20" id="QYD-i8-cs4"/>
                                                                 <constraint firstAttribute="height" constant="25" id="uQ7-l7-dYu"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="At1-K3-UOo">
                                                             <rect key="frame" x="39" y="99" width="121" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0o-HJ-UIu">
                                                             <rect key="frame" x="39" y="64" width="121" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="5s3-MQ-Elw">
-                                                            <rect key="frame" x="10" y="130" width="25" height="25"/>
+                                                            <rect key="frame" x="10" y="130" width="20" height="25"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="25" id="69T-LM-Af6"/>
+                                                                <constraint firstAttribute="width" constant="20" id="69T-LM-Af6"/>
                                                                 <constraint firstAttribute="height" constant="25" id="ybI-g9-eTt"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNt-tt-J2g">
                                                             <rect key="frame" x="39" y="134" width="121" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -445,10 +485,10 @@
             </objects>
             <point key="canvasLocation" x="-423.1884057971015" y="-423.21428571428572"/>
         </scene>
-        <!--Add Exam View Controller-->
+        <!--Add ExamVC-->
         <scene sceneID="YY1-rB-uu8">
             <objects>
-                <viewController id="q2s-Oy-HAv" customClass="AddExamViewController" customModule="myiosapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="q2s-Oy-HAv" customClass="AddExamVC" customModule="myiosapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="te2-Eh-A2w">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -537,10 +577,10 @@
             </objects>
             <point key="canvasLocation" x="366.66666666666669" y="-534.375"/>
         </scene>
-        <!--Date View Controller-->
+        <!--DateVC-->
         <scene sceneID="2Pu-Kc-GKE">
             <objects>
-                <viewController id="ZFc-UV-D2I" customClass="DateViewController" customModule="myiosapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZFc-UV-D2I" customClass="DateVC" customModule="myiosapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vcV-KE-rgo">
                         <rect key="frame" x="0.0" y="0.0" width="358" height="475"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -553,10 +593,10 @@
             </objects>
             <point key="canvasLocation" x="1267" y="-530"/>
         </scene>
-        <!--Gallery View Controller-->
+        <!--GalleryVC-->
         <scene sceneID="spd-oK-imj">
             <objects>
-                <viewController id="RST-aq-KQ3" customClass="GalleryViewController" customModule="myiosapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RST-aq-KQ3" customClass="GalleryVC" customModule="myiosapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="afb-xr-t46">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -627,18 +667,40 @@
             </objects>
             <point key="canvasLocation" x="-584" y="-1332"/>
         </scene>
-        <!--Add Record Controller-->
+        <!--Add StudentVC-->
         <scene sceneID="rh0-an-d3x">
             <objects>
-                <viewController id="DV5-Ks-sZ0" customClass="AddRecordController" customModule="myiosapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DV5-Ks-sZ0" customClass="AddStudentVC" customModule="myiosapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZuQ-9z-3q2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4PV-wq-5SV">
-                                <rect key="frame" x="168" y="246" width="226" height="34"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Hx-Vz-tnb">
+                                <rect key="frame" x="20" y="594" width="374" height="211"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mqB-eY-NHV">
+                                <rect key="frame" x="19" y="126" width="374" height="460"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESR-Ns-3h5">
+                                        <rect key="frame" x="138" y="69" width="154" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                        <state key="normal" title="Select an image">
+                                            <color key="titleColor" red="0.0" green="0.49328223430000001" blue="0.54967084389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="RST-aq-KQ3" kind="presentation" identifier="addImage" id="dke-Hy-3of"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4PV-wq-5SV">
+                                <rect key="frame" x="156" y="246" width="226" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -650,9 +712,10 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ByD-N0-DIm">
-                                <rect key="frame" x="168" y="291" width="226" height="34"/>
+                                <rect key="frame" x="156" y="291" width="226" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -664,129 +727,122 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cnk-Oq-ndj">
-                                <rect key="frame" x="168" y="336" width="226" height="34"/>
+                                <rect key="frame" x="156" y="336" width="226" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VYD-ea-PEW">
-                                <rect key="frame" x="168" y="469" width="226" height="34"/>
+                                <rect key="frame" x="156" y="469" width="226" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NFm-tM-42a">
-                                <rect key="frame" x="168" y="379" width="226" height="32"/>
+                                <rect key="frame" x="156" y="379" width="226" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Male"/>
                                     <segment title="Female"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" red="0.55723768472671509" green="0.72727853059768677" blue="0.65760421752929688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cl5-m1-e7Z" customClass="UIStepperController" customModule="myiosapp" customModuleProvider="target">
-                                <rect key="frame" x="168" y="425" width="226" height="30"/>
+                                <rect key="frame" x="156" y="425" width="226" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l20-MJ-dUh">
-                                <rect key="frame" x="20" y="735" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.68821460010000002" blue="0.76517581940000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="savePersonDetail:" destination="DV5-Ks-sZ0" eventType="touchUpInside" id="BzV-bF-tNF"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJG-1T-tZU">
-                                <rect key="frame" x="118" y="527" width="179" height="24"/>
+                                <rect key="frame" x="118" y="597" width="179" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <state key="normal" title="Select an address"/>
+                                <state key="normal" title="Select an address">
+                                    <color key="titleColor" red="0.0" green="0.47424825790000003" blue="0.52846103509999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="opO-PF-5eP" kind="presentation" id="sOo-Oc-wTb"/>
                                 </connections>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SSh-zr-VHu">
-                                <rect key="frame" x="20" y="559" width="374" height="158"/>
+                                <rect key="frame" x="34" y="626" width="348" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9P-h7-Ppz">
                                 <rect key="frame" x="20" y="248" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99144905805587769" green="0.81261426210403442" blue="0.71669596433639526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.28667771816253662" green="0.22506341338157654" blue="0.32107418775558472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQm-ON-xGi">
                                 <rect key="frame" x="20" y="293" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99144905805587769" green="0.81261426210403442" blue="0.71669596433639526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.28667771816253662" green="0.22506341338157654" blue="0.32107418775558472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Last Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyx-cf-Ead">
                                 <rect key="frame" x="20" y="338" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99144905805587769" green="0.81261426210403442" blue="0.71669596433639526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.28667771816253662" green="0.22506341338157654" blue="0.32107418775558472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66Z-zL-WLv">
                                 <rect key="frame" x="20" y="425" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99144905805587769" green="0.81261426210403442" blue="0.71669596433639526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.28667771816253662" green="0.22506341338157654" blue="0.32107418775558472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKd-23-0GF">
                                 <rect key="frame" x="20" y="471" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99144905805587769" green="0.81261426210403442" blue="0.71669596433639526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.28667771816253662" green="0.22506341338157654" blue="0.32107418775558472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Gender " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVg-dK-Wtk">
                                 <rect key="frame" x="20" y="380" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99144905805587769" green="0.81261426210403442" blue="0.71669596433639526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.28667771816253662" green="0.22506341338157654" blue="0.32107418775558472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MKM-38-3NY">
-                                <rect key="frame" x="20" y="158" width="120" height="81"/>
+                                <rect key="frame" x="20" y="141" width="120" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.99144905805587769" green="0.81261426210403442" blue="0.71669596433639526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESR-Ns-3h5">
-                                <rect key="frame" x="168" y="201" width="154" height="29"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UJV-qi-xH7">
+                                <rect key="frame" x="156" y="517" width="226" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EU4-f0-NKS">
+                                <rect key="frame" x="20" y="519" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <state key="normal" title="Select an image"/>
+                                <color key="textColor" red="0.28667771816253662" green="0.22506341338157654" blue="0.32107418775558472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKE-Ms-hGw">
+                                <rect key="frame" x="16" y="823" width="384" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.0" green="0.49328223430000001" blue="0.54967084389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="RST-aq-KQ3" kind="presentation" identifier="addImage" id="dke-Hy-3of"/>
+                                    <action selector="savePersonDetail:" destination="DV5-Ks-sZ0" eventType="touchUpInside" id="dmX-k2-Stj"/>
+                                    <action selector="showExams:" destination="S3Z-yx-fZr" eventType="touchUpInside" id="8ht-6z-md9"/>
                                 </connections>
                             </button>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="STi-WK-6BF">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="duk-ZH-n9y">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <blurEffect style="regular"/>
-                            </visualEffectView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U8a-aj-gLe">
-                                <rect key="frame" x="20" y="430" width="374" height="167"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AyB-tT-qsP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -795,14 +851,16 @@
                     <connections>
                         <outlet property="ageSelector" destination="cl5-m1-e7Z" id="quS-xe-7C5"/>
                         <outlet property="avatarImage" destination="MKM-38-3NY" id="PlG-4D-RNR"/>
-                        <outlet property="blur" destination="STi-WK-6BF" id="d6C-8h-13r"/>
+                        <outlet property="bg1" destination="mqB-eY-NHV" id="4LM-uh-rfz"/>
+                        <outlet property="bg2" destination="7Hx-Vz-tnb" id="5DH-zH-oum"/>
                         <outlet property="course" destination="VYD-ea-PEW" id="Yeb-hn-KF6"/>
                         <outlet property="fname" destination="ByD-N0-DIm" id="E0o-fw-SSC"/>
                         <outlet property="genderSelector" destination="NFm-tM-42a" id="H9r-XY-mpa"/>
                         <outlet property="id" destination="4PV-wq-5SV" id="57q-6D-gXi"/>
                         <outlet property="lname" destination="cnk-Oq-ndj" id="Vr6-S1-kkO"/>
                         <outlet property="map" destination="SSh-zr-VHu" id="YDf-Ry-PzF"/>
-                        <outlet property="picker" destination="U8a-aj-gLe" id="a3j-nz-5fo"/>
+                        <outlet property="phone" destination="UJV-qi-xH7" id="sgT-fD-Mkk"/>
+                        <outlet property="saveButton" destination="GKE-Ms-hGw" id="4jr-me-sqy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3A-NE-dFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -847,30 +905,36 @@
                                                                         <constraint firstAttribute="height" constant="70" id="Q2W-4K-CIL"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QiQ-cg-Zs1">
-                                                                    <rect key="frame" x="90" y="9.5" width="274" height="51"/>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="QiQ-cg-Zs1">
+                                                                    <rect key="frame" x="90" y="5" width="274" height="60"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPR-Wj-6mV">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="274" height="17"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="41" height="17"/>
                                                                             <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
-                                                                            <nil key="textColor"/>
+                                                                            <color key="textColor" red="0.46523743867874146" green="0.36352938413619995" blue="0.41619986295700073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XI-3j-wPx">
-                                                                            <rect key="frame" x="0.0" y="17" width="274" height="17"/>
+                                                                            <rect key="frame" x="0.0" y="21.5" width="20.5" height="17"/>
                                                                             <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                                                            <nil key="textColor"/>
+                                                                            <color key="textColor" red="0.55723768472671509" green="0.72727853059768677" blue="0.65760421752929688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFh-mf-y1B">
-                                                                            <rect key="frame" x="0.0" y="34" width="274" height="17"/>
+                                                                            <rect key="frame" x="0.0" y="43" width="61.5" height="17"/>
                                                                             <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                                                            <nil key="textColor"/>
+                                                                            <color key="textColor" red="0.55723768472671509" green="0.72727853059768677" blue="0.65760421752929688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
                                                                 </stackView>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="QiQ-cg-Zs1" firstAttribute="leading" secondItem="kJH-q6-Zbp" secondAttribute="trailing" constant="20" id="A8e-FC-hny"/>
+                                                                <constraint firstAttribute="bottom" secondItem="QiQ-cg-Zs1" secondAttribute="bottom" constant="5" id="Ut2-1g-s0e"/>
+                                                                <constraint firstItem="QiQ-cg-Zs1" firstAttribute="top" secondItem="yd7-KW-3bw" secondAttribute="top" constant="5" id="dvw-uS-aPy"/>
+                                                                <constraint firstAttribute="trailing" secondItem="QiQ-cg-Zs1" secondAttribute="trailing" id="rOO-hN-f3T"/>
+                                                            </constraints>
                                                         </stackView>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -940,6 +1004,28 @@
             </objects>
             <point key="canvasLocation" x="-2974" y="-413"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="WKo-Kr-aEk">
+            <objects>
+                <viewController id="dsh-Ph-9vH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NcW-fB-Prx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w29-BE-sKn">
+                                <rect key="frame" x="184" y="292" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ci9-Lm-7PK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aiH-xh-Uoq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3053" y="340"/>
+        </scene>
         <!--Location Search Table-->
         <scene sceneID="RYC-C1-JjK">
             <objects>
@@ -984,10 +1070,10 @@
             </objects>
             <point key="canvasLocation" x="1141" y="192"/>
         </scene>
-        <!--Map View Controller-->
+        <!--MapVC-->
         <scene sceneID="z6H-7B-EDO">
             <objects>
-                <viewController id="VS9-8h-XZ2" customClass="MapViewController" customModule="myiosapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VS9-8h-XZ2" customClass="MapVC" customModule="myiosapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zl0-Vu-RAd"/>
                         <viewControllerLayoutGuide type="bottom" id="4ef-Zu-ZqM"/>

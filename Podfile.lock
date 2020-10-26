@@ -1,45 +1,28 @@
 PODS:
   - DateTimePicker (2.5.0)
-  - fluid-slider (1.1.0):
-    - pop
-  - GoogleMaps (3.10.0):
-    - GoogleMaps/Maps (= 3.10.0)
-  - GoogleMaps/Base (3.10.0)
-  - GoogleMaps/Maps (3.10.0):
-    - GoogleMaps/Base
-  - GooglePlaces (3.10.0):
-    - GoogleMaps/Base (= 3.10.0)
   - MDatePickerView (1.2.3)
-  - pop (1.0.12)
+  - RAMPaperSwitch (3.1.0)
   - ViewAnimator (3.0.1)
 
 DEPENDENCIES:
   - DateTimePicker
-  - fluid-slider
-  - GoogleMaps (= 3.10.0)
-  - GooglePlaces (= 3.10.0)
   - MDatePickerView
+  - RAMPaperSwitch
   - ViewAnimator
 
 SPEC REPOS:
   trunk:
     - DateTimePicker
-    - fluid-slider
-    - GoogleMaps
-    - GooglePlaces
     - MDatePickerView
-    - pop
+    - RAMPaperSwitch
     - ViewAnimator
 
 SPEC CHECKSUMS:
   DateTimePicker: 9a370913607f360b67ecfc7dcf331911c9b407a6
-  fluid-slider: 68037ac7247f16a89f3e24ff5d0167c8eea6f50b
-  GoogleMaps: 8c080862ff2748ece9929471b30feb56a6c5079d
-  GooglePlaces: 9a6f5f3a0c88da2aa1bf7426a65d3e004f5e69a1
   MDatePickerView: e26233885de2f13659c6101b3ed265eacf92c078
-  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  RAMPaperSwitch: 4ab6358e37cc90060693f10fb60fb6b73f6492c3
   ViewAnimator: dd18d2f5c1e472f78d0065ff92750fe56cbd2f39
 
-PODFILE CHECKSUM: 92567b801a7146c16a44cec53fef65f463aa0c6f
+PODFILE CHECKSUM: 9b0046522f71ee5933a2b5d883213d76383da3fe
 
 COCOAPODS: 1.9.3

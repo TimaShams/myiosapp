@@ -7,12 +7,6 @@
         <attribute name="unit" optional="YES" attributeType="String"/>
         <relationship name="examee" maxCount="1" deletionRule="No Action" destinationEntity="Student" inverseName="examItems" inverseEntity="Student"/>
     </entity>
-    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
-        <attribute name="dateOfBirth" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="givenName" optional="YES" attributeType="String"/>
-        <attribute name="studentID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="surname" optional="YES" attributeType="String"/>
-    </entity>
     <entity name="Student" representedClassName="Student" isAbstract="YES" syncable="YES" codeGenerationType="class">
         <attribute name="address" optional="YES" attributeType="String"/>
         <attribute name="age" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
@@ -24,16 +18,11 @@
         <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="lname" optional="YES" attributeType="String"/>
         <attribute name="long" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="phone" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="examItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Exam" inverseName="examee" inverseEntity="Exam"/>
-    </entity>
-    <entity name="StudentExam" representedClassName="StudentExam" syncable="YES" codeGenerationType="class">
-        <attribute name="examid" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="studentid" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <elements>
         <element name="Exam" positionX="-119.73828125" positionY="-35.90234375" width="128" height="118"/>
-        <element name="Person" positionX="-18" positionY="81" width="128" height="103"/>
-        <element name="Student" positionX="-268.2890625" positionY="-45.359375" width="128" height="208"/>
-        <element name="StudentExam" positionX="44.7734375" positionY="-23.97265625" width="128" height="73"/>
+        <element name="Student" positionX="-268.2890625" positionY="-45.359375" width="128" height="223"/>
     </elements>
 </model>
